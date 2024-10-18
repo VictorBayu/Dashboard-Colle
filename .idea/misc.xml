@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
   <component name="Black">
     <option name="sdkName" value="Python 3.9 (Dashboard Colle)" />
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.9" project-jdk-type="Python SDK" />
+=======
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.9 (Dashboard Colle)" project-jdk-type="Python SDK" />
+>>>>>>> 23dafa3f9b9ad5c5f2b01e93112ec5c2cac361c3
 </project>
