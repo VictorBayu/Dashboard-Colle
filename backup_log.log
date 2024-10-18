@@ -1,0 +1,637 @@
+2024-10-16 12:19:18,456 [ERROR] Gagal terhubung ke database: Not an executable object: 'SELECT 1'
+2024-10-16 12:19:18,456 [ERROR] Akhiri skrip karena koneksi ke database gagal.
+2024-10-16 12:22:50,183 [INFO] Tes koneksi berhasil!
+2024-10-16 12:25:33,757 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023/20230101.xlsx
+2024-10-16 12:25:36,842 [ERROR] Gagal menyimpan data ke SQL Server: (pyodbc.ProgrammingError) ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'MaxOvd'. (207) (SQLExecDirectW); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ProfID'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'MaxOvd'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ProfID'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)")
+[SQL: INSERT INTO [AZ_Daily] ([Periode], [BranchID], [AgreementNo], [CustomerID], [Nama], [Model], [Tenor], [Ang_ke], [POKOK_AWAL], [SALDO_POKOK], [OVD], [Status], [Tgl_jt], [Angsuran], [CMO], [Tgl_Cair], [ProductId], [StatusWo], [StatusAsset], [Tgl_Tarik] ... 6435 characters truncated ... ?, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('20230101', 405, 24051015000161, '40500002894         ', 'NARNI', 'HONDA.REVO-NF11 B1D MT', 18, 999, '4081250,00', '0,00', 0, 'ICP', datetime.datetime(2016, 8, 20, 0, 0), 288000.0, 'MEI HERLINA SO', datetime.datetime(2015, 2, 20, 0, 0), 'R2DCSYR   ', 'NM ', 'Normal', None, None, datetime.datetime(2015, 2, 20, 0, 0), datetime.datetime(2023, 1, 1, 0, 0), '-', 'DIRECT SELLING', 27.0, 'SALES OFFICER DANA CEPAT', 'Wiraswasta', None, '20230101', 430, 24301122000359, '43000002460         ', 'YUSMAN', 'Q37HONDA-ALL NEW SCOOPY-STYLISH', 24, 6, '11556250,00', '9896543,47', 0, 'LIV', datetime.datetime(2023, 1, 20, 0, 0), 732500.0, 'WIWIN HENDRIAWAN', datetime.datetime(2022, 7, 25, 0, 0), 'DINARKU2  ', 'NM ', 'Normal', None, datetime.datetime(2022, 12, 18, 0, 0) ... 1988 parameters truncated ... '8116875,00', '5782930,48', 0, 'LIV', datetime.datetime(2023, 1, 22, 0, 0), 844500.0, 'NUR HADI SE', datetime.datetime(2022, 8, 22, 0, 0), 'DINARKU2  ', 'NM ', 'Normal', None, datetime.datetime(2022, 12, 21, 0, 0), datetime.datetime(2022, 8, 22, 0, 0), datetime.datetime(2023, 1, 1, 0, 0), 'New', 'AGENCY', 0.0, 'RAHMAT ALDIANSYAH', 'PEGAWAI SW', 'KP GRESIK', '20230101', 410, 24101122000549, '41000006062         ', 'NILA KUSUMA WARDANI', 'Q37HONDA.BEAT.FI CBS', 12, 7, '6505875,00', '3634583,90', 0, 'LIV', datetime.datetime(2023, 1, 10, 0, 0), 693500.0, 'ASHAR', datetime.datetime(2022, 6, 10, 0, 0), 'DINARKU2  ', 'NM ', 'Normal', None, datetime.datetime(2022, 12, 23, 0, 0), datetime.datetime(2022, 6, 10, 0, 0), datetime.datetime(2023, 1, 1, 0, 0), 'RO', 'INTERNAL CUSTOMER', 18.0, 'SALES PRIMA', 'Ibu Rumah', 'KC SANGATA')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-10-16 16:37:57,158 [INFO] Tes koneksi berhasil!
+2024-10-16 16:40:41,173 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023/20230101.xlsx
+2024-10-16 16:40:41,174 [INFO] DataFrame setelah membaca Excel:
+2024-10-16 16:40:41,174 [INFO]    BranchID     AgreementNo  ...      ProfID         POS_ID
+0       401   4011021000268  ...   Ibu Rumah  KC BALIKPAPAN
+1       404   4040421301878  ...  TNI                   NaN
+2       405  24051015000161  ...  Wiraswasta            NaN
+3       409   4091016000908  ...  PEGAWAI SW            NaN
+4       420   4201017000079  ...  Wiraswasta            NaN
+
+[5 rows x 28 columns]
+2024-10-16 16:40:41,657 [INFO] Kolom yang ada di tabel SQL Server: ['Periode', 'BranchID', 'AgreementNo', 'CustomerID', 'Nama', 'Model', 'Tenor', 'Ang_ke', 'Pokok_Awal', 'Saldo_Pokok', 'OVD', 'Status', 'Tgl_Jt', 'Tgl_Cair', 'ProductId', 'StatusWo', 'StatusAsset', 'Tgl_Tarik', 'Tgl_Bayar', 'TglDO', 'Tgl_Proses', 'Max OVD', 'POS_ID', 'ApplicationPriority', 'BAName', 'CMO', 'Angsuran', 'Profession', 'SourceApplication', 'isSyariah']
+2024-10-16 16:40:41,658 [INFO] DataFrame setelah rename kolom:
+2024-10-16 16:40:41,658 [INFO]      Periode  BranchID  ...  Profession      POS_ID
+2   20230101       405  ...  Wiraswasta         NaN
+5   20230101       430  ...  Non Profes  KC MATARAM
+10  20230101       413  ...  Wiraswasta         NaN
+13  20230101       451  ...  Pekerja So   KC MANADO
+14  20230101       455  ...   Ibu Rumah  KP LIMBOTO
+
+[5 rows x 29 columns]
+2024-10-16 16:40:41,698 [INFO] DataFrame Final yang akan diupload:
+2024-10-16 16:40:41,698 [INFO]      Periode  BranchID  ...  Profession      POS_ID
+2   20230101       405  ...  Wiraswasta         NaN
+5   20230101       430  ...  Non Profes  KC MATARAM
+10  20230101       413  ...  Wiraswasta         NaN
+13  20230101       451  ...  Pekerja So   KC MANADO
+14  20230101       455  ...   Ibu Rumah  KP LIMBOTO
+
+[5 rows x 29 columns]
+2024-10-16 16:40:42,981 [ERROR] Gagal menyimpan data ke SQL Server: (pyodbc.DataError) ('22018', "[22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Conversion failed when converting the varchar value '4081250,00' to data type int. (245) (SQLExecDirectW)")
+[SQL: INSERT INTO [AZ_Daily] ([Periode], [BranchID], [AgreementNo], [CustomerID], [Nama], [Model], [Tenor], [Ang_ke], [Pokok_Awal], [Saldo_Pokok], [OVD], [Status], [Tgl_Jt], [Angsuran], [CMO], [Tgl_Cair], [ProductId], [StatusWo], [StatusAsset], [Tgl_Tarik] ... 6440 characters truncated ... ?, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('20230101', 405, 24051015000161, '40500002894         ', 'NARNI', 'HONDA.REVO-NF11 B1D MT', 18, 999, '4081250,00', '0,00', 0, 'ICP', datetime.datetime(2016, 8, 20, 0, 0), 288000.0, 'MEI HERLINA SO', datetime.datetime(2015, 2, 20, 0, 0), 'R2DCSYR   ', 'NM ', 'Normal', None, None, datetime.datetime(2015, 2, 20, 0, 0), datetime.datetime(2023, 1, 1, 0, 0), '-', 'DIRECT SELLING', 27.0, 'SALES OFFICER DANA CEPAT', 'Wiraswasta', None, '20230101', 430, 24301122000359, '43000002460         ', 'YUSMAN', 'Q37HONDA-ALL NEW SCOOPY-STYLISH', 24, 6, '11556250,00', '9896543,47', 0, 'LIV', datetime.datetime(2023, 1, 20, 0, 0), 732500.0, 'WIWIN HENDRIAWAN', datetime.datetime(2022, 7, 25, 0, 0), 'DINARKU2  ', 'NM ', 'Normal', None, datetime.datetime(2022, 12, 18, 0, 0) ... 1988 parameters truncated ... '8116875,00', '5782930,48', 0, 'LIV', datetime.datetime(2023, 1, 22, 0, 0), 844500.0, 'NUR HADI SE', datetime.datetime(2022, 8, 22, 0, 0), 'DINARKU2  ', 'NM ', 'Normal', None, datetime.datetime(2022, 12, 21, 0, 0), datetime.datetime(2022, 8, 22, 0, 0), datetime.datetime(2023, 1, 1, 0, 0), 'New', 'AGENCY', 0.0, 'RAHMAT ALDIANSYAH', 'PEGAWAI SW', 'KP GRESIK', '20230101', 410, 24101122000549, '41000006062         ', 'NILA KUSUMA WARDANI', 'Q37HONDA.BEAT.FI CBS', 12, 7, '6505875,00', '3634583,90', 0, 'LIV', datetime.datetime(2023, 1, 10, 0, 0), 693500.0, 'ASHAR', datetime.datetime(2022, 6, 10, 0, 0), 'DINARKU2  ', 'NM ', 'Normal', None, datetime.datetime(2022, 12, 23, 0, 0), datetime.datetime(2022, 6, 10, 0, 0), datetime.datetime(2023, 1, 1, 0, 0), 'RO', 'INTERNAL CUSTOMER', 18.0, 'SALES PRIMA', 'Ibu Rumah', 'KC SANGATA')]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-10-16 17:00:31,395 [INFO] Tes koneksi berhasil!
+2024-10-16 17:03:12,710 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023/20230101.xlsx
+2024-10-16 17:03:12,710 [INFO] DataFrame setelah membaca Excel:
+2024-10-16 17:03:12,711 [INFO]    BranchID     AgreementNo  ...      ProfID         POS_ID
+0       401   4011021000268  ...   Ibu Rumah  KC BALIKPAPAN
+1       404   4040421301878  ...  TNI                   NaN
+2       405  24051015000161  ...  Wiraswasta            NaN
+3       409   4091016000908  ...  PEGAWAI SW            NaN
+4       420   4201017000079  ...  Wiraswasta            NaN
+
+[5 rows x 28 columns]
+2024-10-16 17:03:13,390 [INFO] DataFrame setelah pembersihan kolom numerik:
+2024-10-16 17:03:13,390 [INFO]      Periode  BranchID  ...      ProfID      POS_ID
+2   20230101       405  ...  Wiraswasta         NaN
+5   20230101       430  ...  Non Profes  KC MATARAM
+10  20230101       413  ...  Wiraswasta         NaN
+13  20230101       451  ...  Pekerja So   KC MANADO
+14  20230101       455  ...   Ibu Rumah  KP LIMBOTO
+
+[5 rows x 29 columns]
+2024-10-16 17:03:13,464 [INFO] Kolom yang ada di tabel SQL Server: ['Periode', 'BranchID', 'AgreementNo', 'CustomerID', 'Nama', 'Model', 'Tenor', 'Ang_ke', 'Pokok_Awal', 'Saldo_Pokok', 'OVD', 'Status', 'Tgl_Jt', 'Tgl_Cair', 'ProductId', 'StatusWo', 'StatusAsset', 'Tgl_Tarik', 'Tgl_Bayar', 'TglDO', 'Tgl_Proses', 'Max OVD', 'POS_ID', 'ApplicationPriority', 'BAName', 'CMO', 'Angsuran', 'Profession', 'SourceApplication', 'isSyariah']
+2024-10-16 17:03:13,465 [INFO] DataFrame setelah rename kolom:
+2024-10-16 17:03:13,465 [INFO]      Periode  BranchID  ...  Profession      POS_ID
+2   20230101       405  ...  Wiraswasta         NaN
+5   20230101       430  ...  Non Profes  KC MATARAM
+10  20230101       413  ...  Wiraswasta         NaN
+13  20230101       451  ...  Pekerja So   KC MANADO
+14  20230101       455  ...   Ibu Rumah  KP LIMBOTO
+
+[5 rows x 29 columns]
+2024-10-16 17:03:13,501 [INFO] DataFrame Final yang akan diupload:
+2024-10-16 17:03:13,501 [INFO]      Periode  BranchID  ...  Profession      POS_ID
+2   20230101       405  ...  Wiraswasta         NaN
+5   20230101       430  ...  Non Profes  KC MATARAM
+10  20230101       413  ...  Wiraswasta         NaN
+13  20230101       451  ...  Pekerja So   KC MANADO
+14  20230101       455  ...   Ibu Rumah  KP LIMBOTO
+
+[5 rows x 29 columns]
+2024-10-16 17:03:14,689 [ERROR] Gagal menyimpan data ke SQL Server: (pyodbc.IntegrityError) ('23000', "[23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'POS_ID', table 'Reporting.dbo.AZ_Daily'; column does not allow nulls. INSERT fails. (515) (SQLExecDirectW); [23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: INSERT INTO [AZ_Daily] ([Periode], [BranchID], [AgreementNo], [CustomerID], [Nama], [Model], [Tenor], [Ang_ke], [Pokok_Awal], [Saldo_Pokok], [OVD], [Status], [Tgl_Jt], [Angsuran], [CMO], [Tgl_Cair], [ProductId], [StatusWo], [StatusAsset], [Tgl_Tarik] ... 6440 characters truncated ... ?, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('20230101', 405, 24051015000161, '40500002894         ', 'NARNI', 'HONDA.REVO-NF11 B1D MT', 18, 999, 408125000, 0, 0, 'ICP', datetime.datetime(2016, 8, 20, 0, 0), 2880000.0, 'MEI HERLINA SO', datetime.datetime(2015, 2, 20, 0, 0), 'R2DCSYR   ', 'NM ', 'Normal', None, None, datetime.datetime(2015, 2, 20, 0, 0), datetime.datetime(2023, 1, 1, 0, 0), '-', 'DIRECT SELLING', 270.0, 'SALES OFFICER DANA CEPAT', 'Wiraswasta', None, '20230101', 430, 24301122000359, '43000002460         ', 'YUSMAN', 'Q37HONDA-ALL NEW SCOOPY-STYLISH', 24, 6, 1155625000, 989654347, 0, 'LIV', datetime.datetime(2023, 1, 20, 0, 0), 7325000.0, 'WIWIN HENDRIAWAN', datetime.datetime(2022, 7, 25, 0, 0), 'DINARKU2  ', 'NM ', 'Normal', None, datetime.datetime(2022, 12, 18, 0, 0) ... 1988 parameters truncated ... 811687500, 578293048, 0, 'LIV', datetime.datetime(2023, 1, 22, 0, 0), 8445000.0, 'NUR HADI SE', datetime.datetime(2022, 8, 22, 0, 0), 'DINARKU2  ', 'NM ', 'Normal', None, datetime.datetime(2022, 12, 21, 0, 0), datetime.datetime(2022, 8, 22, 0, 0), datetime.datetime(2023, 1, 1, 0, 0), 'New', 'AGENCY', 0.0, 'RAHMAT ALDIANSYAH', 'PEGAWAI SW', 'KP GRESIK', '20230101', 410, 24101122000549, '41000006062         ', 'NILA KUSUMA WARDANI', 'Q37HONDA.BEAT.FI CBS', 12, 7, 650587500, 363458390, 0, 'LIV', datetime.datetime(2023, 1, 10, 0, 0), 6935000.0, 'ASHAR', datetime.datetime(2022, 6, 10, 0, 0), 'DINARKU2  ', 'NM ', 'Normal', None, datetime.datetime(2022, 12, 23, 0, 0), datetime.datetime(2022, 6, 10, 0, 0), datetime.datetime(2023, 1, 1, 0, 0), 'RO', 'INTERNAL CUSTOMER', 180.0, 'SALES PRIMA', 'Ibu Rumah', 'KC SANGATA')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-10-16 17:13:09,626 [INFO] Tes koneksi berhasil!
+2024-10-16 17:15:48,048 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023/20230101.xlsx
+2024-10-16 17:15:48,048 [INFO] DataFrame setelah membaca Excel:
+2024-10-16 17:15:48,048 [INFO]    BranchID     AgreementNo  ...      ProfID         POS_ID
+0       401   4011021000268  ...   Ibu Rumah  KC BALIKPAPAN
+1       404   4040421301878  ...  TNI                   NaN
+2       405  24051015000161  ...  Wiraswasta            NaN
+3       409   4091016000908  ...  PEGAWAI SW            NaN
+4       420   4201017000079  ...  Wiraswasta            NaN
+
+[5 rows x 28 columns]
+2024-10-16 17:15:48,707 [INFO] DataFrame setelah pembersihan kolom numerik:
+2024-10-16 17:15:48,707 [INFO]      Periode  BranchID  ...      ProfID      POS_ID
+2   20230101       405  ...  Wiraswasta         NaN
+5   20230101       430  ...  Non Profes  KC MATARAM
+10  20230101       413  ...  Wiraswasta         NaN
+13  20230101       451  ...  Pekerja So   KC MANADO
+14  20230101       455  ...   Ibu Rumah  KP LIMBOTO
+
+[5 rows x 29 columns]
+2024-10-16 17:15:48,783 [INFO] Kolom yang ada di tabel SQL Server: ['Periode', 'BranchID', 'AgreementNo', 'CustomerID', 'Nama', 'Model', 'Tenor', 'Ang_ke', 'Pokok_Awal', 'Saldo_Pokok', 'OVD', 'Status', 'Tgl_Jt', 'Tgl_Cair', 'ProductId', 'StatusWo', 'StatusAsset', 'Tgl_Tarik', 'Tgl_Bayar', 'TglDO', 'Tgl_Proses', 'Max OVD', 'POS_ID', 'ApplicationPriority', 'BAName', 'CMO', 'Angsuran', 'Profession', 'SourceApplication', 'isSyariah']
+2024-10-16 17:15:48,783 [INFO] DataFrame setelah rename kolom:
+2024-10-16 17:15:48,783 [INFO]      Periode  BranchID  ...  Profession      POS_ID
+2   20230101       405  ...  Wiraswasta         NaN
+5   20230101       430  ...  Non Profes  KC MATARAM
+10  20230101       413  ...  Wiraswasta         NaN
+13  20230101       451  ...  Pekerja So   KC MANADO
+14  20230101       455  ...   Ibu Rumah  KP LIMBOTO
+
+[5 rows x 29 columns]
+2024-10-16 17:15:48,820 [INFO] DataFrame Final yang akan diupload:
+2024-10-16 17:15:48,820 [INFO]      Periode  BranchID  ...  Profession      POS_ID
+2   20230101       405  ...  Wiraswasta         NaN
+5   20230101       430  ...  Non Profes  KC MATARAM
+10  20230101       413  ...  Wiraswasta         NaN
+13  20230101       451  ...  Pekerja So   KC MANADO
+14  20230101       455  ...   Ibu Rumah  KP LIMBOTO
+
+[5 rows x 29 columns]
+2024-10-16 17:15:50,229 [ERROR] Gagal menyimpan data ke SQL Server: (pyodbc.DataError) ('22003', '[22003] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Arithmetic overflow error converting expression to data type int. (8115) (SQLExecDirectW); [22003] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)')
+[SQL: INSERT INTO [AZ_Daily] ([Periode], [BranchID], [AgreementNo], [CustomerID], [Nama], [Model], [Tenor], [Ang_ke], [Pokok_Awal], [Saldo_Pokok], [OVD], [Status], [Tgl_Jt], [Angsuran], [CMO], [Tgl_Cair], [ProductId], [StatusWo], [StatusAsset], [Tgl_Tarik] ... 6440 characters truncated ... ?, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('20230101', 405, 24051015000161, '40500002894         ', 'NARNI', 'HONDA.REVO-NF11 B1D MT', 18, 999, 408125000, 0, 0, 'ICP', datetime.datetime(2016, 8, 20, 0, 0), 2880000.0, 'MEI HERLINA SO', datetime.datetime(2015, 2, 20, 0, 0), 'R2DCSYR   ', 'NM ', 'Normal', None, None, datetime.datetime(2015, 2, 20, 0, 0), datetime.datetime(2023, 1, 1, 0, 0), '-', 'DIRECT SELLING', 270.0, 'SALES OFFICER DANA CEPAT', 'Wiraswasta', None, '20230101', 430, 24301122000359, '43000002460         ', 'YUSMAN', 'Q37HONDA-ALL NEW SCOOPY-STYLISH', 24, 6, 1155625000, 989654347, 0, 'LIV', datetime.datetime(2023, 1, 20, 0, 0), 7325000.0, 'WIWIN HENDRIAWAN', datetime.datetime(2022, 7, 25, 0, 0), 'DINARKU2  ', 'NM ', 'Normal', None, datetime.datetime(2022, 12, 18, 0, 0) ... 1988 parameters truncated ... 811687500, 578293048, 0, 'LIV', datetime.datetime(2023, 1, 22, 0, 0), 8445000.0, 'NUR HADI SE', datetime.datetime(2022, 8, 22, 0, 0), 'DINARKU2  ', 'NM ', 'Normal', None, datetime.datetime(2022, 12, 21, 0, 0), datetime.datetime(2022, 8, 22, 0, 0), datetime.datetime(2023, 1, 1, 0, 0), 'New', 'AGENCY', 0.0, 'RAHMAT ALDIANSYAH', 'PEGAWAI SW', 'KP GRESIK', '20230101', 410, 24101122000549, '41000006062         ', 'NILA KUSUMA WARDANI', 'Q37HONDA.BEAT.FI CBS', 12, 7, 650587500, 363458390, 0, 'LIV', datetime.datetime(2023, 1, 10, 0, 0), 6935000.0, 'ASHAR', datetime.datetime(2022, 6, 10, 0, 0), 'DINARKU2  ', 'NM ', 'Normal', None, datetime.datetime(2022, 12, 23, 0, 0), datetime.datetime(2022, 6, 10, 0, 0), datetime.datetime(2023, 1, 1, 0, 0), 'RO', 'INTERNAL CUSTOMER', 180.0, 'SALES PRIMA', 'Ibu Rumah', 'KC SANGATA')]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-10-16 17:22:28,876 [INFO] Tes koneksi berhasil!
+2024-10-16 17:25:08,014 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023/20230101.xlsx
+2024-10-16 17:25:08,014 [INFO] DataFrame setelah membaca Excel:
+2024-10-16 17:25:08,014 [INFO]    BranchID     AgreementNo  ...      ProfID         POS_ID
+0       401   4011021000268  ...   Ibu Rumah  KC BALIKPAPAN
+1       404   4040421301878  ...  TNI                   NaN
+2       405  24051015000161  ...  Wiraswasta            NaN
+3       409   4091016000908  ...  PEGAWAI SW            NaN
+4       420   4201017000079  ...  Wiraswasta            NaN
+
+[5 rows x 28 columns]
+2024-10-16 17:25:08,687 [INFO] DataFrame setelah pembersihan kolom numerik:
+2024-10-16 17:25:08,687 [INFO]      Periode  BranchID  ...      ProfID      POS_ID
+2   20230101       405  ...  Wiraswasta         NaN
+5   20230101       430  ...  Non Profes  KC MATARAM
+10  20230101       413  ...  Wiraswasta         NaN
+13  20230101       451  ...  Pekerja So   KC MANADO
+14  20230101       455  ...   Ibu Rumah  KP LIMBOTO
+
+[5 rows x 29 columns]
+2024-10-16 17:25:08,760 [INFO] Kolom yang ada di tabel SQL Server: ['Periode', 'BranchID', 'AgreementNo', 'CustomerID', 'Nama', 'Model', 'Tenor', 'Ang_ke', 'Pokok_Awal', 'Saldo_Pokok', 'OVD', 'Status', 'Tgl_Jt', 'Tgl_Cair', 'ProductId', 'StatusWo', 'StatusAsset', 'Tgl_Tarik', 'Tgl_Bayar', 'TglDO', 'Tgl_Proses', 'Max OVD', 'POS_ID', 'ApplicationPriority', 'BAName', 'CMO', 'Angsuran', 'Profession', 'SourceApplication', 'isSyariah']
+2024-10-16 17:25:08,761 [INFO] DataFrame setelah rename kolom:
+2024-10-16 17:25:08,761 [INFO]      Periode  BranchID  ...  Profession      POS_ID
+2   20230101       405  ...  Wiraswasta         NaN
+5   20230101       430  ...  Non Profes  KC MATARAM
+10  20230101       413  ...  Wiraswasta         NaN
+13  20230101       451  ...  Pekerja So   KC MANADO
+14  20230101       455  ...   Ibu Rumah  KP LIMBOTO
+
+[5 rows x 29 columns]
+2024-10-16 17:25:08,798 [INFO] DataFrame Final yang akan diupload:
+2024-10-16 17:25:08,798 [INFO]      Periode  BranchID  ...  Profession      POS_ID
+2   20230101       405  ...  Wiraswasta         NaN
+5   20230101       430  ...  Non Profes  KC MATARAM
+10  20230101       413  ...  Wiraswasta         NaN
+13  20230101       451  ...  Pekerja So   KC MANADO
+14  20230101       455  ...   Ibu Rumah  KP LIMBOTO
+
+[5 rows x 29 columns]
+2024-10-16 17:25:56,009 [ERROR] Gagal menyimpan data ke SQL Server: (pyodbc.IntegrityError) ('23000', "[23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'Angsuran', table 'Reporting.dbo.AZ_Daily'; column does not allow nulls. INSERT fails. (515) (SQLExecDirectW); [23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: INSERT INTO [AZ_Daily] ([Periode], [BranchID], [AgreementNo], [CustomerID], [Nama], [Model], [Tenor], [Ang_ke], [Pokok_Awal], [Saldo_Pokok], [OVD], [Status], [Tgl_Jt], [Angsuran], [CMO], [Tgl_Cair], [ProductId], [StatusWo], [StatusAsset], [Tgl_Tarik] ... 6440 characters truncated ... ?, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('20230101', 408, 24081121000159, '40800004846         ', 'GOVIN', 'Q37HONDA.BEAT.FI CW', 17, 15, 612187500, 139706069, 90, 'ICP', datetime.datetime(2022, 10, 3, 0, 0), 5035000.0, 'MUHAMMAD KADRI', datetime.datetime(2021, 6, 30, 0, 0), 'DINARKU2  ', 'NA ', 'Asset has been repossed', datetime.datetime(2022, 12, 31, 0, 0), datetime.datetime(2022, 10, 24, 0, 0), datetime.datetime(2021, 6, 30, 0, 0), datetime.datetime(2023, 1, 1, 0, 0), 'New', 'AGENCY', 890.0, 'ANDY FAJAR SAMODRA', 'PEGAWAI SW', 'KC LOA JANAN', '20230101', 456, 4561021000525, '45600002685         ', 'YULIANA', 'Q37YAMAHA.NEW MIO.GT', 18, 10, 560081250, 325186183, 163, 'LIV', datetime.datetime(2022, 7, 22, 0, 0), 4310000.0, 'TRI DWIYANTO', datetime.datetime(2021, 9, 22, 0, 0), 'FDANA     ', 'NA ', 'Asset has been repossed', datetime.datetime(2022, 10, 17, 0, 0), datetime.datetime(2022, 7, 11, 0, 0) ... 1988 parameters truncated ... 872968750, 0, 0, 'ICP', datetime.datetime(2020, 11, 3, 0, 0), 5440000.0, 'ACHMAD SOFINGI', datetime.datetime(2018, 10, 31, 0, 0), 'PRIMAMOTOR', 'NM ', 'Normal', None, None, datetime.datetime(2018, 10, 31, 0, 0), datetime.datetime(2023, 1, 1, 0, 0), 'New', 'OTHER - EGC', 1300.0, 'SALES PRIMA', 'PEGAWAI NE', 'KP SAMBUTAN', '20230101', 435, 24351015000126, '43500000211         ', 'HARIYONO', 'HONDA.BEAT-NC11BF1DA/T', 12, 999, 877500000, 0, 0, 'ICP', datetime.datetime(2016, 12, 3, 0, 0), 8550000.0, 'SIPRIANUS ANTAL', datetime.datetime(2015, 11, 30, 0, 0), 'R2 PRIMA  ', 'NM ', 'Normal', None, None, datetime.datetime(2015, 11, 30, 0, 0), datetime.datetime(2023, 1, 1, 0, 0), '-', 'DIRECT SELLING', 930.0, 'M - RUDI PRASTIYO', 'Wiraswasta', None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-10-17 11:16:05,749 [INFO] Tes koneksi berhasil!
+2024-10-17 11:16:07,324 [INFO] Berhasil membaca data dari C:/Users/smartuser/Downloads/tes az.xlsx
+2024-10-17 11:16:07,324 [INFO] DataFrame setelah membaca Excel:
+2024-10-17 11:16:07,324 [INFO]    BranchID     AgreementNo  ...      ProfID         POS_ID
+0       401   4011021000268  ...   Ibu Rumah  KC BALIKPAPAN
+1       404   4040421301878  ...  TNI                   NaN
+2       405  24051015000161  ...  Wiraswasta            NaN
+3       409   4091016000908  ...  PEGAWAI SW            NaN
+4       420   4201017000079  ...  Wiraswasta            NaN
+
+[5 rows x 28 columns]
+2024-10-17 11:16:07,366 [INFO] DataFrame setelah pembersihan kolom numerik:
+2024-10-17 11:16:07,366 [INFO]    Periode  BranchID  ...      ProfID      POS_ID
+2   tes az       405  ...  Wiraswasta         NaN
+5   tes az       430  ...  Non Profes  KC MATARAM
+10  tes az       413  ...  Wiraswasta         NaN
+13  tes az       451  ...  Pekerja So   KC MANADO
+14  tes az       455  ...   Ibu Rumah  KP LIMBOTO
+
+[5 rows x 29 columns]
+2024-10-17 11:16:07,431 [INFO] Kolom yang ada di tabel SQL Server: ['Periode', 'BranchID', 'AgreementNo', 'CustomerID', 'Nama', 'Model', 'Tenor', 'Ang_ke', 'Pokok_Awal', 'Saldo_Pokok', 'OVD', 'Status', 'Tgl_Jt', 'Tgl_Cair', 'ProductId', 'StatusWo', 'StatusAsset', 'Tgl_Tarik', 'Tgl_Bayar', 'TglDO', 'Tgl_Proses', 'Max OVD', 'POS_ID', 'ApplicationPriority', 'BAName', 'CMO', 'Angsuran', 'Profession', 'SourceApplication', 'isSyariah']
+2024-10-17 11:16:07,431 [INFO] DataFrame setelah rename kolom:
+2024-10-17 11:16:07,431 [INFO]    Periode  BranchID  ...  Profession      POS_ID
+2   tes az       405  ...  Wiraswasta         NaN
+5   tes az       430  ...  Non Profes  KC MATARAM
+10  tes az       413  ...  Wiraswasta         NaN
+13  tes az       451  ...  Pekerja So   KC MANADO
+14  tes az       455  ...   Ibu Rumah  KP LIMBOTO
+
+[5 rows x 29 columns]
+2024-10-17 11:16:07,455 [INFO] DataFrame Final yang akan diupload:
+2024-10-17 11:16:07,455 [INFO]    Periode  BranchID  ...  Profession      POS_ID
+2   tes az       405  ...  Wiraswasta         NaN
+5   tes az       430  ...  Non Profes  KC MATARAM
+10  tes az       413  ...  Wiraswasta         NaN
+13  tes az       451  ...  Pekerja So   KC MANADO
+14  tes az       455  ...   Ibu Rumah  KP LIMBOTO
+
+[5 rows x 29 columns]
+2024-10-17 11:16:07,622 [ERROR] Gagal menyimpan data ke SQL Server: (pyodbc.DataError) ('22018', '[22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206) (SQLExecDirectW); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Operand type clash: float is incompatible with date (206); [22018] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)')
+[SQL: INSERT INTO [AZ_Daily] ([Periode], [BranchID], [AgreementNo], [CustomerID], [Nama], [Model], [Tenor], [Ang_ke], [Pokok_Awal], [Saldo_Pokok], [OVD], [Status], [Tgl_Jt], [Angsuran], [CMO], [Tgl_Cair], [ProductId], [StatusWo], [StatusAsset], [Tgl_Tarik] ... 6440 characters truncated ... ?, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('tes az', 405, 24051015000161, '40500002894         ', 'NARNI', 'HONDA.REVO-NF11 B1D MT', 18, 999, 408125000, 0, 0, 'ICP', 42602, 2880000, 'MEI HERLINA SO', 42055, 'R2DCSYR   ', 'NM ', 'Normal', None, None, 42055, 44927, '-', 'DIRECT SELLING', 270, 'SALES OFFICER DANA CEPAT', 'Wiraswasta', None, 'tes az', 430, 24301122000359, '43000002460         ', 'YUSMAN', 'Q37HONDA-ALL NEW SCOOPY-STYLISH', 24, 6, 1155625000, 989654347, 0, 'LIV', 44946, 7325000, 'WIWIN HENDRIAWAN', 44767, 'DINARKU2  ', 'NM ', 'Normal', None, 44913.0 ... 1988 parameters truncated ... 811687500, 578293048, 0, 'LIV', 44948, 8445000, 'NUR HADI SE', 44795, 'DINARKU2  ', 'NM ', 'Normal', None, 44916.0, 44795, 44927, 'New', 'AGENCY', 0, 'RAHMAT ALDIANSYAH', 'PEGAWAI SW', 'KP GRESIK', 'tes az', 410, 24101122000549, '41000006062         ', 'NILA KUSUMA WARDANI', 'Q37HONDA.BEAT.FI CBS', 12, 7, 650587500, 363458390, 0, 'LIV', 44936, 6935000, 'ASHAR', 44722, 'DINARKU2  ', 'NM ', 'Normal', None, 44918.0, 44722, 44927, 'RO', 'INTERNAL CUSTOMER', 180, 'SALES PRIMA', 'Ibu Rumah', 'KC SANGATA')]
+(Background on this error at: https://sqlalche.me/e/20/9h9h)
+2024-10-17 11:23:48,949 [INFO] Tes koneksi berhasil!
+2024-10-17 11:23:50,041 [INFO] Berhasil membaca data dari C:/Users/smartuser/Downloads/tes az.xlsx
+2024-10-17 11:23:50,041 [INFO] DataFrame setelah membaca Excel:
+2024-10-17 11:23:50,041 [INFO]    BranchID     AgreementNo  ...      ProfID         POS_ID
+0       401   4011021000268  ...   Ibu Rumah  KC BALIKPAPAN
+1       404   4040421301878  ...  TNI                   NaN
+2       405  24051015000161  ...  Wiraswasta            NaN
+3       409   4091016000908  ...  PEGAWAI SW            NaN
+4       420   4201017000079  ...  Wiraswasta            NaN
+
+[5 rows x 28 columns]
+2024-10-17 11:23:50,074 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime:
+2024-10-17 11:23:50,074 [INFO]    Periode  BranchID  ...      ProfID      POS_ID
+2   tes az       405  ...  Wiraswasta         NaN
+5   tes az       430  ...  Non Profes  KC MATARAM
+10  tes az       413  ...  Wiraswasta         NaN
+13  tes az       451  ...  Pekerja So   KC MANADO
+14  tes az       455  ...   Ibu Rumah  KP LIMBOTO
+
+[5 rows x 29 columns]
+2024-10-17 11:23:50,134 [INFO] Kolom yang ada di tabel SQL Server: ['Periode', 'BranchID', 'AgreementNo', 'CustomerID', 'Nama', 'Model', 'Tenor', 'Ang_ke', 'Pokok_Awal', 'Saldo_Pokok', 'OVD', 'Status', 'Tgl_Jt', 'Tgl_Cair', 'ProductId', 'StatusWo', 'StatusAsset', 'Tgl_Tarik', 'Tgl_Bayar', 'TglDO', 'Tgl_Proses', 'Max OVD', 'POS_ID', 'ApplicationPriority', 'BAName', 'CMO', 'Angsuran', 'Profession', 'SourceApplication', 'isSyariah']
+2024-10-17 11:23:51,700 [ERROR] Gagal menyimpan data ke SQL Server: (pyodbc.ProgrammingError) ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'MaxOvd'. (207) (SQLExecDirectW); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ProfID'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'MaxOvd'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ProfID'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)")
+[SQL: INSERT INTO [AZ_Daily] ([Periode], [BranchID], [AgreementNo], [CustomerID], [Nama], [Model], [Tenor], [Ang_ke], [POKOK_AWAL], [SALDO_POKOK], [OVD], [Status], [Tgl_jt], [Angsuran], [CMO], [Tgl_Cair], [ProductId], [StatusWo], [StatusAsset], [Tgl_Tarik] ... 6435 characters truncated ... ?, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('tes az', 405, 24051015000161, '40500002894         ', 'NARNI', 'HONDA.REVO-NF11 B1D MT', 18, 999, 408125000, 0, 0, 'ICP', datetime.datetime(1970, 1, 1, 0, 0, 0, 42), 2880000, 'MEI HERLINA SO', datetime.datetime(1970, 1, 1, 0, 0, 0, 42), 'R2DCSYR   ', 'NM ', 'Normal', None, None, datetime.datetime(1970, 1, 1, 0, 0, 0, 42), datetime.datetime(1970, 1, 1, 0, 0, 0, 44), '-', 'DIRECT SELLING', 270, 'SALES OFFICER DANA CEPAT', 'Wiraswasta', None, 'tes az', 430, 24301122000359, '43000002460         ', 'YUSMAN', 'Q37HONDA-ALL NEW SCOOPY-STYLISH', 24, 6, 1155625000, 989654347, 0, 'LIV', datetime.datetime(1970, 1, 1, 0, 0, 0, 44), 7325000, 'WIWIN HENDRIAWAN', datetime.datetime(1970, 1, 1, 0, 0, 0, 44), 'DINARKU2  ', 'NM ', 'Normal', None, datetime.datetime(1970, 1, 1, 0, 0, 0, 44) ... 1988 parameters truncated ... 811687500, 578293048, 0, 'LIV', datetime.datetime(1970, 1, 1, 0, 0, 0, 44), 8445000, 'NUR HADI SE', datetime.datetime(1970, 1, 1, 0, 0, 0, 44), 'DINARKU2  ', 'NM ', 'Normal', None, datetime.datetime(1970, 1, 1, 0, 0, 0, 44), datetime.datetime(1970, 1, 1, 0, 0, 0, 44), datetime.datetime(1970, 1, 1, 0, 0, 0, 44), 'New', 'AGENCY', 0, 'RAHMAT ALDIANSYAH', 'PEGAWAI SW', 'KP GRESIK', 'tes az', 410, 24101122000549, '41000006062         ', 'NILA KUSUMA WARDANI', 'Q37HONDA.BEAT.FI CBS', 12, 7, 650587500, 363458390, 0, 'LIV', datetime.datetime(1970, 1, 1, 0, 0, 0, 44), 6935000, 'ASHAR', datetime.datetime(1970, 1, 1, 0, 0, 0, 44), 'DINARKU2  ', 'NM ', 'Normal', None, datetime.datetime(1970, 1, 1, 0, 0, 0, 44), datetime.datetime(1970, 1, 1, 0, 0, 0, 44), datetime.datetime(1970, 1, 1, 0, 0, 0, 44), 'RO', 'INTERNAL CUSTOMER', 180, 'SALES PRIMA', 'Ibu Rumah', 'KC SANGATA')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-10-17 11:24:35,359 [INFO] Tes koneksi berhasil!
+2024-10-17 11:24:36,434 [INFO] Berhasil membaca data dari C:/Users/smartuser/Downloads/tes az.xlsx
+2024-10-17 11:24:36,434 [INFO] DataFrame setelah membaca Excel:
+2024-10-17 11:24:36,434 [INFO]    BranchID     AgreementNo  ...      ProfID         POS_ID
+0       401   4011021000268  ...   Ibu Rumah  KC BALIKPAPAN
+1       404   4040421301878  ...  TNI                   NaN
+2       405  24051015000161  ...  Wiraswasta            NaN
+3       409   4091016000908  ...  PEGAWAI SW            NaN
+4       420   4201017000079  ...  Wiraswasta            NaN
+
+[5 rows x 28 columns]
+2024-10-17 11:24:36,464 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime:
+2024-10-17 11:24:36,464 [INFO]    Periode  BranchID  ...      ProfID      POS_ID
+2   tes az       405  ...  Wiraswasta         NaN
+5   tes az       430  ...  Non Profes  KC MATARAM
+10  tes az       413  ...  Wiraswasta         NaN
+13  tes az       451  ...  Pekerja So   KC MANADO
+14  tes az       455  ...   Ibu Rumah  KP LIMBOTO
+
+[5 rows x 29 columns]
+2024-10-17 11:24:36,527 [INFO] Kolom yang ada di tabel SQL Server: ['Periode', 'BranchID', 'AgreementNo', 'CustomerID', 'Nama', 'Model', 'Tenor', 'Ang_ke', 'Pokok_Awal', 'Saldo_Pokok', 'OVD', 'Status', 'Tgl_Jt', 'Tgl_Cair', 'ProductId', 'StatusWo', 'StatusAsset', 'Tgl_Tarik', 'Tgl_Bayar', 'TglDO', 'Tgl_Proses', 'Max OVD', 'POS_ID', 'ApplicationPriority', 'BAName', 'CMO', 'Angsuran', 'Profession', 'SourceApplication', 'isSyariah']
+2024-10-17 11:24:38,115 [ERROR] Gagal menyimpan data ke SQL Server: (pyodbc.ProgrammingError) ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'MaxOvd'. (207) (SQLExecDirectW); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ProfID'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'MaxOvd'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ProfID'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)")
+[SQL: INSERT INTO [AZ_Daily] ([Periode], [BranchID], [AgreementNo], [CustomerID], [Nama], [Model], [Tenor], [Ang_ke], [POKOK_AWAL], [SALDO_POKOK], [OVD], [Status], [Tgl_jt], [Angsuran], [CMO], [Tgl_Cair], [ProductId], [StatusWo], [StatusAsset], [Tgl_Tarik] ... 6435 characters truncated ... ?, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('tes az', 405, 24051015000161, '40500002894         ', 'NARNI', 'HONDA.REVO-NF11 B1D MT', 18, 999, 408125000, 0, 0, 'ICP', datetime.datetime(1970, 1, 1, 0, 0, 0, 42), 2880000, 'MEI HERLINA SO', datetime.datetime(1970, 1, 1, 0, 0, 0, 42), 'R2DCSYR   ', 'NM ', 'Normal', None, None, datetime.datetime(1970, 1, 1, 0, 0, 0, 42), datetime.datetime(1970, 1, 1, 0, 0, 0, 44), '-', 'DIRECT SELLING', 270, 'SALES OFFICER DANA CEPAT', 'Wiraswasta', None, 'tes az', 430, 24301122000359, '43000002460         ', 'YUSMAN', 'Q37HONDA-ALL NEW SCOOPY-STYLISH', 24, 6, 1155625000, 989654347, 0, 'LIV', datetime.datetime(1970, 1, 1, 0, 0, 0, 44), 7325000, 'WIWIN HENDRIAWAN', datetime.datetime(1970, 1, 1, 0, 0, 0, 44), 'DINARKU2  ', 'NM ', 'Normal', None, datetime.datetime(1970, 1, 1, 0, 0, 0, 44) ... 1988 parameters truncated ... 811687500, 578293048, 0, 'LIV', datetime.datetime(1970, 1, 1, 0, 0, 0, 44), 8445000, 'NUR HADI SE', datetime.datetime(1970, 1, 1, 0, 0, 0, 44), 'DINARKU2  ', 'NM ', 'Normal', None, datetime.datetime(1970, 1, 1, 0, 0, 0, 44), datetime.datetime(1970, 1, 1, 0, 0, 0, 44), datetime.datetime(1970, 1, 1, 0, 0, 0, 44), 'New', 'AGENCY', 0, 'RAHMAT ALDIANSYAH', 'PEGAWAI SW', 'KP GRESIK', 'tes az', 410, 24101122000549, '41000006062         ', 'NILA KUSUMA WARDANI', 'Q37HONDA.BEAT.FI CBS', 12, 7, 650587500, 363458390, 0, 'LIV', datetime.datetime(1970, 1, 1, 0, 0, 0, 44), 6935000, 'ASHAR', datetime.datetime(1970, 1, 1, 0, 0, 0, 44), 'DINARKU2  ', 'NM ', 'Normal', None, datetime.datetime(1970, 1, 1, 0, 0, 0, 44), datetime.datetime(1970, 1, 1, 0, 0, 0, 44), datetime.datetime(1970, 1, 1, 0, 0, 0, 44), 'RO', 'INTERNAL CUSTOMER', 180, 'SALES PRIMA', 'Ibu Rumah', 'KC SANGATA')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-10-17 11:30:35,670 [INFO] Tes koneksi berhasil!
+2024-10-17 11:30:36,747 [INFO] Berhasil membaca data dari C:/Users/smartuser/Downloads/tes az.xlsx
+2024-10-17 11:30:36,747 [INFO] DataFrame setelah membaca Excel:
+2024-10-17 11:30:36,747 [INFO]    BranchID     AgreementNo  ...      ProfID         POS_ID
+0       401   4011021000268  ...   Ibu Rumah  KC BALIKPAPAN
+1       404   4040421301878  ...  TNI                   NaN
+2       405  24051015000161  ...  Wiraswasta            NaN
+3       409   4091016000908  ...  PEGAWAI SW            NaN
+4       420   4201017000079  ...  Wiraswasta            NaN
+
+[5 rows x 28 columns]
+2024-10-17 11:30:36,778 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime:
+2024-10-17 11:30:36,778 [INFO]    Periode  BranchID  ...      ProfID      POS_ID
+2   tes az       405  ...  Wiraswasta         NaN
+5   tes az       430  ...  Non Profes  KC MATARAM
+10  tes az       413  ...  Wiraswasta         NaN
+13  tes az       451  ...  Pekerja So   KC MANADO
+14  tes az       455  ...   Ibu Rumah  KP LIMBOTO
+
+[5 rows x 29 columns]
+2024-10-17 11:30:36,839 [INFO] Kolom yang ada di tabel SQL Server: ['Periode', 'BranchID', 'AgreementNo', 'CustomerID', 'Nama', 'Model', 'Tenor', 'Ang_ke', 'Pokok_Awal', 'Saldo_Pokok', 'OVD', 'Status', 'Tgl_Jt', 'Tgl_Cair', 'ProductId', 'StatusWo', 'StatusAsset', 'Tgl_Tarik', 'Tgl_Bayar', 'TglDO', 'Tgl_Proses', 'Max OVD', 'POS_ID', 'ApplicationPriority', 'BAName', 'CMO', 'Angsuran', 'Profession', 'SourceApplication', 'isSyariah']
+2024-10-17 11:30:37,487 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 11:38:02,559 [INFO] Tes koneksi berhasil!
+2024-10-17 11:38:03,644 [INFO] Berhasil membaca data dari C:/Users/smartuser/Downloads/tes az.xlsx
+2024-10-17 11:38:03,644 [INFO] DataFrame setelah membaca Excel:
+2024-10-17 11:38:03,644 [INFO]    BranchID     AgreementNo  ...      ProfID         POS_ID
+0       401   4011021000268  ...   Ibu Rumah  KC BALIKPAPAN
+1       404   4040421301878  ...  TNI                   NaN
+2       405  24051015000161  ...  Wiraswasta            NaN
+3       409   4091016000908  ...  PEGAWAI SW            NaN
+4       420   4201017000079  ...  Wiraswasta            NaN
+
+[5 rows x 28 columns]
+2024-10-17 11:38:03,675 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime:
+2024-10-17 11:38:03,675 [INFO]    Periode  BranchID  ...      ProfID      POS_ID
+2   tes az       405  ...  Wiraswasta         NaN
+5   tes az       430  ...  Non Profes  KC MATARAM
+10  tes az       413  ...  Wiraswasta         NaN
+13  tes az       451  ...  Pekerja So   KC MANADO
+14  tes az       455  ...   Ibu Rumah  KP LIMBOTO
+
+[5 rows x 29 columns]
+2024-10-17 11:38:03,737 [INFO] Kolom yang ada di tabel SQL Server: ['Periode', 'BranchID', 'AgreementNo', 'CustomerID', 'Nama', 'Model', 'Tenor', 'Ang_ke', 'Pokok_Awal', 'Saldo_Pokok', 'OVD', 'Status', 'Tgl_Jt', 'Tgl_Cair', 'ProductId', 'StatusWo', 'StatusAsset', 'Tgl_Tarik', 'Tgl_Bayar', 'TglDO', 'Tgl_Proses', 'Max OVD', 'POS_ID', 'ApplicationPriority', 'BAName', 'CMO', 'Angsuran', 'Profession', 'SourceApplication', 'isSyariah']
+2024-10-17 11:38:04,347 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 11:41:39,685 [INFO] Tes koneksi berhasil!
+2024-10-17 11:44:18,176 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023/20230101.xlsx
+2024-10-17 11:44:18,176 [INFO] DataFrame setelah membaca Excel:
+2024-10-17 11:44:18,176 [INFO]    BranchID     AgreementNo  ...      ProfID         POS_ID
+0       401   4011021000268  ...   Ibu Rumah  KC BALIKPAPAN
+1       404   4040421301878  ...  TNI                   NaN
+2       405  24051015000161  ...  Wiraswasta            NaN
+3       409   4091016000908  ...  PEGAWAI SW            NaN
+4       420   4201017000079  ...  Wiraswasta            NaN
+
+[5 rows x 28 columns]
+2024-10-17 11:44:18,883 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime:
+2024-10-17 11:44:18,884 [INFO]      Periode  BranchID  ...      ProfID      POS_ID
+2   20230101       405  ...  Wiraswasta         NaN
+5   20230101       430  ...  Non Profes  KC MATARAM
+10  20230101       413  ...  Wiraswasta         NaN
+13  20230101       451  ...  Pekerja So   KC MANADO
+14  20230101       455  ...   Ibu Rumah  KP LIMBOTO
+
+[5 rows x 29 columns]
+2024-10-17 11:44:18,947 [INFO] Kolom yang ada di tabel SQL Server: ['Periode', 'BranchID', 'AgreementNo', 'CustomerID', 'Nama', 'Model', 'Tenor', 'Ang_ke', 'Pokok_Awal', 'Saldo_Pokok', 'OVD', 'Status', 'Tgl_Jt', 'Tgl_Cair', 'ProductId', 'StatusWo', 'StatusAsset', 'Tgl_Tarik', 'Tgl_Bayar', 'TglDO', 'Tgl_Proses', 'Max OVD', 'POS_ID', 'ApplicationPriority', 'BAName', 'CMO', 'Angsuran', 'Profession', 'SourceApplication', 'isSyariah']
+2024-10-17 11:45:04,559 [ERROR] Gagal menyimpan data ke SQL Server: (pyodbc.IntegrityError) ('23000', "[23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'Angsuran', table 'Reporting.dbo.AZ_Daily'; column does not allow nulls. INSERT fails. (515) (SQLExecDirectW); [23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: INSERT INTO [AZ_Daily] ([Periode], [BranchID], [AgreementNo], [CustomerID], [Nama], [Model], [Tenor], [Ang_ke], [Pokok_Awal], [Saldo_Pokok], [OVD], [Status], [Tgl_Jt], [Angsuran], [CMO], [Tgl_Cair], [ProductId], [StatusWo], [StatusAsset], [Tgl_Tarik] ... 6440 characters truncated ... ?, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('20230101', 408, 24081121000159, '40800004846         ', 'GOVIN', 'Q37HONDA.BEAT.FI CW', 17, 15, 612187500, 139706069, 90, 'ICP', datetime.datetime(2022, 10, 3, 0, 0), 5035000.0, 'MUHAMMAD KADRI', datetime.datetime(2021, 6, 30, 0, 0), 'DINARKU2  ', 'NA ', 'Asset has been repossed', datetime.datetime(2022, 12, 31, 0, 0), datetime.datetime(2022, 10, 24, 0, 0), datetime.datetime(2021, 6, 30, 0, 0), datetime.datetime(2023, 1, 1, 0, 0), 'New', 'AGENCY', 890.0, 'ANDY FAJAR SAMODRA', 'PEGAWAI SW', 'KC LOA JANAN', '20230101', 456, 4561021000525, '45600002685         ', 'YULIANA', 'Q37YAMAHA.NEW MIO.GT', 18, 10, 560081250, 325186183, 163, 'LIV', datetime.datetime(2022, 7, 22, 0, 0), 4310000.0, 'TRI DWIYANTO', datetime.datetime(2021, 9, 22, 0, 0), 'FDANA     ', 'NA ', 'Asset has been repossed', datetime.datetime(2022, 10, 17, 0, 0), datetime.datetime(2022, 7, 11, 0, 0) ... 1988 parameters truncated ... 872968750, 0, 0, 'ICP', datetime.datetime(2020, 11, 3, 0, 0), 5440000.0, 'ACHMAD SOFINGI', datetime.datetime(2018, 10, 31, 0, 0), 'PRIMAMOTOR', 'NM ', 'Normal', None, None, datetime.datetime(2018, 10, 31, 0, 0), datetime.datetime(2023, 1, 1, 0, 0), 'New', 'OTHER - EGC', 1300.0, 'SALES PRIMA', 'PEGAWAI NE', 'KP SAMBUTAN', '20230101', 435, 24351015000126, '43500000211         ', 'HARIYONO', 'HONDA.BEAT-NC11BF1DA/T', 12, 999, 877500000, 0, 0, 'ICP', datetime.datetime(2016, 12, 3, 0, 0), 8550000.0, 'SIPRIANUS ANTAL', datetime.datetime(2015, 11, 30, 0, 0), 'R2 PRIMA  ', 'NM ', 'Normal', None, None, datetime.datetime(2015, 11, 30, 0, 0), datetime.datetime(2023, 1, 1, 0, 0), '-', 'DIRECT SELLING', 930.0, 'M - RUDI PRASTIYO', 'Wiraswasta', None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-10-17 11:47:36,000 [INFO] Tes koneksi berhasil!
+2024-10-17 11:50:18,795 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023/20230101.xlsx
+2024-10-17 11:50:18,795 [INFO] DataFrame setelah membaca Excel:
+2024-10-17 11:50:18,795 [INFO]    BranchID     AgreementNo  ...      ProfID         POS_ID
+0       401   4011021000268  ...   Ibu Rumah  KC BALIKPAPAN
+1       404   4040421301878  ...  TNI                   NaN
+2       405  24051015000161  ...  Wiraswasta            NaN
+3       409   4091016000908  ...  PEGAWAI SW            NaN
+4       420   4201017000079  ...  Wiraswasta            NaN
+
+[5 rows x 28 columns]
+2024-10-17 11:50:19,641 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime:
+2024-10-17 11:50:19,642 [INFO]      Periode  BranchID  ...      ProfID      POS_ID
+2   20230101       405  ...  Wiraswasta         NaN
+5   20230101       430  ...  Non Profes  KC MATARAM
+10  20230101       413  ...  Wiraswasta         NaN
+13  20230101       451  ...  Pekerja So   KC MANADO
+14  20230101       455  ...   Ibu Rumah  KP LIMBOTO
+
+[5 rows x 29 columns]
+2024-10-17 11:50:19,674 [INFO] Kolom yang ada di tabel SQL Server: ['Periode', 'BranchID', 'AgreementNo', 'CustomerID', 'Nama', 'Model', 'Tenor', 'Ang_ke', 'Pokok_Awal', 'Saldo_Pokok', 'OVD', 'Status', 'Tgl_Jt', 'Tgl_Cair', 'ProductId', 'StatusWo', 'StatusAsset', 'Tgl_Tarik', 'Tgl_Bayar', 'TglDO', 'Tgl_Proses', 'Max OVD', 'POS_ID', 'ApplicationPriority', 'BAName', 'CMO', 'Angsuran', 'Profession', 'SourceApplication', 'isSyariah']
+2024-10-17 11:51:02,116 [ERROR] Gagal menyimpan data ke SQL Server: (pyodbc.IntegrityError) ('23000', "[23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'Max OVD', table 'Reporting.dbo.AZ_Daily'; column does not allow nulls. INSERT fails. (515) (SQLExecDirectW); [23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: INSERT INTO [AZ_Daily] ([Periode], [BranchID], [AgreementNo], [CustomerID], [Nama], [Model], [Tenor], [Ang_ke], [Pokok_Awal], [Saldo_Pokok], [OVD], [Status], [Tgl_Jt], [Angsuran], [CMO], [Tgl_Cair], [ProductId], [StatusWo], [StatusAsset], [Tgl_Tarik] ... 6440 characters truncated ... ?, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('20230101', 408, 24081121000159, '40800004846         ', 'GOVIN', 'Q37HONDA.BEAT.FI CW', 17, 15, 612187500, 139706069, 90, 'ICP', datetime.datetime(2022, 10, 3, 0, 0), 5035000.0, 'MUHAMMAD KADRI', datetime.datetime(2021, 6, 30, 0, 0), 'DINARKU2  ', 'NA ', 'Asset has been repossed', datetime.datetime(2022, 12, 31, 0, 0), datetime.datetime(2022, 10, 24, 0, 0), datetime.datetime(2021, 6, 30, 0, 0), datetime.datetime(2023, 1, 1, 0, 0), 'New', 'AGENCY', 890.0, 'ANDY FAJAR SAMODRA', 'PEGAWAI SW', 'KC LOA JANAN', '20230101', 456, 4561021000525, '45600002685         ', 'YULIANA', 'Q37YAMAHA.NEW MIO.GT', 18, 10, 560081250, 325186183, 163, 'LIV', datetime.datetime(2022, 7, 22, 0, 0), 4310000.0, 'TRI DWIYANTO', datetime.datetime(2021, 9, 22, 0, 0), 'FDANA     ', 'NA ', 'Asset has been repossed', datetime.datetime(2022, 10, 17, 0, 0), datetime.datetime(2022, 7, 11, 0, 0) ... 1988 parameters truncated ... 872968750, 0, 0, 'ICP', datetime.datetime(2020, 11, 3, 0, 0), 5440000.0, 'ACHMAD SOFINGI', datetime.datetime(2018, 10, 31, 0, 0), 'PRIMAMOTOR', 'NM ', 'Normal', None, None, datetime.datetime(2018, 10, 31, 0, 0), datetime.datetime(2023, 1, 1, 0, 0), 'New', 'OTHER - EGC', 1300.0, 'SALES PRIMA', 'PEGAWAI NE', 'KP SAMBUTAN', '20230101', 435, 24351015000126, '43500000211         ', 'HARIYONO', 'HONDA.BEAT-NC11BF1DA/T', 12, 999, 877500000, 0, 0, 'ICP', datetime.datetime(2016, 12, 3, 0, 0), 8550000.0, 'SIPRIANUS ANTAL', datetime.datetime(2015, 11, 30, 0, 0), 'R2 PRIMA  ', 'NM ', 'Normal', None, None, datetime.datetime(2015, 11, 30, 0, 0), datetime.datetime(2023, 1, 1, 0, 0), '-', 'DIRECT SELLING', 930.0, 'M - RUDI PRASTIYO', 'Wiraswasta', None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-10-17 13:13:15,147 [INFO] Tes koneksi berhasil!
+2024-10-17 13:16:23,020 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023/20230101.xlsx
+2024-10-17 13:16:23,021 [INFO] DataFrame setelah membaca Excel:
+2024-10-17 13:16:23,021 [INFO]    BranchID     AgreementNo  ...      ProfID         POS_ID
+0       401   4011021000268  ...   Ibu Rumah  KC BALIKPAPAN
+1       404   4040421301878  ...  TNI                   NaN
+2       405  24051015000161  ...  Wiraswasta            NaN
+3       409   4091016000908  ...  PEGAWAI SW            NaN
+4       420   4201017000079  ...  Wiraswasta            NaN
+
+[5 rows x 28 columns]
+2024-10-17 13:16:23,838 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime:
+2024-10-17 13:16:23,838 [INFO]      Periode  BranchID  ...      ProfID      POS_ID
+2   20230101       405  ...  Wiraswasta         NaN
+5   20230101       430  ...  Non Profes  KC MATARAM
+10  20230101       413  ...  Wiraswasta         NaN
+13  20230101       451  ...  Pekerja So   KC MANADO
+14  20230101       455  ...   Ibu Rumah  KP LIMBOTO
+
+[5 rows x 29 columns]
+2024-10-17 13:16:23,904 [INFO] Kolom yang ada di tabel SQL Server: ['Periode', 'BranchID', 'AgreementNo', 'CustomerID', 'Nama', 'Model', 'Tenor', 'Ang_ke', 'Pokok_Awal', 'Saldo_Pokok', 'OVD', 'Status', 'Tgl_Jt', 'Tgl_Cair', 'ProductId', 'StatusWo', 'StatusAsset', 'Tgl_Tarik', 'Tgl_Bayar', 'TglDO', 'Tgl_Proses', 'Max_OVD', 'POS_ID', 'ApplicationPriority', 'BAName', 'CMO', 'Angsuran', 'Profession', 'SourceApplication', 'isSyariah']
+2024-10-17 13:17:41,243 [ERROR] Gagal menyimpan data ke SQL Server: (pyodbc.IntegrityError) ('23000', "[23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot insert the value NULL into column 'CMO', table 'Reporting.dbo.AZ_Daily'; column does not allow nulls. INSERT fails. (515) (SQLExecDirectW); [23000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]The statement has been terminated. (3621)")
+[SQL: INSERT INTO [AZ_Daily] ([Periode], [BranchID], [AgreementNo], [CustomerID], [Nama], [Model], [Tenor], [Ang_ke], [Pokok_Awal], [Saldo_Pokok], [OVD], [Status], [Tgl_Jt], [Angsuran], [CMO], [Tgl_Cair], [ProductId], [StatusWo], [StatusAsset], [Tgl_Tarik] ... 6440 characters truncated ... ?, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('20230101', 409, 4091016001396, '40900004903         ', 'KATRINA TANGKE', 'HONDA.BLADE-STD', 12, 999, 460000000, 0, 0, 'RRD', datetime.datetime(2017, 11, 24, 0, 0), 4740000.0, 'ALFIANI', datetime.datetime(2016, 11, 24, 0, 0), 'PRIMAMOTOR', 'NM ', 'Ready to release asset document', None, None, datetime.datetime(2016, 11, 24, 0, 0), datetime.datetime(2023, 1, 1, 0, 0), '-', 'INTERNAL CUSTOMER', 60.0, 'SALES PRIMA', 'Wiraswasta', None, '20230101', 435, 4351018000164, '43500000786         ', 'NOVITA TUKAYO', 'Q37YAMAHA.MT25.-', 24, 11, 1565000000, 1064450607, 1386, 'ICP', datetime.datetime(2019, 3, 17, 0, 0), 9750000.0, 'LOISA AWOM', datetime.datetime(2018, 4, 17, 0, 0), 'PRIMAMOTOR', 'WO ', 'Request for Repossesion', None, datetime.datetime(2019, 3, 19, 0, 0) ... 1988 parameters truncated ... 453125050, 0, 0, 'ICP', datetime.datetime(2017, 2, 3, 0, 0), 4810000.0, 'HENDRIKUS HP NGONGO', datetime.datetime(2016, 2, 27, 0, 0), 'R2PRIMACVN', 'NM ', 'Normal', None, None, datetime.datetime(2016, 2, 27, 0, 0), datetime.datetime(2023, 1, 1, 0, 0), '-', 'DIRECT SELLING', 540.0, 'SC/UD METRO/SALES-MARIA EMILIANA NINI OLA', 'Guru', None, '20230101', 427, 24271122001108, '42700003753         ', 'DIAN PERMANA', 'Q37HONDA.SCOOPY-FI', 12, 1, 1254225000, 1254225000, 0, 'LIV', datetime.datetime(2023, 1, 24, 0, 0), 12920000.0, 'RYMAWATI INDRIANY', datetime.datetime(2022, 12, 24, 0, 0), 'DINARKU2  ', 'NM ', 'Normal', None, None, datetime.datetime(2022, 12, 24, 0, 0), datetime.datetime(2023, 1, 1, 0, 0), 'RO', 'INTERNAL CUSTOMER', 0.0, 'MUHAMAD RIFKI PERMANA', 'PEGAWAI SW', None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-10-17 13:41:59,140 [INFO] Tes koneksi berhasil!
+2024-10-17 13:44:47,870 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023/20230101.xlsx
+2024-10-17 13:44:47,870 [INFO] DataFrame setelah membaca Excel:
+2024-10-17 13:44:47,870 [INFO]    BranchID     AgreementNo  ...      ProfID         POS_ID
+0       401   4011021000268  ...   Ibu Rumah  KC BALIKPAPAN
+1       404   4040421301878  ...  TNI                   NaN
+2       405  24051015000161  ...  Wiraswasta            NaN
+3       409   4091016000908  ...  PEGAWAI SW            NaN
+4       420   4201017000079  ...  Wiraswasta            NaN
+
+[5 rows x 28 columns]
+2024-10-17 13:44:48,668 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime:
+2024-10-17 13:44:48,669 [INFO]      Periode  BranchID  ...      ProfID      POS_ID
+2   20230101       405  ...  Wiraswasta         NaN
+5   20230101       430  ...  Non Profes  KC MATARAM
+10  20230101       413  ...  Wiraswasta         NaN
+13  20230101       451  ...  Pekerja So   KC MANADO
+14  20230101       455  ...   Ibu Rumah  KP LIMBOTO
+
+[5 rows x 29 columns]
+2024-10-17 13:44:48,731 [INFO] Kolom yang ada di tabel SQL Server: ['Periode', 'BranchID', 'AgreementNo', 'CustomerID', 'Nama', 'Model', 'Tenor', 'Ang_ke', 'Pokok_Awal', 'Saldo_Pokok', 'OVD', 'Status', 'Tgl_Jt', 'Tgl_Cair', 'ProductId', 'StatusWo', 'StatusAsset', 'Tgl_Tarik', 'Tgl_Bayar', 'TglDO', 'Tgl_Proses', 'Max_OVD', 'POS_ID', 'ApplicationPriority', 'BAName', 'CMO', 'Angsuran', 'Profession', 'SourceApplication', 'isSyariah']
+2024-10-17 13:46:49,247 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 13:50:04,630 [INFO] Tes koneksi berhasil!
+2024-10-17 13:52:46,337 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023/20230102.xlsx
+2024-10-17 13:52:46,337 [INFO] DataFrame setelah membaca Excel:
+2024-10-17 13:52:46,338 [INFO]    BranchID     AgreementNo  ...      ProfID         POS_ID
+0       401   4011021000268  ...   Ibu Rumah  KC BALIKPAPAN
+1       404   4040421301878  ...  TNI                   NaN
+2       405  24051015000161  ...  Wiraswasta            NaN
+3       409   4091016000908  ...  PEGAWAI SW            NaN
+4       420   4201017000079  ...  Wiraswasta            NaN
+
+[5 rows x 28 columns]
+2024-10-17 13:52:47,038 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime:
+2024-10-17 13:52:47,038 [INFO]      Periode  BranchID  ...      ProfID      POS_ID
+2   20230102       405  ...  Wiraswasta         NaN
+5   20230102       430  ...  Non Profes  KC MATARAM
+7   20230102       410  ...  PEGAWAI SW         NaN
+8   20230102       410  ...  Wiraswasta  KC SANGATA
+11  20230102       401  ...  PEGAWAI SW         NaN
+
+[5 rows x 29 columns]
+2024-10-17 13:52:47,100 [INFO] Kolom yang ada di tabel SQL Server: ['Periode', 'BranchID', 'AgreementNo', 'CustomerID', 'Nama', 'Model', 'Tenor', 'Ang_ke', 'Pokok_Awal', 'Saldo_Pokok', 'OVD', 'Status', 'Tgl_Jt', 'Tgl_Cair', 'ProductId', 'StatusWo', 'StatusAsset', 'Tgl_Tarik', 'Tgl_Bayar', 'TglDO', 'Tgl_Proses', 'Max_OVD', 'POS_ID', 'ApplicationPriority', 'BAName', 'CMO', 'Angsuran', 'Profession', 'SourceApplication', 'isSyariah']
+2024-10-17 13:54:53,070 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 14:22:53,916 [INFO] Tes koneksi berhasil!
+2024-10-17 14:25:53,468 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230101.xlsx
+2024-10-17 14:25:53,468 [INFO] DataFrame setelah membaca 20230101.xlsx:
+2024-10-17 14:25:54,387 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime untuk 20230101.xlsx:
+2024-10-17 14:28:12,464 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 14:31:17,533 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230102.xlsx
+2024-10-17 14:31:17,558 [INFO] DataFrame setelah membaca 20230102.xlsx:
+2024-10-17 14:31:18,443 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime untuk 20230102.xlsx:
+2024-10-17 14:33:35,111 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 14:36:38,624 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230103.xlsx
+2024-10-17 14:36:38,653 [INFO] DataFrame setelah membaca 20230103.xlsx:
+2024-10-17 14:36:39,510 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime untuk 20230103.xlsx:
+2024-10-17 14:38:57,695 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 14:42:01,681 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230104.xlsx
+2024-10-17 14:42:01,707 [INFO] DataFrame setelah membaca 20230104.xlsx:
+2024-10-17 14:42:02,583 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime untuk 20230104.xlsx:
+2024-10-17 14:44:19,319 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 14:47:16,966 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230105.xlsx
+2024-10-17 14:47:16,993 [INFO] DataFrame setelah membaca 20230105.xlsx:
+2024-10-17 14:47:17,839 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime untuk 20230105.xlsx:
+2024-10-17 14:49:34,530 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 14:52:36,604 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230106.xlsx
+2024-10-17 14:52:36,630 [INFO] DataFrame setelah membaca 20230106.xlsx:
+2024-10-17 14:52:37,510 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime untuk 20230106.xlsx:
+2024-10-17 14:54:54,448 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 14:57:56,110 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230107.xlsx
+2024-10-17 14:57:56,137 [INFO] DataFrame setelah membaca 20230107.xlsx:
+2024-10-17 14:57:57,146 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime untuk 20230107.xlsx:
+2024-10-17 15:00:14,877 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 15:03:18,922 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230108.xlsx
+2024-10-17 15:03:18,951 [INFO] DataFrame setelah membaca 20230108.xlsx:
+2024-10-17 15:03:19,825 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime untuk 20230108.xlsx:
+2024-10-17 15:05:38,657 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 15:08:40,141 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230109.xlsx
+2024-10-17 15:08:40,170 [INFO] DataFrame setelah membaca 20230109.xlsx:
+2024-10-17 15:08:41,048 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime untuk 20230109.xlsx:
+2024-10-17 15:10:59,308 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 15:13:56,972 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230110.xlsx
+2024-10-17 15:13:56,997 [INFO] DataFrame setelah membaca 20230110.xlsx:
+2024-10-17 15:13:57,838 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime untuk 20230110.xlsx:
+2024-10-17 15:16:13,402 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 15:19:13,542 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230111.xlsx
+2024-10-17 15:19:13,569 [INFO] DataFrame setelah membaca 20230111.xlsx:
+2024-10-17 15:19:14,411 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime untuk 20230111.xlsx:
+2024-10-17 15:21:34,332 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 15:24:42,243 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230112.xlsx
+2024-10-17 15:24:42,270 [INFO] DataFrame setelah membaca 20230112.xlsx:
+2024-10-17 15:24:43,184 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime untuk 20230112.xlsx:
+2024-10-17 15:27:04,771 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 15:30:15,540 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230113.xlsx
+2024-10-17 15:30:15,567 [INFO] DataFrame setelah membaca 20230113.xlsx:
+2024-10-17 15:30:16,542 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime untuk 20230113.xlsx:
+2024-10-17 15:32:40,186 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 15:35:40,378 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230114.xlsx
+2024-10-17 15:35:40,406 [INFO] DataFrame setelah membaca 20230114.xlsx:
+2024-10-17 15:35:41,224 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime untuk 20230114.xlsx:
+2024-10-17 15:37:50,888 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 15:40:42,099 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230115.xlsx
+2024-10-17 15:40:42,126 [INFO] DataFrame setelah membaca 20230115.xlsx:
+2024-10-17 15:40:42,917 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime untuk 20230115.xlsx:
+2024-10-17 15:42:53,176 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 15:45:40,690 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230116.xlsx
+2024-10-17 15:45:40,715 [INFO] DataFrame setelah membaca 20230116.xlsx:
+2024-10-17 15:45:41,484 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime untuk 20230116.xlsx:
+2024-10-17 15:47:48,111 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 15:50:34,005 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230117.xlsx
+2024-10-17 15:50:34,030 [INFO] DataFrame setelah membaca 20230117.xlsx:
+2024-10-17 15:50:34,967 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime untuk 20230117.xlsx:
+2024-10-17 15:52:40,924 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 15:55:23,593 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230118.xlsx
+2024-10-17 15:55:23,615 [INFO] DataFrame setelah membaca 20230118.xlsx:
+2024-10-17 15:55:24,371 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime untuk 20230118.xlsx:
+2024-10-17 15:57:33,233 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 16:00:35,482 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230119.xlsx
+2024-10-17 16:00:35,508 [INFO] DataFrame setelah membaca 20230119.xlsx:
+2024-10-17 16:00:36,440 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime untuk 20230119.xlsx:
+2024-10-17 16:02:54,325 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 16:05:49,398 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230120.xlsx
+2024-10-17 16:05:49,423 [INFO] DataFrame setelah membaca 20230120.xlsx:
+2024-10-17 16:05:50,185 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime untuk 20230120.xlsx:
+2024-10-17 16:08:01,517 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 16:10:51,309 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230121.xlsx
+2024-10-17 16:10:51,334 [INFO] DataFrame setelah membaca 20230121.xlsx:
+2024-10-17 16:10:52,111 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime untuk 20230121.xlsx:
+2024-10-17 16:12:58,278 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 16:15:44,784 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230122.xlsx
+2024-10-17 16:15:44,807 [INFO] DataFrame setelah membaca 20230122.xlsx:
+2024-10-17 16:15:45,550 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime untuk 20230122.xlsx:
+2024-10-17 16:17:51,547 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 16:20:39,596 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230123.xlsx
+2024-10-17 16:20:39,619 [INFO] DataFrame setelah membaca 20230123.xlsx:
+2024-10-17 16:20:40,397 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime untuk 20230123.xlsx:
+2024-10-17 16:22:46,014 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 16:25:32,351 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230124.xlsx
+2024-10-17 16:25:32,374 [INFO] DataFrame setelah membaca 20230124.xlsx:
+2024-10-17 16:25:33,233 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime untuk 20230124.xlsx:
+2024-10-17 16:27:38,993 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 16:30:29,097 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230125.xlsx
+2024-10-17 16:30:29,120 [INFO] DataFrame setelah membaca 20230125.xlsx:
+2024-10-17 16:30:29,871 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime untuk 20230125.xlsx:
+2024-10-17 16:32:36,208 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 16:35:23,257 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230126.xlsx
+2024-10-17 16:35:23,281 [INFO] DataFrame setelah membaca 20230126.xlsx:
+2024-10-17 16:35:24,046 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime untuk 20230126.xlsx:
+2024-10-17 16:37:35,532 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 16:40:42,959 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230127.xlsx
+2024-10-17 16:40:42,987 [INFO] DataFrame setelah membaca 20230127.xlsx:
+2024-10-17 16:40:43,811 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime untuk 20230127.xlsx:
+2024-10-17 16:43:12,701 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 16:46:58,149 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230128.xlsx
+2024-10-17 16:46:58,178 [INFO] DataFrame setelah membaca 20230128.xlsx:
+2024-10-17 16:46:59,011 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime untuk 20230128.xlsx:
+2024-10-17 16:49:13,909 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 16:52:15,481 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230129.xlsx
+2024-10-17 16:52:15,509 [INFO] DataFrame setelah membaca 20230129.xlsx:
+2024-10-17 16:52:16,356 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime untuk 20230129.xlsx:
+2024-10-17 16:54:30,832 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 16:57:29,184 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230130.xlsx
+2024-10-17 16:57:29,212 [INFO] DataFrame setelah membaca 20230130.xlsx:
+2024-10-17 16:57:30,043 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime untuk 20230130.xlsx:
+2024-10-17 16:59:44,196 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 17:02:36,854 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230131.xlsx
+2024-10-17 17:02:36,882 [INFO] DataFrame setelah membaca 20230131.xlsx:
+2024-10-17 17:02:37,720 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime untuk 20230131.xlsx:
+2024-10-17 17:04:49,492 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 20:57:37,073 [INFO] Tes koneksi berhasil!
+2024-10-17 21:00:32,938 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230201.xlsx
+2024-10-17 21:00:32,938 [INFO] DataFrame setelah membaca 20230201.xlsx:
+2024-10-17 21:02:40,845 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 21:05:26,991 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230202.xlsx
+2024-10-17 21:05:27,021 [INFO] DataFrame setelah membaca 20230202.xlsx:
+2024-10-17 21:07:36,020 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 21:10:45,949 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230203.xlsx
+2024-10-17 21:10:45,973 [INFO] DataFrame setelah membaca 20230203.xlsx:
+2024-10-17 21:12:59,284 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 21:15:50,896 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230204.xlsx
+2024-10-17 21:15:50,920 [INFO] DataFrame setelah membaca 20230204.xlsx:
+2024-10-17 21:17:59,757 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 21:20:55,088 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230205.xlsx
+2024-10-17 21:20:55,127 [INFO] DataFrame setelah membaca 20230205.xlsx:
+2024-10-17 21:23:05,783 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 21:25:57,010 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230206.xlsx
+2024-10-17 21:25:57,033 [INFO] DataFrame setelah membaca 20230206.xlsx:
+2024-10-17 21:28:05,329 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 21:30:53,913 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230207.xlsx
+2024-10-17 21:30:53,940 [INFO] DataFrame setelah membaca 20230207.xlsx:
+2024-10-17 21:33:01,695 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 21:35:45,848 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230208.xlsx
+2024-10-17 21:35:45,872 [INFO] DataFrame setelah membaca 20230208.xlsx:
+2024-10-17 21:37:53,140 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 21:40:36,566 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230209.xlsx
+2024-10-17 21:40:36,590 [INFO] DataFrame setelah membaca 20230209.xlsx:
+2024-10-17 21:42:43,885 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 21:45:27,043 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230210.xlsx
+2024-10-17 21:45:27,064 [INFO] DataFrame setelah membaca 20230210.xlsx:
+2024-10-17 21:47:32,447 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 21:50:12,881 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230211.xlsx
+2024-10-17 21:50:12,903 [INFO] DataFrame setelah membaca 20230211.xlsx:
+2024-10-17 21:52:18,378 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 21:54:59,855 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230212.xlsx
+2024-10-17 21:54:59,875 [INFO] DataFrame setelah membaca 20230212.xlsx:
+2024-10-17 21:57:05,695 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 21:59:46,316 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230213.xlsx
+2024-10-17 21:59:46,336 [INFO] DataFrame setelah membaca 20230213.xlsx:
+2024-10-17 22:01:51,742 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 22:04:31,906 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230214.xlsx
+2024-10-17 22:04:31,930 [INFO] DataFrame setelah membaca 20230214.xlsx:
+2024-10-17 22:06:37,102 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 22:09:17,234 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230215.xlsx
+2024-10-17 22:09:17,256 [INFO] DataFrame setelah membaca 20230215.xlsx:
+2024-10-17 22:11:23,125 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 22:14:03,497 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230216.xlsx
+2024-10-17 22:14:03,521 [INFO] DataFrame setelah membaca 20230216.xlsx:
+2024-10-17 22:16:09,119 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 22:18:51,433 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230217.xlsx
+2024-10-17 22:18:51,454 [INFO] DataFrame setelah membaca 20230217.xlsx:
+2024-10-17 22:20:56,734 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 22:23:38,974 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230218.xlsx
+2024-10-17 22:23:38,996 [INFO] DataFrame setelah membaca 20230218.xlsx:
+2024-10-17 22:25:44,208 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 22:28:24,829 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230219.xlsx
+2024-10-17 22:28:24,851 [INFO] DataFrame setelah membaca 20230219.xlsx:
+2024-10-17 22:30:31,394 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 22:33:11,949 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230220.xlsx
+2024-10-17 22:33:11,970 [INFO] DataFrame setelah membaca 20230220.xlsx:
+2024-10-17 22:35:18,131 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 22:37:58,529 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230221.xlsx
+2024-10-17 22:37:58,550 [INFO] DataFrame setelah membaca 20230221.xlsx:
+2024-10-17 22:40:04,832 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 22:42:46,519 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230222.xlsx
+2024-10-17 22:42:46,541 [INFO] DataFrame setelah membaca 20230222.xlsx:
+2024-10-17 22:44:53,517 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 22:47:35,439 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230223.xlsx
+2024-10-17 22:47:35,460 [INFO] DataFrame setelah membaca 20230223.xlsx:
+2024-10-17 22:49:41,890 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 22:52:23,757 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230224.xlsx
+2024-10-17 22:52:23,779 [INFO] DataFrame setelah membaca 20230224.xlsx:
+2024-10-17 22:54:31,157 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 22:57:15,853 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230225.xlsx
+2024-10-17 22:57:15,874 [INFO] DataFrame setelah membaca 20230225.xlsx:
+2024-10-17 22:59:21,936 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 23:02:06,651 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230226.xlsx
+2024-10-17 23:02:06,675 [INFO] DataFrame setelah membaca 20230226.xlsx:
+2024-10-17 23:04:13,460 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 23:06:55,300 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230227.xlsx
+2024-10-17 23:06:55,322 [INFO] DataFrame setelah membaca 20230227.xlsx:
+2024-10-17 23:09:01,440 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-17 23:11:47,556 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230228.xlsx
+2024-10-17 23:11:47,579 [INFO] DataFrame setelah membaca 20230228.xlsx:
+2024-10-17 23:13:52,826 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
