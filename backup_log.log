@@ -635,3 +635,649 @@
 2024-10-17 23:11:47,556 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230228.xlsx
 2024-10-17 23:11:47,579 [INFO] DataFrame setelah membaca 20230228.xlsx:
 2024-10-17 23:13:52,826 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-21 10:14:48,734 [ERROR] Gagal terhubung ke database: 'function' object has no attribute 'connect'
+2024-10-21 10:15:45,452 [ERROR] Gagal terhubung ke database: 'function' object has no attribute 'connect'
+2024-10-21 10:16:09,290 [ERROR] Gagal terhubung ke database: 'function' object has no attribute 'connect'
+2024-10-21 10:20:04,867 [ERROR] Gagal terhubung ke database: 'function' object has no attribute 'connect'
+2024-10-21 10:20:34,366 [INFO] Tes koneksi berhasil!
+2024-10-21 10:48:45,344 [ERROR] Gagal terhubung ke database: 'function' object has no attribute 'connect'
+2024-10-21 10:50:36,119 [ERROR] Gagal terhubung ke database: 'function' object has no attribute 'connect'
+2024-10-21 10:55:06,820 [INFO] Tes koneksi berhasil!
+2024-10-21 10:55:25,941 [INFO] Tes koneksi berhasil!
+2024-10-21 10:57:17,591 [INFO] Tes koneksi berhasil!
+2024-10-21 11:01:36,078 [INFO] Tes koneksi berhasil!
+2024-10-21 11:01:56,554 [INFO] Tes koneksi berhasil!
+2024-10-21 11:02:36,341 [INFO] Tes koneksi berhasil!
+2024-10-21 11:02:42,170 [INFO] Tes koneksi berhasil!
+2024-10-21 11:05:51,687 [INFO] Tes koneksi berhasil!
+2024-10-21 11:13:35,611 [INFO] Tes koneksi berhasil!
+2024-10-21 11:15:15,028 [INFO] Tes koneksi berhasil!
+2024-10-21 11:15:33,573 [INFO] Tes koneksi berhasil!
+2024-10-21 11:18:46,291 [INFO] Tes koneksi berhasil!
+2024-10-21 11:19:36,890 [INFO] Tes koneksi berhasil!
+2024-10-21 11:22:35,400 [INFO] Tes koneksi berhasil!
+2024-10-21 11:25:36,677 [INFO] Tes koneksi berhasil!
+2024-10-21 11:29:14,655 [INFO] Tes koneksi berhasil!
+2024-10-21 11:35:12,081 [INFO] Tes koneksi berhasil!
+2024-10-21 11:36:51,761 [INFO] Tes koneksi berhasil!
+2024-10-21 11:39:32,870 [INFO] Tes koneksi berhasil!
+2024-10-21 11:40:06,852 [INFO] Tes koneksi berhasil!
+2024-10-21 11:44:37,207 [INFO] Tes koneksi berhasil!
+2024-10-21 11:46:15,614 [INFO] Tes koneksi berhasil!
+2024-10-21 11:47:49,456 [INFO] Tes koneksi berhasil!
+2024-10-21 11:48:06,897 [INFO] Tes koneksi berhasil!
+2024-10-21 11:49:02,849 [INFO] Tes koneksi berhasil!
+2024-10-21 11:52:24,955 [INFO] Tes koneksi berhasil!
+2024-10-21 11:54:14,631 [INFO] Tes koneksi berhasil!
+2024-10-21 11:55:14,276 [INFO] Tes koneksi berhasil!
+2024-10-21 11:56:32,902 [INFO] Tes koneksi berhasil!
+2024-10-21 11:57:36,010 [INFO] Tes koneksi berhasil!
+2024-10-21 11:58:05,182 [INFO] Tes koneksi berhasil!
+2024-10-21 15:27:51,722 [INFO] Tes koneksi berhasil!
+2024-10-21 15:31:29,166 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023/20230228.xlsx
+2024-10-21 15:31:29,166 [INFO] DataFrame setelah membaca Excel:
+2024-10-21 15:31:29,628 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime:
+2024-10-21 15:32:32,887 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-21 16:01:55,054 [INFO] Tes koneksi berhasil!
+2024-10-21 16:05:28,014 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023/20230101.xlsx
+2024-10-21 16:05:28,014 [INFO] DataFrame setelah membaca Excel:
+2024-10-21 16:05:28,507 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime:
+2024-10-21 16:05:29,855 [ERROR] Gagal menyimpan data ke SQL Server: (pyodbc.ProgrammingError) ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Error converting data type varchar to float. (8114) (SQLExecDirectW)')
+[SQL: INSERT INTO [AZ_Daily] ([Periode], [BranchID], [AgreementNo], [CustomerID], [Nama], [Model], [Tenor], [Ang_ke], [Pokok_Awal], [Saldo_Pokok], [OVD], [Status], [Tgl_Jt], [Angsuran], [CMO], [Tgl_Cair], [ProductId], [StatusWo], [StatusAsset], [Tgl_Tarik] ... 6440 characters truncated ... ?, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('20230101', 405, 24051015000161, '40500002894         ', 'NARNI', 'HONDA.REVO-NF11 B1D MT', 18, 999, '4081250,00', '0,00', 0, 'ICP', datetime.datetime(2016, 8, 20, 0, 0), 288000.0, 'MEI HERLINA SO', datetime.datetime(2015, 2, 20, 0, 0), 'R2DCSYR   ', 'NM ', 'Normal', None, None, datetime.datetime(2015, 2, 20, 0, 0), datetime.datetime(2023, 1, 1, 0, 0), '-', 'DIRECT SELLING', 270.0, 'SALES OFFICER DANA CEPAT', 'Wiraswasta', None, '20230101', 430, 24301122000359, '43000002460         ', 'YUSMAN', 'Q37HONDA-ALL NEW SCOOPY-STYLISH', 24, 6, '11556250,00', '9896543,47', 0, 'LIV', datetime.datetime(2023, 1, 20, 0, 0), 732500.0, 'WIWIN HENDRIAWAN', datetime.datetime(2022, 7, 25, 0, 0), 'DINARKU2  ', 'NM ', 'Normal', None, datetime.datetime(2022, 12, 18, 0, 0) ... 1988 parameters truncated ... '8116875,00', '5782930,48', 0, 'LIV', datetime.datetime(2023, 1, 22, 0, 0), 844500.0, 'NUR HADI SE', datetime.datetime(2022, 8, 22, 0, 0), 'DINARKU2  ', 'NM ', 'Normal', None, datetime.datetime(2022, 12, 21, 0, 0), datetime.datetime(2022, 8, 22, 0, 0), datetime.datetime(2023, 1, 1, 0, 0), 'New', 'AGENCY', 0.0, 'RAHMAT ALDIANSYAH', 'PEGAWAI SW', 'KP GRESIK', '20230101', 410, 24101122000549, '41000006062         ', 'NILA KUSUMA WARDANI', 'Q37HONDA.BEAT.FI CBS', 12, 7, '6505875,00', '3634583,90', 0, 'LIV', datetime.datetime(2023, 1, 10, 0, 0), 693500.0, 'ASHAR', datetime.datetime(2022, 6, 10, 0, 0), 'DINARKU2  ', 'NM ', 'Normal', None, datetime.datetime(2022, 12, 23, 0, 0), datetime.datetime(2022, 6, 10, 0, 0), datetime.datetime(2023, 1, 1, 0, 0), 'RO', 'INTERNAL CUSTOMER', 180.0, 'SALES PRIMA', 'Ibu Rumah', 'KC SANGATA')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-10-21 16:37:50,722 [INFO] Tes koneksi berhasil!
+2024-10-21 16:41:33,157 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023/20230101.xlsx
+2024-10-21 16:41:33,157 [INFO] DataFrame setelah membaca Excel:
+2024-10-21 16:41:33,674 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime:
+2024-10-21 16:41:35,022 [ERROR] Gagal menyimpan data ke SQL Server: (pyodbc.ProgrammingError) ('42000', '[42000] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Error converting data type varchar to float. (8114) (SQLExecDirectW)')
+[SQL: INSERT INTO [AZ_Daily] ([Periode], [BranchID], [AgreementNo], [CustomerID], [Nama], [Model], [Tenor], [Ang_ke], [Pokok_Awal], [Saldo_Pokok], [OVD], [Status], [Tgl_Jt], [Angsuran], [CMO], [Tgl_Cair], [ProductId], [StatusWo], [StatusAsset], [Tgl_Tarik] ... 6440 characters truncated ... ?, ?, ?, ?), (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('20230101', 405, 24051015000161, '40500002894         ', 'NARNI', 'HONDA.REVO-NF11 B1D MT', 18, 999, '4081250,00', '0,00', 0, 'ICP', datetime.datetime(2016, 8, 20, 0, 0), 288000.0, 'MEI HERLINA SO', datetime.datetime(2015, 2, 20, 0, 0), 'R2DCSYR   ', 'NM ', 'Normal', None, None, datetime.datetime(2015, 2, 20, 0, 0), datetime.datetime(2023, 1, 1, 0, 0), '-', 'DIRECT SELLING', 27.0, 'SALES OFFICER DANA CEPAT', 'Wiraswasta', None, '20230101', 430, 24301122000359, '43000002460         ', 'YUSMAN', 'Q37HONDA-ALL NEW SCOOPY-STYLISH', 24, 6, '11556250,00', '9896543,47', 0, 'LIV', datetime.datetime(2023, 1, 20, 0, 0), 732500.0, 'WIWIN HENDRIAWAN', datetime.datetime(2022, 7, 25, 0, 0), 'DINARKU2  ', 'NM ', 'Normal', None, datetime.datetime(2022, 12, 18, 0, 0) ... 1988 parameters truncated ... '8116875,00', '5782930,48', 0, 'LIV', datetime.datetime(2023, 1, 22, 0, 0), 844500.0, 'NUR HADI SE', datetime.datetime(2022, 8, 22, 0, 0), 'DINARKU2  ', 'NM ', 'Normal', None, datetime.datetime(2022, 12, 21, 0, 0), datetime.datetime(2022, 8, 22, 0, 0), datetime.datetime(2023, 1, 1, 0, 0), 'New', 'AGENCY', 0.0, 'RAHMAT ALDIANSYAH', 'PEGAWAI SW', 'KP GRESIK', '20230101', 410, 24101122000549, '41000006062         ', 'NILA KUSUMA WARDANI', 'Q37HONDA.BEAT.FI CBS', 12, 7, '6505875,00', '3634583,90', 0, 'LIV', datetime.datetime(2023, 1, 10, 0, 0), 693500.0, 'ASHAR', datetime.datetime(2022, 6, 10, 0, 0), 'DINARKU2  ', 'NM ', 'Normal', None, datetime.datetime(2022, 12, 23, 0, 0), datetime.datetime(2022, 6, 10, 0, 0), datetime.datetime(2023, 1, 1, 0, 0), 'RO', 'INTERNAL CUSTOMER', 18.0, 'SALES PRIMA', 'Ibu Rumah', 'KC SANGATA')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-10-21 17:06:18,852 [INFO] Tes koneksi berhasil!
+2024-10-21 17:09:58,077 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023/20230101.xlsx
+2024-10-21 17:09:58,077 [INFO] DataFrame setelah membaca Excel:
+2024-10-21 17:09:58,725 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime:
+2024-10-21 17:11:07,556 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-21 19:49:48,037 [INFO] Tes koneksi berhasil!
+2024-10-21 19:53:21,905 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230101.xlsx
+2024-10-21 19:53:21,905 [INFO] DataFrame setelah membaca 20230101.xlsx:
+2024-10-21 20:04:10,625 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-21 20:07:48,143 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230102.xlsx
+2024-10-21 20:07:48,165 [INFO] DataFrame setelah membaca 20230102.xlsx:
+2024-10-21 20:08:51,567 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-21 20:12:25,650 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230103.xlsx
+2024-10-21 20:12:25,676 [INFO] DataFrame setelah membaca 20230103.xlsx:
+2024-10-21 20:13:28,987 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-21 20:17:03,748 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230104.xlsx
+2024-10-21 20:17:03,769 [INFO] DataFrame setelah membaca 20230104.xlsx:
+2024-10-21 20:18:07,619 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-21 20:21:52,729 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230105.xlsx
+2024-10-21 20:21:52,754 [INFO] DataFrame setelah membaca 20230105.xlsx:
+2024-10-21 20:22:56,290 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-21 20:26:38,874 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230106.xlsx
+2024-10-21 20:26:38,898 [INFO] DataFrame setelah membaca 20230106.xlsx:
+2024-10-21 20:27:41,794 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-21 20:31:13,781 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230107.xlsx
+2024-10-21 20:31:13,806 [INFO] DataFrame setelah membaca 20230107.xlsx:
+2024-10-21 20:32:22,050 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-21 20:36:09,259 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230108.xlsx
+2024-10-21 20:36:09,287 [INFO] DataFrame setelah membaca 20230108.xlsx:
+2024-10-21 20:37:12,623 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-21 20:40:44,346 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230109.xlsx
+2024-10-21 20:40:44,375 [INFO] DataFrame setelah membaca 20230109.xlsx:
+2024-10-21 20:41:45,852 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-21 20:45:15,280 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230110.xlsx
+2024-10-21 20:45:15,308 [INFO] DataFrame setelah membaca 20230110.xlsx:
+2024-10-21 20:46:16,983 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-21 20:49:45,446 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230111.xlsx
+2024-10-21 20:49:45,471 [INFO] DataFrame setelah membaca 20230111.xlsx:
+2024-10-21 20:50:47,817 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-21 20:54:17,451 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230112.xlsx
+2024-10-21 20:54:17,477 [INFO] DataFrame setelah membaca 20230112.xlsx:
+2024-10-21 20:55:19,227 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-21 20:58:49,418 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230113.xlsx
+2024-10-21 20:58:49,444 [INFO] DataFrame setelah membaca 20230113.xlsx:
+2024-10-21 20:59:50,684 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-21 21:03:23,421 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230114.xlsx
+2024-10-21 21:03:23,445 [INFO] DataFrame setelah membaca 20230114.xlsx:
+2024-10-21 21:04:24,933 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-21 21:07:53,410 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230115.xlsx
+2024-10-21 21:07:53,434 [INFO] DataFrame setelah membaca 20230115.xlsx:
+2024-10-21 21:08:54,889 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-21 21:12:24,310 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230116.xlsx
+2024-10-21 21:12:24,336 [INFO] DataFrame setelah membaca 20230116.xlsx:
+2024-10-21 21:13:25,920 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-21 21:16:54,931 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230117.xlsx
+2024-10-21 21:16:54,957 [INFO] DataFrame setelah membaca 20230117.xlsx:
+2024-10-21 21:17:56,506 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-21 21:21:25,792 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230118.xlsx
+2024-10-21 21:21:25,816 [INFO] DataFrame setelah membaca 20230118.xlsx:
+2024-10-21 21:22:27,320 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-21 21:25:57,186 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230119.xlsx
+2024-10-21 21:25:57,212 [INFO] DataFrame setelah membaca 20230119.xlsx:
+2024-10-21 21:26:58,861 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-21 21:30:31,844 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230120.xlsx
+2024-10-21 21:30:31,866 [INFO] DataFrame setelah membaca 20230120.xlsx:
+2024-10-21 21:31:33,612 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-21 21:35:08,860 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230121.xlsx
+2024-10-21 21:35:08,882 [INFO] DataFrame setelah membaca 20230121.xlsx:
+2024-10-21 21:36:10,632 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-21 21:39:42,595 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230122.xlsx
+2024-10-21 21:39:42,621 [INFO] DataFrame setelah membaca 20230122.xlsx:
+2024-10-21 21:40:44,658 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-21 21:44:18,026 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230123.xlsx
+2024-10-21 21:44:18,053 [INFO] DataFrame setelah membaca 20230123.xlsx:
+2024-10-21 21:45:20,231 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-21 21:48:53,694 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230124.xlsx
+2024-10-21 21:48:53,721 [INFO] DataFrame setelah membaca 20230124.xlsx:
+2024-10-21 21:49:55,564 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-21 21:53:30,301 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230125.xlsx
+2024-10-21 21:53:30,323 [INFO] DataFrame setelah membaca 20230125.xlsx:
+2024-10-21 21:54:31,965 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-21 21:58:05,203 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230126.xlsx
+2024-10-21 21:58:05,225 [INFO] DataFrame setelah membaca 20230126.xlsx:
+2024-10-21 21:59:06,927 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-21 22:02:45,973 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230127.xlsx
+2024-10-21 22:02:45,996 [INFO] DataFrame setelah membaca 20230127.xlsx:
+2024-10-21 22:03:47,935 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-21 22:07:23,325 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230128.xlsx
+2024-10-21 22:07:23,349 [INFO] DataFrame setelah membaca 20230128.xlsx:
+2024-10-21 22:08:25,098 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-21 22:11:58,416 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230129.xlsx
+2024-10-21 22:11:58,443 [INFO] DataFrame setelah membaca 20230129.xlsx:
+2024-10-21 22:13:00,265 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-21 22:16:34,582 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230130.xlsx
+2024-10-21 22:16:34,605 [INFO] DataFrame setelah membaca 20230130.xlsx:
+2024-10-21 22:17:36,591 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-21 22:21:06,052 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/01. JANUARI 2023\20230131.xlsx
+2024-10-21 22:21:06,079 [INFO] DataFrame setelah membaca 20230131.xlsx:
+2024-10-21 22:22:08,338 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-22 01:58:02,118 [INFO] Tes koneksi berhasil!
+2024-10-22 02:01:36,283 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230201.xlsx
+2024-10-22 02:01:36,283 [INFO] DataFrame setelah membaca 20230201.xlsx:
+2024-10-22 02:02:37,983 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-22 02:06:11,584 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230202.xlsx
+2024-10-22 02:06:11,608 [INFO] DataFrame setelah membaca 20230202.xlsx:
+2024-10-22 02:07:13,347 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-22 02:10:48,364 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230203.xlsx
+2024-10-22 02:10:48,390 [INFO] DataFrame setelah membaca 20230203.xlsx:
+2024-10-22 02:11:50,177 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-22 02:15:22,229 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230204.xlsx
+2024-10-22 02:15:22,256 [INFO] DataFrame setelah membaca 20230204.xlsx:
+2024-10-22 02:16:24,469 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-22 02:19:56,690 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230205.xlsx
+2024-10-22 02:19:56,711 [INFO] DataFrame setelah membaca 20230205.xlsx:
+2024-10-22 02:20:58,805 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-22 02:24:33,198 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230206.xlsx
+2024-10-22 02:24:33,219 [INFO] DataFrame setelah membaca 20230206.xlsx:
+2024-10-22 02:25:35,132 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-22 02:29:10,557 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230207.xlsx
+2024-10-22 02:29:10,583 [INFO] DataFrame setelah membaca 20230207.xlsx:
+2024-10-22 02:30:12,693 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-22 02:33:45,024 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230208.xlsx
+2024-10-22 02:33:45,048 [INFO] DataFrame setelah membaca 20230208.xlsx:
+2024-10-22 02:34:47,558 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-22 02:38:20,345 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230209.xlsx
+2024-10-22 02:38:20,371 [INFO] DataFrame setelah membaca 20230209.xlsx:
+2024-10-22 02:39:23,145 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-22 02:42:55,690 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230210.xlsx
+2024-10-22 02:42:55,711 [INFO] DataFrame setelah membaca 20230210.xlsx:
+2024-10-22 02:43:58,295 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-22 02:47:27,631 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230211.xlsx
+2024-10-22 02:47:27,653 [INFO] DataFrame setelah membaca 20230211.xlsx:
+2024-10-22 02:48:30,258 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-22 02:52:02,062 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230212.xlsx
+2024-10-22 02:52:02,090 [INFO] DataFrame setelah membaca 20230212.xlsx:
+2024-10-22 02:53:05,096 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-22 02:56:36,082 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230213.xlsx
+2024-10-22 02:56:36,104 [INFO] DataFrame setelah membaca 20230213.xlsx:
+2024-10-22 02:57:38,720 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-22 03:01:10,674 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230214.xlsx
+2024-10-22 03:01:10,697 [INFO] DataFrame setelah membaca 20230214.xlsx:
+2024-10-22 03:02:13,133 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-22 03:05:43,973 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230215.xlsx
+2024-10-22 03:05:43,999 [INFO] DataFrame setelah membaca 20230215.xlsx:
+2024-10-22 03:06:46,442 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-22 03:10:16,821 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230216.xlsx
+2024-10-22 03:10:16,843 [INFO] DataFrame setelah membaca 20230216.xlsx:
+2024-10-22 03:11:19,455 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-22 03:14:51,776 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230217.xlsx
+2024-10-22 03:14:51,797 [INFO] DataFrame setelah membaca 20230217.xlsx:
+2024-10-22 03:15:54,399 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-22 03:19:28,855 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230218.xlsx
+2024-10-22 03:19:28,882 [INFO] DataFrame setelah membaca 20230218.xlsx:
+2024-10-22 03:20:31,870 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-22 03:24:03,519 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230219.xlsx
+2024-10-22 03:24:03,540 [INFO] DataFrame setelah membaca 20230219.xlsx:
+2024-10-22 03:25:06,434 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-22 03:28:38,108 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230220.xlsx
+2024-10-22 03:28:38,134 [INFO] DataFrame setelah membaca 20230220.xlsx:
+2024-10-22 03:29:40,447 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-22 03:33:12,438 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230221.xlsx
+2024-10-22 03:33:12,459 [INFO] DataFrame setelah membaca 20230221.xlsx:
+2024-10-22 03:34:27,013 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-22 03:38:00,632 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230222.xlsx
+2024-10-22 03:38:00,653 [INFO] DataFrame setelah membaca 20230222.xlsx:
+2024-10-22 03:39:03,038 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-22 03:42:34,958 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230223.xlsx
+2024-10-22 03:42:34,979 [INFO] DataFrame setelah membaca 20230223.xlsx:
+2024-10-22 03:43:37,645 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-22 03:47:11,691 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230224.xlsx
+2024-10-22 03:47:11,713 [INFO] DataFrame setelah membaca 20230224.xlsx:
+2024-10-22 03:48:14,241 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-22 03:51:50,040 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230225.xlsx
+2024-10-22 03:51:50,066 [INFO] DataFrame setelah membaca 20230225.xlsx:
+2024-10-22 03:52:52,681 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-22 03:56:27,153 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230226.xlsx
+2024-10-22 03:56:27,177 [INFO] DataFrame setelah membaca 20230226.xlsx:
+2024-10-22 03:57:29,705 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-22 04:01:01,264 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230227.xlsx
+2024-10-22 04:01:01,286 [INFO] DataFrame setelah membaca 20230227.xlsx:
+2024-10-22 04:02:03,993 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-22 04:05:43,507 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/02. FEBRUARI 2023\20230228.xlsx
+2024-10-22 04:05:43,529 [INFO] DataFrame setelah membaca 20230228.xlsx:
+2024-10-22 04:06:46,185 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-22 19:23:12,299 [ERROR] Gagal terhubung ke database: (pyodbc.OperationalError) ('08001', '[08001] [Microsoft][ODBC Driver 17 for SQL Server]Named Pipes Provider: Could not open a connection to SQL Server [2].  (2) (SQLDriverConnect); [08001] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Login failed for user \'VICTOR-COLL\\smartuser\'. (18456); [08001] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Cannot open database "Reporting" requested by the login. The login failed. (4060); [08001] [Microsoft][ODBC Driver 17 for SQL Server]A network-related or instance-specific error has occurred while establishing a connection to SQL Server. Server is not found or not accessible. Check if instance name is correct and if SQL Server is configured to allow remote connections. For more information see SQL Server Books Online. (2)')
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-10-22 19:23:12,299 [ERROR] Akhiri skrip karena koneksi ke database gagal.
+2024-10-22 19:24:05,494 [INFO] Tes koneksi berhasil!
+2024-10-22 19:27:41,787 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/03. MARET 2023\20230301.xlsx
+2024-10-22 19:27:41,787 [INFO] DataFrame setelah membaca 20230301.xlsx:
+2024-10-22 19:28:46,006 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-22 19:32:16,968 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/03. MARET 2023\20230302.xlsx
+2024-10-22 19:32:16,994 [INFO] DataFrame setelah membaca 20230302.xlsx:
+2024-10-22 19:33:20,007 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-22 19:37:00,817 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/03. MARET 2023\20230303.xlsx
+2024-10-22 19:37:00,842 [INFO] DataFrame setelah membaca 20230303.xlsx:
+2024-10-22 19:38:04,084 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-22 19:41:41,753 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/03. MARET 2023\20230304.xlsx
+2024-10-22 19:41:41,775 [INFO] DataFrame setelah membaca 20230304.xlsx:
+2024-10-22 19:42:46,758 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-22 19:46:20,091 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/03. MARET 2023\20230305.xlsx
+2024-10-22 19:46:20,116 [INFO] DataFrame setelah membaca 20230305.xlsx:
+2024-10-22 19:47:24,152 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-22 19:50:59,827 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/03. MARET 2023\20230306.xlsx
+2024-10-22 19:50:59,851 [INFO] DataFrame setelah membaca 20230306.xlsx:
+2024-10-22 19:52:03,934 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-22 19:55:37,633 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/03. MARET 2023\20230307.xlsx
+2024-10-22 19:55:37,657 [INFO] DataFrame setelah membaca 20230307.xlsx:
+2024-10-22 19:56:41,836 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-22 20:00:14,892 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/03. MARET 2023\20230308.xlsx
+2024-10-22 20:00:14,916 [INFO] DataFrame setelah membaca 20230308.xlsx:
+2024-10-22 20:01:18,850 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-22 20:04:55,594 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/03. MARET 2023\20230309.xlsx
+2024-10-22 20:04:55,616 [INFO] DataFrame setelah membaca 20230309.xlsx:
+2024-10-22 20:05:59,450 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-22 20:09:36,782 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/03. MARET 2023\20230310.xlsx
+2024-10-22 20:09:36,805 [INFO] DataFrame setelah membaca 20230310.xlsx:
+2024-10-22 20:10:40,830 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-22 20:14:18,480 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/03. MARET 2023\20230311.xlsx
+2024-10-22 20:14:18,507 [INFO] DataFrame setelah membaca 20230311.xlsx:
+2024-10-22 20:15:22,397 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-22 20:18:55,914 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/03. MARET 2023\20230312.xlsx
+2024-10-22 20:18:55,937 [INFO] DataFrame setelah membaca 20230312.xlsx:
+2024-10-22 20:19:59,761 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-22 20:20:18,467 [ERROR] Gagal membaca file Excel: Usecols do not match columns, columns expected but not found: ['BAname', 'Tgl_Tarik', 'Ang_ke', 'TglDO', 'Nama', 'Tgl_jt', 'MaxOvd', 'ApplicationPriority', 'Tenor', 'AgreementNo', 'SourceApplication', 'Status', 'Tgl_Bayar', 'StatusAsset', 'SALDO_POKOK', 'CustomerID', 'StatusWo', 'Angsuran', 'CMO', 'ProfID', 'ProductId', 'Tgl_Proses', 'BranchID', 'POKOK_AWAL', 'OVD', 'Tgl_Cair', 'POS_ID', 'Model'] (sheet: 0)
+2024-10-23 09:03:18,758 [INFO] Tes koneksi berhasil!
+2024-10-23 09:03:18,761 [ERROR] Gagal membaca file Excel: Missing optional dependency 'openpyxl'.  Use pip or conda to install openpyxl.
+2024-10-23 09:04:00,236 [INFO] Tes koneksi berhasil!
+2024-10-23 09:08:03,630 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/03. MARET 2023/20230312.xlsx
+2024-10-23 09:09:10,959 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-23 09:11:24,213 [INFO] Tes koneksi berhasil!
+2024-10-23 09:11:42,290 [ERROR] Gagal membaca file Excel: Usecols do not match columns, columns expected but not found: ['Tgl_Proses', 'CustomerID', 'SALDO_POKOK', 'Tgl_Cair', 'StatusAsset', 'Ang_ke', 'ApplicationPriority', 'Angsuran', 'Status', 'Model', 'ProductId', 'MaxOvd', 'StatusWo', 'BranchID', 'POS_ID', 'AgreementNo', 'Tgl_Tarik', 'TglDO', 'BAname', 'Tgl_jt', 'SourceApplication', 'Tenor', 'OVD', 'ProfID', 'CMO', 'Tgl_Bayar', 'POKOK_AWAL', 'Nama'] (sheet: 0)
+2024-10-23 09:12:39,311 [INFO] Tes koneksi berhasil!
+2024-10-23 09:12:57,160 [ERROR] Gagal membaca file Excel: Usecols do not match columns, columns expected but not found: ['ProfID', 'BranchID', 'CustomerID', 'POKOK_AWAL', 'MaxOvd', 'CMO', 'OVD', 'Ang_ke', 'SourceApplication', 'Tgl_Tarik', 'Model', 'ProductId', 'Tgl_Proses', 'Nama', 'SALDO_POKOK', 'ApplicationPriority', 'Tenor', 'POS_ID', 'StatusWo', 'Tgl_Bayar', 'TglDO', 'Status', 'BAname', 'StatusAsset', 'Tgl_Cair', 'Tgl_jt', 'AgreementNo', 'Angsuran'] (sheet: 0)
+2024-10-23 09:22:58,646 [INFO] Tes koneksi berhasil!
+2024-10-23 09:26:34,724 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/03. MARET 2023/20230313.xlsx
+2024-10-23 09:27:39,501 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-23 10:01:03,365 [INFO] Tes koneksi berhasil!
+2024-10-23 10:06:12,337 [INFO] Tes koneksi berhasil!
+2024-10-23 10:10:07,690 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/03. MARET 2023/20230314.xlsx
+2024-10-23 10:22:19,225 [INFO] Tes koneksi berhasil!
+2024-10-23 10:26:07,039 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/03. MARET 2023/20230314.xlsx
+2024-10-23 10:31:12,971 [INFO] Tes koneksi berhasil!
+2024-10-23 10:34:55,870 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/03. MARET 2023/20230314.xlsx
+2024-10-23 10:34:56,735 [WARNING] Some invalid or missing dates found in column 'Tgl_Tarik'. They have been set to NaT.
+2024-10-23 10:34:56,740 [WARNING] Some invalid or missing dates found in column 'Tgl_Bayar'. They have been set to NaT.
+2024-10-23 10:35:08,791 [ERROR] Gagal menyimpan data ke SQL Server: (pyodbc.ProgrammingError) ('42S22', "[42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ApplicationID'. (207) (SQLExecDirectW); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'Alamat'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'Kecamatan'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'LegalCity'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'Alamat_kantor'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'Telp_Rumah'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'Telp_Kantor'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'Merek'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'Type'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'AR_AWAL'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'SALDO_BUNGA'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'SALDO_PINJAM'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'DENDA'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'Dealer'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'Tgl_Ktr'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'DownPayment'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'SISABAYAR'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'Thn_Motor'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'TOTALOTR'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'NoRangka'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'NoMesin'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'AttributeContent'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'EffectiveRate'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'FlatRate'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'UsedNew'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'NIL_ASS'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'NIL_ADM'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'APSUPPLIER'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'INSENTIF'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'RIFUND'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ANGSURANTERTUNGAK'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'BANKFUNDINGJF'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'BANKFUNDINGTL'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'SISA_POKOKP'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'SALDO_BUNGAP'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'SALDO_PINJAMP'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'AnBPKB'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'StatusBPKB'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'NoBPKB'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ContractPrepaidAmount'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'Alamat_Tagih'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'Denda_Bayar'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'KodeBayar'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'Warna'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'Tgl_Sp'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'NoSpBPKB'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'OvdBPKB'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'Tgl_Lahir'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'KTP'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'NPWP'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'Tgl_Denda'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'DendaByrTerakhir'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'TglJual'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'KelurahanLegalAdress'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'KecamatanLegalAdress'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'KodeposLegalAddress'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'KelurahanResidence'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'KecamatanResidence'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'KodeposResidence'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'NilBayarAkhir'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'MobilePhone'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'MailingAdress'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'MailingKecamatan'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'MailingKelurahan'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'MailingZipCode'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'LCInstallment'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'EmployeeID'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'MailingCity'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'marketing'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'SOmarketing'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'Surveyor'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'SOSurveyor'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'CreditScoringResult'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'surveyorid'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'Insurance'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'MainCoverage'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'PolicyNumber'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'legalRT'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'legalRW'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'MailingRT'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'MailingRW'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'YNQuestion'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'BirthPlace'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'MaxOvd'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'OtherFee'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'FirstInstallment'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'SupplierKtpID'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ProfID'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'PenghasilanKons'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'LamaKerja'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'IndustriType'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'AgentCommision'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'AgentCommision2'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ReleaseDate'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'RRDDate'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ProductOfferingID'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ApplicationID'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'Alamat'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'Kecamatan'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'LegalCity'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'Alamat_kantor'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'Telp_Rumah'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'Telp_Kantor'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'Merek'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'Type'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'AR_AWAL'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'SALDO_BUNGA'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'SALDO_PINJAM'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'DENDA'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'Dealer'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'Tgl_Ktr'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'DownPayment'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'SISABAYAR'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'Thn_Motor'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'TOTALOTR'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'NoRangka'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'NoMesin'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'AttributeContent'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'EffectiveRate'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'FlatRate'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'UsedNew'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'NIL_ASS'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'NIL_ADM'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'APSUPPLIER'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'INSENTIF'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'RIFUND'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ANGSURANTERTUNGAK'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'BANKFUNDINGJF'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'BANKFUNDINGTL'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'SISA_POKOKP'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'SALDO_BUNGAP'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'SALDO_PINJAMP'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'AnBPKB'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'StatusBPKB'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'NoBPKB'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ContractPrepaidAmount'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'Alamat_Tagih'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'Denda_Bayar'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'KodeBayar'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'Warna'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'Tgl_Sp'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'NoSpBPKB'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'OvdBPKB'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'Tgl_Lahir'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'KTP'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'NPWP'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'Tgl_Denda'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'DendaByrTerakhir'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'TglJual'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'KelurahanLegalAdress'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'KecamatanLegalAdress'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'KodeposLegalAddress'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'KelurahanResidence'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'KecamatanResidence'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'KodeposResidence'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'NilBayarAkhir'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'MobilePhone'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'MailingAdress'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'MailingKecamatan'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'MailingKelurahan'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'MailingZipCode'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'LCInstallment'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'EmployeeID'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'MailingCity'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'marketing'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'SOmarketing'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'Surveyor'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'SOSurveyor'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'CreditScoringResult'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'surveyorid'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'Insurance'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'MainCoverage'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'PolicyNumber'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'legalRT'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'legalRW'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'MailingRT'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'MailingRW'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'YNQuestion'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'BirthPlace'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'MaxOvd'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'OtherFee'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'FirstInstallment'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'SupplierKtpID'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ProfID'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'PenghasilanKons'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'LamaKerja'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'IndustriType'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'AgentCommision'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'AgentCommision2'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ReleaseDate'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'RRDDate'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Invalid column name 'ProductOfferingID'. (207); [42S22] [Microsoft][ODBC Driver 17 for SQL Server][SQL Server]Statement(s) could not be prepared. (8180)")
+[SQL: INSERT INTO [AZ_Daily] ([BranchID], [ApplicationID], [AgreementNo], [CustomerID], [Nama], [Alamat], [Kecamatan], [LegalCity], [Alamat_kantor], [Telp_Rumah], [Telp_Kantor], [Merek], [Type], [Model], [Tenor], [Ang_ke], [POKOK_AWAL], [AR_AWAL], [SALDO_P ... 7406 characters truncated ... , ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: (401, '0211120805550       ', 211120805550, '1110000494          ', 'AMIRUDIN                                          ', 'JL.PENAJAM RT.05 RW.00 PENAJAM                                                                      ', 'PENAJAM                       ', 'PENAJAM                       ', 'PENAJAM RT.04 KEL.PENAJAM                                                                           ', None, None, 'KAWASAKI', 'KAWASAKI.NINJA                                    ', 'KAWASAKI.NINJA.250 RR                             ', 11, 4, 38388000.0, '45853000,00', 25994012.43, '4190487,57', '30184500,00', 5102, '15283793,00', 'PT. S S M CAB.KAWASAKI 5S (KAWASAKI)', 'ICP', datetime.datetime(2009, 3, 25, 0, 0), 4168500.0, datetime.datetime(2008, 11, 25, 0, 0), 'SARDIANSYAH', datetime.datetime(2008, 11, 29, 0, 0), 'MGRNEW    ', 15000000.0, '30184500,00', 2008, '51900000,00', 'JKAEX250J8DA23206                                 ', 'EX250JEA23206                                     ', 'KT2121VG                                          ', 37.028032, 21.214, 'N', None, '100000,00', None, '0,00', '0,00', '30184500,00', None, None, None ... 1884 parameters truncated ... 'TELAGA SARI                   ', 'BALIKPAPAN SELATAN            ', 76111, None, 'BALIKPAPAN SELATAN            ', 76111, '1374000,00', None, 'JL.KAPTEN.P.TENDEAN NO.07 RT.031                  ', 'BALIKPAPAN SELATAN            ', 'TELAGASARI', 76111, '3631660,00', '013HELI HA', 'BALIKPAPAN', datetime.datetime(2023, 3, 14, 0, 0), 0, 'HELI HANUS                                        ', 'Senior', None, None, 'RO', None, 'DIRECT SELLING', None, None, None, None, 999.0, 999.0, None, None, None, 'BALIKPAPAN          ', 3748.0, '0,00', 'AR', None, None, 'Wiraswasta', '2000000,00', 9001.0, 'Toko Sembako', None, None, datetime.datetime(2010, 4, 29, 0, 0), None, None, 'MGRNEW    ', 'Wiraswasta')]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-10-23 10:39:24,361 [INFO] Tes koneksi berhasil!
+2024-10-23 10:39:46,142 [ERROR] Gagal membaca file Excel: [Errno 22] Invalid argument
+2024-10-23 10:41:53,096 [INFO] Tes koneksi berhasil!
+2024-10-23 10:45:30,087 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/03. MARET 2023/20230314.xlsx
+2024-10-23 10:46:34,888 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-23 10:55:37,361 [INFO] Tes koneksi berhasil!
+2024-10-23 10:59:32,374 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/03. MARET 2023\20230315.xlsx
+2024-10-23 10:59:32,374 [INFO] DataFrame setelah membaca 20230315.xlsx:
+2024-10-23 11:00:41,362 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-23 11:04:44,021 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/03. MARET 2023\20230316.xlsx
+2024-10-23 11:04:44,055 [INFO] DataFrame setelah membaca 20230316.xlsx:
+2024-10-23 11:05:51,393 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-23 11:09:32,514 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/03. MARET 2023\20230317.xlsx
+2024-10-23 11:09:32,538 [INFO] DataFrame setelah membaca 20230317.xlsx:
+2024-10-23 11:10:38,301 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-23 11:14:19,262 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/03. MARET 2023\20230318.xlsx
+2024-10-23 11:14:19,285 [INFO] DataFrame setelah membaca 20230318.xlsx:
+2024-10-23 11:15:25,253 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-23 11:19:04,862 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/03. MARET 2023\20230319.xlsx
+2024-10-23 11:19:04,886 [INFO] DataFrame setelah membaca 20230319.xlsx:
+2024-10-23 11:20:10,189 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-23 11:23:47,270 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/03. MARET 2023\20230320.xlsx
+2024-10-23 11:23:47,292 [INFO] DataFrame setelah membaca 20230320.xlsx:
+2024-10-23 11:24:51,604 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-23 11:28:35,846 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/03. MARET 2023\20230321.xlsx
+2024-10-23 11:28:35,869 [INFO] DataFrame setelah membaca 20230321.xlsx:
+2024-10-23 11:29:40,999 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-23 11:33:29,717 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/03. MARET 2023\20230322.xlsx
+2024-10-23 11:33:29,742 [INFO] DataFrame setelah membaca 20230322.xlsx:
+2024-10-23 11:34:37,224 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-23 11:38:22,067 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/03. MARET 2023\20230323.xlsx
+2024-10-23 11:38:22,092 [INFO] DataFrame setelah membaca 20230323.xlsx:
+2024-10-23 11:39:28,907 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-23 11:43:18,759 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/03. MARET 2023\20230324.xlsx
+2024-10-23 11:43:18,784 [INFO] DataFrame setelah membaca 20230324.xlsx:
+2024-10-23 11:44:26,976 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-23 11:48:15,698 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/03. MARET 2023\20230325.xlsx
+2024-10-23 11:48:15,722 [INFO] DataFrame setelah membaca 20230325.xlsx:
+2024-10-23 11:49:22,568 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-23 11:53:11,657 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/03. MARET 2023\20230326.xlsx
+2024-10-23 11:53:11,681 [INFO] DataFrame setelah membaca 20230326.xlsx:
+2024-10-23 11:54:19,263 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-23 11:58:06,930 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/03. MARET 2023\20230327.xlsx
+2024-10-23 11:58:06,955 [INFO] DataFrame setelah membaca 20230327.xlsx:
+2024-10-23 11:59:13,187 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-23 12:03:10,107 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/03. MARET 2023\20230328.xlsx
+2024-10-23 12:03:10,132 [INFO] DataFrame setelah membaca 20230328.xlsx:
+2024-10-23 12:04:16,651 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-23 12:08:05,799 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/03. MARET 2023\20230329.xlsx
+2024-10-23 12:08:05,825 [INFO] DataFrame setelah membaca 20230329.xlsx:
+2024-10-23 12:09:12,786 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-23 12:12:59,166 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/03. MARET 2023\20230330.xlsx
+2024-10-23 12:12:59,190 [INFO] DataFrame setelah membaca 20230330.xlsx:
+2024-10-23 12:14:05,616 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-23 12:17:53,308 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/03. MARET 2023\20230331.xlsx
+2024-10-23 12:17:53,332 [INFO] DataFrame setelah membaca 20230331.xlsx:
+2024-10-23 12:19:01,394 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-23 12:38:53,864 [INFO] Tes koneksi berhasil!
+2024-10-23 12:42:37,877 [INFO] Tes koneksi berhasil!
+2024-10-23 12:46:29,713 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/04. APRIL 2023\20230401.xlsx
+2024-10-23 12:46:29,714 [INFO] DataFrame setelah membaca 20230401.xlsx:
+2024-10-23 12:47:36,418 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-23 12:51:29,998 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/04. APRIL 2023\20230402.xlsx
+2024-10-23 12:51:30,022 [INFO] DataFrame setelah membaca 20230402.xlsx:
+2024-10-23 12:52:36,075 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-23 12:56:23,553 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/04. APRIL 2023\20230403.xlsx
+2024-10-23 12:56:23,579 [INFO] DataFrame setelah membaca 20230403.xlsx:
+2024-10-23 12:57:29,160 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-23 13:01:18,506 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/04. APRIL 2023\20230404.xlsx
+2024-10-23 13:01:18,529 [INFO] DataFrame setelah membaca 20230404.xlsx:
+2024-10-23 13:02:24,152 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-23 13:06:18,573 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/04. APRIL 2023\20230405.xlsx
+2024-10-23 13:06:18,600 [INFO] DataFrame setelah membaca 20230405.xlsx:
+2024-10-23 13:07:25,846 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-23 13:14:05,868 [ERROR] Gagal membaca file Excel: Usecols do not match columns, columns expected but not found: ['SALDO_POKOK', 'Tgl_jt', 'POKOK_AWAL', 'Tgl_Bayar', 'Tgl_Proses', 'Tgl_Tarik', 'Ang_ke', 'Tgl_Cair', 'OVD'] (sheet: 0)
+2024-10-23 13:29:20,431 [INFO] Tes koneksi berhasil!
+2024-10-23 13:33:20,805 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/04. APRIL 2023/20230405.xlsx
+2024-10-23 13:34:29,688 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-23 13:46:02,287 [INFO] Tes koneksi berhasil!
+2024-10-23 13:49:38,294 [ERROR] Gagal membaca file Excel: Usecols do not match columns, columns expected but not found: ['Ang_ke', 'Tgl_Proses', 'Tgl_Bayar', 'POKOK_AWAL', 'Tgl_Cair', 'OVD', 'Tgl_jt', 'Tgl_Tarik', 'SALDO_POKOK'] (sheet: 0)
+2024-10-23 13:55:46,985 [INFO] Tes koneksi berhasil!
+2024-10-23 13:59:19,812 [ERROR] Gagal membaca file Excel: Usecols do not match columns, columns expected but not found: ['Tgl_jt', 'OVD', 'SALDO_POKOK', 'Tgl_Bayar', 'Tgl_Proses', 'POKOK_AWAL', 'Tgl_Cair', 'Tgl_Tarik', 'Ang_ke'] (sheet: 0)
+2024-10-23 14:05:06,344 [INFO] Tes koneksi berhasil!
+2024-10-23 14:05:06,345 [ERROR] Gagal membaca file Excel: [Errno 13] Permission denied: 'D:/OneDrive/ASM/DATA/2023/04. APRIL 2023\\20230406.xlsx'
+2024-10-23 14:06:24,676 [INFO] Tes koneksi berhasil!
+2024-10-23 14:09:59,518 [ERROR] Gagal membaca file Excel: Usecols do not match columns, columns expected but not found: ['OVD', 'Pokok_Awal'] (sheet: 0)
+2024-10-23 14:13:39,057 [INFO] Tes koneksi berhasil!
+2024-10-23 14:17:09,357 [ERROR] Gagal membaca file Excel: Usecols do not match columns, columns expected but not found: ['POKOK_AWAL', 'SALDO_POKOK', 'Ang_ke', 'Tgl_Tarik', 'OVD', 'Tgl_Cair', 'Tgl_jt', 'Tgl_Bayar', 'Tgl_Proses'] (sheet: 0)
+2024-10-23 14:23:52,004 [INFO] Tes koneksi berhasil!
+2024-10-23 14:27:28,708 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/04. APRIL 2023/20230406.xlsx
+2024-10-23 14:41:50,730 [INFO] Tes koneksi berhasil!
+2024-10-23 14:45:27,244 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/04. APRIL 2023/20230406.xlsx
+2024-10-23 16:22:44,559 [INFO] Tes koneksi berhasil!
+2024-10-23 16:26:20,109 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/04. APRIL 2023/20230406.xlsx
+2024-10-23 16:28:04,666 [INFO] Tes koneksi berhasil!
+2024-10-23 16:31:41,959 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/04. APRIL 2023/20230406.xlsx
+2024-10-23 16:35:33,301 [INFO] Tes koneksi berhasil!
+2024-10-23 16:39:04,652 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/04. APRIL 2023/20230406.xlsx
+2024-10-23 16:40:15,628 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-23 16:57:43,961 [INFO] Tes koneksi berhasil!
+2024-10-23 16:57:43,962 [ERROR] Gagal membaca file Excel: [Errno 2] No such file or directory: 'D:/OneDrive/ASM/DATA/2023/04. APRIL 2023/20230406.xlsx'
+2024-10-23 16:58:21,373 [INFO] Tes koneksi berhasil!
+2024-10-23 17:02:02,394 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/20230406.xlsx
+2024-10-23 17:03:07,927 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-24 10:43:39,509 [INFO] Tes koneksi berhasil!
+2024-10-24 10:43:39,517 [ERROR] Gagal membaca file Excel: Missing optional dependency 'openpyxl'.  Use pip or conda to install openpyxl.
+2024-10-24 10:44:14,247 [INFO] Tes koneksi berhasil!
+2024-10-24 10:48:34,952 [ERROR] Gagal membaca file Excel: Usecols do not match columns, columns expected but not found: ['TglJt', 'TglTarik', 'TglBayar', 'Ovd', 'TglProses', 'SaldoPokok', 'PokokAwal', 'TglCair', 'AngKe'] (sheet: 0)
+2024-10-24 10:50:38,662 [INFO] Tes koneksi berhasil!
+2024-10-24 10:54:35,268 [ERROR] Gagal membaca file Excel: Usecols do not match columns, columns expected but not found: ['SaldoPokok', 'TglCair', 'TglJt', 'PokokAwal', 'TglTarik', 'AngKe', 'TglBayar', 'TglProses', 'Ovd'] (sheet: 0)
+2024-10-24 10:57:38,798 [INFO] Tes koneksi berhasil!
+2024-10-24 11:02:08,707 [ERROR] Gagal membaca file Excel: Usecols do not match columns, columns expected but not found: ['Ovd', 'TglTarik', 'TglBayar', 'AngKe', 'TglProses', 'PokokAwal', 'TglJt', 'SaldoPokok', 'TglCair'] (sheet: 0)
+2024-10-24 12:00:03,459 [INFO] Tes koneksi berhasil!
+2024-10-24 12:03:45,202 [ERROR] Gagal membaca file Excel: Usecols do not match columns, columns expected but not found: ['angsuran', 'angke', 'tgltarik', 'agreementno', 'productid', 'baname', 'tenor', 'statusasset', 'branchid', 'cmo', 'applicationpriority', 'customerid', 'tglbayar', 'tglcair', 'pokokawal', 'saldopokok', 'tglproses', 'maxovd', 'tgldo', 'model', 'tgljt', 'nama', 'profid', 'sourceapplication', 'posid', 'status', 'statuswo', 'ovd'] (sheet: 0)
+2024-10-24 13:23:50,226 [INFO] Tes koneksi berhasil!
+2024-10-24 13:27:42,941 [INFO] Kolom yang ada di file: ['BranchID', 'ApplicationID', 'AgreementNo', 'CustomerID', 'Nama', 'Alamat', 'Kecamatan', 'LegalCity', 'Alamat_kantor', 'Telp_Rumah', 'Telp_Kantor', 'Merek', 'Type', 'Model', 'Tenor', 'Ang_ke', 'POKOK_AWAL', 'AR_AWAL', 'SALDO_POKOK', 'SALDO_BUNGA', 'SALDO_PINJAM', 'OVD', 'DENDA', 'Dealer', 'Status', 'Tgl_jt', 'Angsuran', 'Tgl_Ktr', 'CMO', 'Tgl_Cair', 'ProductId', 'DownPayment', 'SISABAYAR', 'Thn_Motor', 'TOTALOTR', 'NoRangka', 'NoMesin', 'AttributeContent', 'EffectiveRate', 'FlatRate', 'UsedNew', 'NIL_ASS', 'NIL_ADM', 'APSUPPLIER', 'INSENTIF', 'RIFUND', 'ANGSURANTERTUNGAK', 'BANKFUNDINGJF', 'BANKFUNDINGTL', 'SISA_POKOKP', 'SALDO_BUNGAP', 'SALDO_PINJAMP', 'AnBPKB', 'StatusBPKB', 'NoBPKB', 'StatusWo', 'ContractPrepaidAmount', 'StatusAsset', 'Tgl_Tarik', 'Alamat_Tagih', 'Denda_Bayar', 'KodeBayar', 'Tgl_Bayar', 'Warna', 'Tgl_Sp', 'NoSpBPKB', 'OvdBPKB', 'Tgl_Lahir', 'KTP', 'NPWP', 'Tgl_Denda', 'DendaByrTerakhir', 'TglJual', 'TglDO', 'KelurahanLegalAdress', 'KecamatanLegalAdress', 'KodeposLegalAddress', 'KelurahanResidence', 'KecamatanResidence', 'KodeposResidence', 'NilBayarAkhir', 'MobilePhone', 'MailingAdress', 'MailingKecamatan', 'MailingKelurahan', 'MailingZipCode', 'LCInstallment', 'EmployeeID', 'MailingCity', 'Tgl_Proses', 'IsSyariah', 'marketing', 'SOmarketing', 'Surveyor', 'SOSurveyor', 'SourceApplication', 'CreditScoringResult', 'ApplicationPriority', 'surveyorid', 'Insurance', 'MainCoverage', 'PolicyNumber', 'legalRT', 'legalRW', 'MailingRT', 'MailingRW', 'YNQuestion', 'BirthPlace', 'MaxOvd', 'OtherFee', 'FirstInstallment', 'BAname', 'SupplierKtpID', 'ProfID', 'PenghasilanKons', 'LamaKerja', 'IndustriType', 'AgentCommision', 'AgentCommision2', 'ReleaseDate', 'RRDDate', 'POS_ID', 'ProductOfferingID', 'Profession']
+2024-10-24 13:27:42,941 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/04. APRIL 2023/20230405.xlsx
+2024-10-24 13:27:42,941 [INFO] Kolom di file Excel: ['BranchID', 'ApplicationID', 'AgreementNo', 'CustomerID', 'Nama', 'Alamat', 'Kecamatan', 'LegalCity', 'Alamat_kantor', 'Telp_Rumah', 'Telp_Kantor', 'Merek', 'Type', 'Model', 'Tenor', 'Ang_ke', 'POKOK_AWAL', 'AR_AWAL', 'SALDO_POKOK', 'SALDO_BUNGA', 'SALDO_PINJAM', 'OVD', 'DENDA', 'Dealer', 'Status', 'Tgl_jt', 'Angsuran', 'Tgl_Ktr', 'CMO', 'Tgl_Cair', 'ProductId', 'DownPayment', 'SISABAYAR', 'Thn_Motor', 'TOTALOTR', 'NoRangka', 'NoMesin', 'AttributeContent', 'EffectiveRate', 'FlatRate', 'UsedNew', 'NIL_ASS', 'NIL_ADM', 'APSUPPLIER', 'INSENTIF', 'RIFUND', 'ANGSURANTERTUNGAK', 'BANKFUNDINGJF', 'BANKFUNDINGTL', 'SISA_POKOKP', 'SALDO_BUNGAP', 'SALDO_PINJAMP', 'AnBPKB', 'StatusBPKB', 'NoBPKB', 'StatusWo', 'ContractPrepaidAmount', 'StatusAsset', 'Tgl_Tarik', 'Alamat_Tagih', 'Denda_Bayar', 'KodeBayar', 'Tgl_Bayar', 'Warna', 'Tgl_Sp', 'NoSpBPKB', 'OvdBPKB', 'Tgl_Lahir', 'KTP', 'NPWP', 'Tgl_Denda', 'DendaByrTerakhir', 'TglJual', 'TglDO', 'KelurahanLegalAdress', 'KecamatanLegalAdress', 'KodeposLegalAddress', 'KelurahanResidence', 'KecamatanResidence', 'KodeposResidence', 'NilBayarAkhir', 'MobilePhone', 'MailingAdress', 'MailingKecamatan', 'MailingKelurahan', 'MailingZipCode', 'LCInstallment', 'EmployeeID', 'MailingCity', 'Tgl_Proses', 'IsSyariah', 'marketing', 'SOmarketing', 'Surveyor', 'SOSurveyor', 'SourceApplication', 'CreditScoringResult', 'ApplicationPriority', 'surveyorid', 'Insurance', 'MainCoverage', 'PolicyNumber', 'legalRT', 'legalRW', 'MailingRT', 'MailingRW', 'YNQuestion', 'BirthPlace', 'MaxOvd', 'OtherFee', 'FirstInstallment', 'BAname', 'SupplierKtpID', 'ProfID', 'PenghasilanKons', 'LamaKerja', 'IndustriType', 'AgentCommision', 'AgentCommision2', 'ReleaseDate', 'RRDDate', 'POS_ID', 'ProductOfferingID', 'Profession']
+2024-10-24 13:27:42,942 [INFO] Kolom yang telah dinormalisasi: ['branchid', 'applicationid', 'agreementno', 'customerid', 'nama', 'alamat', 'kecamatan', 'legalcity', 'alamatkantor', 'telprumah', 'telpkantor', 'merek', 'type', 'model', 'tenor', 'angke', 'pokokawal', 'arawal', 'saldopokok', 'saldobunga', 'saldopinjam', 'ovd', 'denda', 'dealer', 'status', 'tgljt', 'angsuran', 'tglktr', 'cmo', 'tglcair', 'productid', 'downpayment', 'sisabayar', 'thnmotor', 'totalotr', 'norangka', 'nomesin', 'attributecontent', 'effectiverate', 'flatrate', 'usednew', 'nilass', 'niladm', 'apsupplier', 'insentif', 'rifund', 'angsurantertungak', 'bankfundingjf', 'bankfundingtl', 'sisapokokp', 'saldobungap', 'saldopinjamp', 'anbpkb', 'statusbpkb', 'nobpkb', 'statuswo', 'contractprepaidamount', 'statusasset', 'tgltarik', 'alamattagih', 'dendabayar', 'kodebayar', 'tglbayar', 'warna', 'tglsp', 'nospbpkb', 'ovdbpkb', 'tgllahir', 'ktp', 'npwp', 'tgldenda', 'dendabyrterakhir', 'tgljual', 'tgldo', 'kelurahanlegaladress', 'kecamatanlegaladress', 'kodeposlegaladdress', 'kelurahanresidence', 'kecamatanresidence', 'kodeposresidence', 'nilbayarakhir', 'mobilephone', 'mailingadress', 'mailingkecamatan', 'mailingkelurahan', 'mailingzipcode', 'lcinstallment', 'employeeid', 'mailingcity', 'tglproses', 'issyariah', 'marketing', 'somarketing', 'surveyor', 'sosurveyor', 'sourceapplication', 'creditscoringresult', 'applicationpriority', 'surveyorid', 'insurance', 'maincoverage', 'policynumber', 'legalrt', 'legalrw', 'mailingrt', 'mailingrw', 'ynquestion', 'birthplace', 'maxovd', 'otherfee', 'firstinstallment', 'baname', 'supplierktpid', 'profid', 'penghasilankons', 'lamakerja', 'industritype', 'agentcommision', 'agentcommision2', 'releasedate', 'rrddate', 'posid', 'productofferingid', 'profession']
+2024-10-24 13:27:42,946 [INFO] Kolom dinamis hasil pencocokan: {'branchid': 'BranchID', 'agreementno': 'AgreementNo', 'customerid': 'CustomerID', 'nama': 'Nama', 'model': 'Model', 'tenor': 'Tenor', 'angke': 'Ang_ke', 'pokokawal': 'Pokok_Awal', 'saldopokok': 'Saldo_Pokok', 'ovd': 'OVD', 'status': 'Status', 'tgljt': 'Tgl_Jt', 'tglcair': 'Tgl_Cair', 'productid': 'ProductId', 'statuswo': 'StatusWo', 'statusasset': 'StatusAsset', 'tgltarik': 'Tgl_Tarik', 'tglbayar': 'Tgl_Bayar', 'tgldo': 'TglDO', 'tglproses': 'Tgl_Proses', 'maxovd': 'Max_OVD', 'posid': 'POS_ID', 'applicationpriority': 'ApplicationPriority', 'baname': 'BAName', 'cmo': 'CMO', 'angsuran': 'Angsuran', 'profid': 'Profession', 'sourceapplication': 'SourceApplication'}
+2024-10-24 13:27:43,075 [INFO] DataFrame setelah filter dan rename kolom:
+   BranchID   AgreementNo  ...  Profession SourceApplication
+0       401  211120803892  ...  PEGAWAI SW                RO
+1       401  211120805550  ...  TNI                       RO
+2       401  211120900191  ...  Wiraswasta                RO
+3       401  211120900404  ...  Wiraswasta                RO
+4       401  211120900406  ...  PEGAWAI SW                RO
+
+[5 rows x 28 columns]
+2024-10-24 13:27:43,362 [INFO] DataFrame setelah menambahkan kolom periode dan drop baris kosong:
+    Periode  BranchID   AgreementNo  ...   Angsuran  Profession SourceApplication
+0  20230405       401  211120803892  ...        NaN  PEGAWAI SW                RO
+1  20230405       401  211120805550  ...  4168500.0  TNI                       RO
+2  20230405       401  211120900191  ...   741000.0  Wiraswasta                RO
+3  20230405       401  211120900404  ...   848500.0  Wiraswasta                RO
+4  20230405       401  211120900406  ...  1300000.0  PEGAWAI SW                RO
+
+[5 rows x 29 columns]
+2024-10-24 13:27:44,109 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime:
+    Periode  BranchID   AgreementNo  ...   Angsuran  Profession SourceApplication
+0  20230405       401  211120803892  ...        NaN  PEGAWAI SW                RO
+1  20230405       401  211120805550  ...  4168500.0  TNI                       RO
+2  20230405       401  211120900191  ...   741000.0  Wiraswasta                RO
+3  20230405       401  211120900404  ...   848500.0  Wiraswasta                RO
+4  20230405       401  211120900406  ...  1300000.0  PEGAWAI SW                RO
+
+[5 rows x 29 columns]
+2024-10-24 13:33:47,467 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-24 13:33:47,468 [INFO] Proses selesai, data berhasil disimpan ke database!
+2024-10-24 13:33:47,803 [INFO] Tes koneksi berhasil!
+2024-10-24 13:37:40,868 [INFO] Kolom yang ada di file: ['BranchID', 'ApplicationID', 'AgreementNo', 'CustomerID', 'Nama', 'Alamat', 'Kecamatan', 'LegalCity', 'Alamat_kantor', 'Telp_Rumah', 'Telp_Kantor', 'Merek', 'Type', 'Model', 'Tenor', 'Ang_ke', 'POKOK_AWAL', 'AR_AWAL', 'SALDO_POKOK', 'SALDO_BUNGA', 'SALDO_PINJAM', 'OVD', 'DENDA', 'Dealer', 'Status', 'Tgl_jt', 'Angsuran', 'Tgl_Ktr', 'CMO', 'Tgl_Cair', 'ProductId', 'DownPayment', 'SISABAYAR', 'Thn_Motor', 'TOTALOTR', 'NoRangka', 'NoMesin', 'AttributeContent', 'EffectiveRate', 'FlatRate', 'UsedNew', 'NIL_ASS', 'NIL_ADM', 'APSUPPLIER', 'INSENTIF', 'RIFUND', 'ANGSURANTERTUNGAK', 'BANKFUNDINGJF', 'BANKFUNDINGTL', 'SISA_POKOKP', 'SALDO_BUNGAP', 'SALDO_PINJAMP', 'AnBPKB', 'StatusBPKB', 'NoBPKB', 'StatusWo', 'ContractPrepaidAmount', 'StatusAsset', 'Tgl_Tarik', 'Alamat_Tagih', 'Denda_Bayar', 'KodeBayar', 'Tgl_Bayar', 'Warna', 'Tgl_Sp', 'NoSpBPKB', 'OvdBPKB', 'Tgl_Lahir', 'KTP', 'NPWP', 'Tgl_Denda', 'DendaByrTerakhir', 'TglJual', 'TglDO', 'KelurahanLegalAdress', 'KecamatanLegalAdress', 'KodeposLegalAddress', 'KelurahanResidence', 'KecamatanResidence', 'KodeposResidence', 'NilBayarAkhir', 'MobilePhone', 'MailingAdress', 'MailingKecamatan', 'MailingKelurahan', 'MailingZipCode', 'LCInstallment', 'EmployeeID', 'MailingCity', 'Tgl_Proses', 'IsSyariah', 'marketing', 'SOmarketing', 'Surveyor', 'SOSurveyor', 'SourceApplication', 'CreditScoringResult', 'ApplicationPriority', 'surveyorid', 'Insurance', 'MainCoverage', 'PolicyNumber', 'legalRT', 'legalRW', 'MailingRT', 'MailingRW', 'YNQuestion', 'BirthPlace', 'MaxOvd', 'OtherFee', 'FirstInstallment', 'BAname', 'SupplierKtpID', 'ProfID', 'PenghasilanKons', 'LamaKerja', 'IndustriType', 'AgentCommision', 'AgentCommision2', 'ReleaseDate', 'RRDDate', 'POS_ID', 'ProductOfferingID', 'Profession']
+2024-10-24 13:37:40,868 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/04. APRIL 2023/20230405.xlsx
+2024-10-24 13:37:40,869 [INFO] Kolom di file Excel: ['BranchID', 'ApplicationID', 'AgreementNo', 'CustomerID', 'Nama', 'Alamat', 'Kecamatan', 'LegalCity', 'Alamat_kantor', 'Telp_Rumah', 'Telp_Kantor', 'Merek', 'Type', 'Model', 'Tenor', 'Ang_ke', 'POKOK_AWAL', 'AR_AWAL', 'SALDO_POKOK', 'SALDO_BUNGA', 'SALDO_PINJAM', 'OVD', 'DENDA', 'Dealer', 'Status', 'Tgl_jt', 'Angsuran', 'Tgl_Ktr', 'CMO', 'Tgl_Cair', 'ProductId', 'DownPayment', 'SISABAYAR', 'Thn_Motor', 'TOTALOTR', 'NoRangka', 'NoMesin', 'AttributeContent', 'EffectiveRate', 'FlatRate', 'UsedNew', 'NIL_ASS', 'NIL_ADM', 'APSUPPLIER', 'INSENTIF', 'RIFUND', 'ANGSURANTERTUNGAK', 'BANKFUNDINGJF', 'BANKFUNDINGTL', 'SISA_POKOKP', 'SALDO_BUNGAP', 'SALDO_PINJAMP', 'AnBPKB', 'StatusBPKB', 'NoBPKB', 'StatusWo', 'ContractPrepaidAmount', 'StatusAsset', 'Tgl_Tarik', 'Alamat_Tagih', 'Denda_Bayar', 'KodeBayar', 'Tgl_Bayar', 'Warna', 'Tgl_Sp', 'NoSpBPKB', 'OvdBPKB', 'Tgl_Lahir', 'KTP', 'NPWP', 'Tgl_Denda', 'DendaByrTerakhir', 'TglJual', 'TglDO', 'KelurahanLegalAdress', 'KecamatanLegalAdress', 'KodeposLegalAddress', 'KelurahanResidence', 'KecamatanResidence', 'KodeposResidence', 'NilBayarAkhir', 'MobilePhone', 'MailingAdress', 'MailingKecamatan', 'MailingKelurahan', 'MailingZipCode', 'LCInstallment', 'EmployeeID', 'MailingCity', 'Tgl_Proses', 'IsSyariah', 'marketing', 'SOmarketing', 'Surveyor', 'SOSurveyor', 'SourceApplication', 'CreditScoringResult', 'ApplicationPriority', 'surveyorid', 'Insurance', 'MainCoverage', 'PolicyNumber', 'legalRT', 'legalRW', 'MailingRT', 'MailingRW', 'YNQuestion', 'BirthPlace', 'MaxOvd', 'OtherFee', 'FirstInstallment', 'BAname', 'SupplierKtpID', 'ProfID', 'PenghasilanKons', 'LamaKerja', 'IndustriType', 'AgentCommision', 'AgentCommision2', 'ReleaseDate', 'RRDDate', 'POS_ID', 'ProductOfferingID', 'Profession']
+2024-10-24 13:37:40,869 [INFO] Kolom yang telah dinormalisasi: ['branchid', 'applicationid', 'agreementno', 'customerid', 'nama', 'alamat', 'kecamatan', 'legalcity', 'alamatkantor', 'telprumah', 'telpkantor', 'merek', 'type', 'model', 'tenor', 'angke', 'pokokawal', 'arawal', 'saldopokok', 'saldobunga', 'saldopinjam', 'ovd', 'denda', 'dealer', 'status', 'tgljt', 'angsuran', 'tglktr', 'cmo', 'tglcair', 'productid', 'downpayment', 'sisabayar', 'thnmotor', 'totalotr', 'norangka', 'nomesin', 'attributecontent', 'effectiverate', 'flatrate', 'usednew', 'nilass', 'niladm', 'apsupplier', 'insentif', 'rifund', 'angsurantertungak', 'bankfundingjf', 'bankfundingtl', 'sisapokokp', 'saldobungap', 'saldopinjamp', 'anbpkb', 'statusbpkb', 'nobpkb', 'statuswo', 'contractprepaidamount', 'statusasset', 'tgltarik', 'alamattagih', 'dendabayar', 'kodebayar', 'tglbayar', 'warna', 'tglsp', 'nospbpkb', 'ovdbpkb', 'tgllahir', 'ktp', 'npwp', 'tgldenda', 'dendabyrterakhir', 'tgljual', 'tgldo', 'kelurahanlegaladress', 'kecamatanlegaladress', 'kodeposlegaladdress', 'kelurahanresidence', 'kecamatanresidence', 'kodeposresidence', 'nilbayarakhir', 'mobilephone', 'mailingadress', 'mailingkecamatan', 'mailingkelurahan', 'mailingzipcode', 'lcinstallment', 'employeeid', 'mailingcity', 'tglproses', 'issyariah', 'marketing', 'somarketing', 'surveyor', 'sosurveyor', 'sourceapplication', 'creditscoringresult', 'applicationpriority', 'surveyorid', 'insurance', 'maincoverage', 'policynumber', 'legalrt', 'legalrw', 'mailingrt', 'mailingrw', 'ynquestion', 'birthplace', 'maxovd', 'otherfee', 'firstinstallment', 'baname', 'supplierktpid', 'profid', 'penghasilankons', 'lamakerja', 'industritype', 'agentcommision', 'agentcommision2', 'releasedate', 'rrddate', 'posid', 'productofferingid', 'profession']
+2024-10-24 13:37:40,869 [INFO] Kolom dinamis hasil pencocokan: {'branchid': 'BranchID', 'agreementno': 'AgreementNo', 'customerid': 'CustomerID', 'nama': 'Nama', 'model': 'Model', 'tenor': 'Tenor', 'angke': 'Ang_ke', 'pokokawal': 'Pokok_Awal', 'saldopokok': 'Saldo_Pokok', 'ovd': 'OVD', 'status': 'Status', 'tgljt': 'Tgl_Jt', 'tglcair': 'Tgl_Cair', 'productid': 'ProductId', 'statuswo': 'StatusWo', 'statusasset': 'StatusAsset', 'tgltarik': 'Tgl_Tarik', 'tglbayar': 'Tgl_Bayar', 'tgldo': 'TglDO', 'tglproses': 'Tgl_Proses', 'maxovd': 'Max_OVD', 'posid': 'POS_ID', 'applicationpriority': 'ApplicationPriority', 'baname': 'BAName', 'cmo': 'CMO', 'angsuran': 'Angsuran', 'profid': 'Profession', 'sourceapplication': 'SourceApplication'}
+2024-10-24 13:37:41,228 [INFO] DataFrame setelah filter dan rename kolom:
+   BranchID   AgreementNo  ...  Profession SourceApplication
+0       401  211120803892  ...  PEGAWAI SW                RO
+1       401  211120805550  ...  TNI                       RO
+2       401  211120900191  ...  Wiraswasta                RO
+3       401  211120900404  ...  Wiraswasta                RO
+4       401  211120900406  ...  PEGAWAI SW                RO
+
+[5 rows x 28 columns]
+2024-10-24 13:37:41,509 [INFO] DataFrame setelah menambahkan kolom periode dan drop baris kosong:
+    Periode  BranchID   AgreementNo  ...   Angsuran  Profession SourceApplication
+0  20230405       401  211120803892  ...        NaN  PEGAWAI SW                RO
+1  20230405       401  211120805550  ...  4168500.0  TNI                       RO
+2  20230405       401  211120900191  ...   741000.0  Wiraswasta                RO
+3  20230405       401  211120900404  ...   848500.0  Wiraswasta                RO
+4  20230405       401  211120900406  ...  1300000.0  PEGAWAI SW                RO
+
+[5 rows x 29 columns]
+2024-10-24 13:37:42,174 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime:
+    Periode  BranchID   AgreementNo  ...   Angsuran  Profession SourceApplication
+0  20230405       401  211120803892  ...        NaN  PEGAWAI SW                RO
+1  20230405       401  211120805550  ...  4168500.0  TNI                       RO
+2  20230405       401  211120900191  ...   741000.0  Wiraswasta                RO
+3  20230405       401  211120900404  ...   848500.0  Wiraswasta                RO
+4  20230405       401  211120900406  ...  1300000.0  PEGAWAI SW                RO
+
+[5 rows x 29 columns]
+2024-10-24 13:39:33,174 [ERROR] Gagal menyimpan data ke SQL Server: Can't reconnect until invalid transaction is rolled back.  Please rollback() fully before proceeding (Background on this error at: https://sqlalche.me/e/20/8s2b)
+2024-10-24 13:42:18,197 [INFO] Tes koneksi berhasil!
+2024-10-24 13:45:55,940 [ERROR] Gagal membaca file Excel: Usecols do not match columns, columns expected but not found: ['saldopokok', 'applicationpriority', 'tenor', 'tglcair', 'status', 'tgltarik', 'baname', 'maxovd', 'cmo', 'profid', 'customerid', 'agreementno', 'productid', 'model', 'tgljt', 'posid', 'pokokawal', 'nama', 'statuswo', 'tglproses', 'statusasset', 'branchid', 'sourceapplication', 'angke', 'ovd', 'tgldo', 'angsuran', 'tglbayar'] (sheet: 0)
+2024-10-24 13:47:38,847 [INFO] Tes koneksi berhasil!
+2024-10-24 13:51:21,736 [ERROR] Gagal membaca file Excel: Usecols do not match columns, columns expected but not found: ['productid', 'nama', 'posid', 'tgldo', 'saldopokok', 'maxovd', 'tgljt', 'pokokawal', 'sourceapplication', 'cmo', 'customerid', 'tglcair', 'model', 'profid', 'agreementno', 'angsuran', 'ovd', 'tglproses', 'statuswo', 'status', 'tenor', 'tgltarik', 'branchid', 'statusasset', 'angke', 'tglbayar', 'baname', 'applicationpriority'] (sheet: 0)
+2024-10-24 13:58:06,536 [INFO] Tes koneksi berhasil!
+2024-10-24 14:01:49,278 [INFO] Kolom yang ada di file: ['BranchID', 'ApplicationID', 'AgreementNo', 'CustomerID', 'Nama', 'Alamat', 'Kecamatan', 'LegalCity', 'Alamat_kantor', 'Telp_Rumah', 'Telp_Kantor', 'Merek', 'Type', 'Model', 'Tenor', 'Ang_ke', 'POKOK_AWAL', 'AR_AWAL', 'SALDO_POKOK', 'SALDO_BUNGA', 'SALDO_PINJAM', 'OVD', 'DENDA', 'Dealer', 'Status', 'Tgl_jt', 'Angsuran', 'Tgl_Ktr', 'CMO', 'Tgl_Cair', 'ProductId', 'DownPayment', 'SISABAYAR', 'Thn_Motor', 'TOTALOTR', 'NoRangka', 'NoMesin', 'AttributeContent', 'EffectiveRate', 'FlatRate', 'UsedNew', 'NIL_ASS', 'NIL_ADM', 'APSUPPLIER', 'INSENTIF', 'RIFUND', 'ANGSURANTERTUNGAK', 'BANKFUNDINGJF', 'BANKFUNDINGTL', 'SISA_POKOKP', 'SALDO_BUNGAP', 'SALDO_PINJAMP', 'AnBPKB', 'StatusBPKB', 'NoBPKB', 'StatusWo', 'ContractPrepaidAmount', 'StatusAsset', 'Tgl_Tarik', 'Alamat_Tagih', 'Denda_Bayar', 'KodeBayar', 'Tgl_Bayar', 'Warna', 'Tgl_Sp', 'NoSpBPKB', 'OvdBPKB', 'Tgl_Lahir', 'KTP', 'NPWP', 'Tgl_Denda', 'DendaByrTerakhir', 'TglJual', 'TglDO', 'KelurahanLegalAdress', 'KecamatanLegalAdress', 'KodeposLegalAddress', 'KelurahanResidence', 'KecamatanResidence', 'KodeposResidence', 'NilBayarAkhir', 'MobilePhone', 'MailingAdress', 'MailingKecamatan', 'MailingKelurahan', 'MailingZipCode', 'LCInstallment', 'EmployeeID', 'MailingCity', 'Tgl_Proses', 'IsSyariah', 'marketing', 'SOmarketing', 'Surveyor', 'SOSurveyor', 'SourceApplication', 'CreditScoringResult', 'ApplicationPriority', 'surveyorid', 'Insurance', 'MainCoverage', 'PolicyNumber', 'legalRT', 'legalRW', 'MailingRT', 'MailingRW', 'YNQuestion', 'BirthPlace', 'MaxOvd', 'OtherFee', 'FirstInstallment', 'BAname', 'SupplierKtpID', 'ProfID', 'PenghasilanKons', 'LamaKerja', 'IndustriType', 'AgentCommision', 'AgentCommision2', 'ReleaseDate', 'RRDDate', 'POS_ID', 'ProductOfferingID', 'Profession']
+2024-10-24 14:01:49,280 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/04. APRIL 2023/20230405.xlsx
+2024-10-24 14:01:49,280 [INFO] Kolom di file Excel: ['BranchID', 'ApplicationID', 'AgreementNo', 'CustomerID', 'Nama', 'Alamat', 'Kecamatan', 'LegalCity', 'Alamat_kantor', 'Telp_Rumah', 'Telp_Kantor', 'Merek', 'Type', 'Model', 'Tenor', 'Ang_ke', 'POKOK_AWAL', 'AR_AWAL', 'SALDO_POKOK', 'SALDO_BUNGA', 'SALDO_PINJAM', 'OVD', 'DENDA', 'Dealer', 'Status', 'Tgl_jt', 'Angsuran', 'Tgl_Ktr', 'CMO', 'Tgl_Cair', 'ProductId', 'DownPayment', 'SISABAYAR', 'Thn_Motor', 'TOTALOTR', 'NoRangka', 'NoMesin', 'AttributeContent', 'EffectiveRate', 'FlatRate', 'UsedNew', 'NIL_ASS', 'NIL_ADM', 'APSUPPLIER', 'INSENTIF', 'RIFUND', 'ANGSURANTERTUNGAK', 'BANKFUNDINGJF', 'BANKFUNDINGTL', 'SISA_POKOKP', 'SALDO_BUNGAP', 'SALDO_PINJAMP', 'AnBPKB', 'StatusBPKB', 'NoBPKB', 'StatusWo', 'ContractPrepaidAmount', 'StatusAsset', 'Tgl_Tarik', 'Alamat_Tagih', 'Denda_Bayar', 'KodeBayar', 'Tgl_Bayar', 'Warna', 'Tgl_Sp', 'NoSpBPKB', 'OvdBPKB', 'Tgl_Lahir', 'KTP', 'NPWP', 'Tgl_Denda', 'DendaByrTerakhir', 'TglJual', 'TglDO', 'KelurahanLegalAdress', 'KecamatanLegalAdress', 'KodeposLegalAddress', 'KelurahanResidence', 'KecamatanResidence', 'KodeposResidence', 'NilBayarAkhir', 'MobilePhone', 'MailingAdress', 'MailingKecamatan', 'MailingKelurahan', 'MailingZipCode', 'LCInstallment', 'EmployeeID', 'MailingCity', 'Tgl_Proses', 'IsSyariah', 'marketing', 'SOmarketing', 'Surveyor', 'SOSurveyor', 'SourceApplication', 'CreditScoringResult', 'ApplicationPriority', 'surveyorid', 'Insurance', 'MainCoverage', 'PolicyNumber', 'legalRT', 'legalRW', 'MailingRT', 'MailingRW', 'YNQuestion', 'BirthPlace', 'MaxOvd', 'OtherFee', 'FirstInstallment', 'BAname', 'SupplierKtpID', 'ProfID', 'PenghasilanKons', 'LamaKerja', 'IndustriType', 'AgentCommision', 'AgentCommision2', 'ReleaseDate', 'RRDDate', 'POS_ID', 'ProductOfferingID', 'Profession']
+2024-10-24 14:01:49,280 [INFO] Kolom yang telah dinormalisasi: ['branchid', 'applicationid', 'agreementno', 'customerid', 'nama', 'alamat', 'kecamatan', 'legalcity', 'alamatkantor', 'telprumah', 'telpkantor', 'merek', 'type', 'model', 'tenor', 'angke', 'pokokawal', 'arawal', 'saldopokok', 'saldobunga', 'saldopinjam', 'ovd', 'denda', 'dealer', 'status', 'tgljt', 'angsuran', 'tglktr', 'cmo', 'tglcair', 'productid', 'downpayment', 'sisabayar', 'thnmotor', 'totalotr', 'norangka', 'nomesin', 'attributecontent', 'effectiverate', 'flatrate', 'usednew', 'nilass', 'niladm', 'apsupplier', 'insentif', 'rifund', 'angsurantertungak', 'bankfundingjf', 'bankfundingtl', 'sisapokokp', 'saldobungap', 'saldopinjamp', 'anbpkb', 'statusbpkb', 'nobpkb', 'statuswo', 'contractprepaidamount', 'statusasset', 'tgltarik', 'alamattagih', 'dendabayar', 'kodebayar', 'tglbayar', 'warna', 'tglsp', 'nospbpkb', 'ovdbpkb', 'tgllahir', 'ktp', 'npwp', 'tgldenda', 'dendabyrterakhir', 'tgljual', 'tgldo', 'kelurahanlegaladress', 'kecamatanlegaladress', 'kodeposlegaladdress', 'kelurahanresidence', 'kecamatanresidence', 'kodeposresidence', 'nilbayarakhir', 'mobilephone', 'mailingadress', 'mailingkecamatan', 'mailingkelurahan', 'mailingzipcode', 'lcinstallment', 'employeeid', 'mailingcity', 'tglproses', 'issyariah', 'marketing', 'somarketing', 'surveyor', 'sosurveyor', 'sourceapplication', 'creditscoringresult', 'applicationpriority', 'surveyorid', 'insurance', 'maincoverage', 'policynumber', 'legalrt', 'legalrw', 'mailingrt', 'mailingrw', 'ynquestion', 'birthplace', 'maxovd', 'otherfee', 'firstinstallment', 'baname', 'supplierktpid', 'profid', 'penghasilankons', 'lamakerja', 'industritype', 'agentcommision', 'agentcommision2', 'releasedate', 'rrddate', 'posid', 'productofferingid', 'profession']
+2024-10-24 14:01:49,280 [INFO] Kolom dinamis hasil pencocokan: {'branchid': 'BranchID', 'agreementno': 'AgreementNo', 'customerid': 'CustomerID', 'nama': 'Nama', 'model': 'Model', 'tenor': 'Tenor', 'angke': 'Ang_ke', 'pokokawal': 'Pokok_Awal', 'saldopokok': 'Saldo_Pokok', 'ovd': 'OVD', 'status': 'Status', 'tgljt': 'Tgl_Jt', 'tglcair': 'Tgl_Cair', 'productid': 'ProductId', 'statuswo': 'StatusWo', 'statusasset': 'StatusAsset', 'tgltarik': 'Tgl_Tarik', 'tglbayar': 'Tgl_Bayar', 'tgldo': 'TglDO', 'tglproses': 'Tgl_Proses', 'maxovd': 'Max_OVD', 'posid': 'POS_ID', 'applicationpriority': 'ApplicationPriority', 'baname': 'BAName', 'cmo': 'CMO', 'angsuran': 'Angsuran', 'profid': 'Profession', 'sourceapplication': 'SourceApplication'}
+2024-10-24 14:01:49,399 [INFO] DataFrame setelah filter dan rename kolom:
+   BranchID   AgreementNo  ...  Profession SourceApplication
+0       401  211120803892  ...  PEGAWAI SW                RO
+1       401  211120805550  ...  TNI                       RO
+2       401  211120900191  ...  Wiraswasta                RO
+3       401  211120900404  ...  Wiraswasta                RO
+4       401  211120900406  ...  PEGAWAI SW                RO
+
+[5 rows x 28 columns]
+2024-10-24 14:01:50,257 [INFO] DataFrame setelah menambahkan kolom periode dan drop baris kosong:
+    Periode  branchid  ... productofferingid      profession
+1  20230405       401  ...        MGRNEW                 TNI
+2  20230405       401  ...        MGRNEW          Wiraswasta
+3  20230405       401  ...        MGRNEW          Wiraswasta
+4  20230405       401  ...        MGRNEW      PEGAWAI SWASTA
+5  20230405       401  ...        MGRNEW      PEGAWAI SWASTA
+
+[5 rows x 125 columns]
+2024-10-24 14:03:41,243 [INFO] Tes koneksi berhasil!
+2024-10-24 14:07:22,641 [INFO] Kolom yang ada di file: ['BranchID', 'ApplicationID', 'AgreementNo', 'CustomerID', 'Nama', 'Alamat', 'Kecamatan', 'LegalCity', 'Alamat_kantor', 'Telp_Rumah', 'Telp_Kantor', 'Merek', 'Type', 'Model', 'Tenor', 'Ang_ke', 'POKOK_AWAL', 'AR_AWAL', 'SALDO_POKOK', 'SALDO_BUNGA', 'SALDO_PINJAM', 'OVD', 'DENDA', 'Dealer', 'Status', 'Tgl_jt', 'Angsuran', 'Tgl_Ktr', 'CMO', 'Tgl_Cair', 'ProductId', 'DownPayment', 'SISABAYAR', 'Thn_Motor', 'TOTALOTR', 'NoRangka', 'NoMesin', 'AttributeContent', 'EffectiveRate', 'FlatRate', 'UsedNew', 'NIL_ASS', 'NIL_ADM', 'APSUPPLIER', 'INSENTIF', 'RIFUND', 'ANGSURANTERTUNGAK', 'BANKFUNDINGJF', 'BANKFUNDINGTL', 'SISA_POKOKP', 'SALDO_BUNGAP', 'SALDO_PINJAMP', 'AnBPKB', 'StatusBPKB', 'NoBPKB', 'StatusWo', 'ContractPrepaidAmount', 'StatusAsset', 'Tgl_Tarik', 'Alamat_Tagih', 'Denda_Bayar', 'KodeBayar', 'Tgl_Bayar', 'Warna', 'Tgl_Sp', 'NoSpBPKB', 'OvdBPKB', 'Tgl_Lahir', 'KTP', 'NPWP', 'Tgl_Denda', 'DendaByrTerakhir', 'TglJual', 'TglDO', 'KelurahanLegalAdress', 'KecamatanLegalAdress', 'KodeposLegalAddress', 'KelurahanResidence', 'KecamatanResidence', 'KodeposResidence', 'NilBayarAkhir', 'MobilePhone', 'MailingAdress', 'MailingKecamatan', 'MailingKelurahan', 'MailingZipCode', 'LCInstallment', 'EmployeeID', 'MailingCity', 'Tgl_Proses', 'IsSyariah', 'marketing', 'SOmarketing', 'Surveyor', 'SOSurveyor', 'SourceApplication', 'CreditScoringResult', 'ApplicationPriority', 'surveyorid', 'Insurance', 'MainCoverage', 'PolicyNumber', 'legalRT', 'legalRW', 'MailingRT', 'MailingRW', 'YNQuestion', 'BirthPlace', 'MaxOvd', 'OtherFee', 'FirstInstallment', 'BAname', 'SupplierKtpID', 'ProfID', 'PenghasilanKons', 'LamaKerja', 'IndustriType', 'AgentCommision', 'AgentCommision2', 'ReleaseDate', 'RRDDate', 'POS_ID', 'ProductOfferingID', 'Profession']
+2024-10-24 14:07:22,641 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/04. APRIL 2023/20230405.xlsx
+2024-10-24 14:07:22,641 [INFO] Kolom di file Excel: ['BranchID', 'ApplicationID', 'AgreementNo', 'CustomerID', 'Nama', 'Alamat', 'Kecamatan', 'LegalCity', 'Alamat_kantor', 'Telp_Rumah', 'Telp_Kantor', 'Merek', 'Type', 'Model', 'Tenor', 'Ang_ke', 'POKOK_AWAL', 'AR_AWAL', 'SALDO_POKOK', 'SALDO_BUNGA', 'SALDO_PINJAM', 'OVD', 'DENDA', 'Dealer', 'Status', 'Tgl_jt', 'Angsuran', 'Tgl_Ktr', 'CMO', 'Tgl_Cair', 'ProductId', 'DownPayment', 'SISABAYAR', 'Thn_Motor', 'TOTALOTR', 'NoRangka', 'NoMesin', 'AttributeContent', 'EffectiveRate', 'FlatRate', 'UsedNew', 'NIL_ASS', 'NIL_ADM', 'APSUPPLIER', 'INSENTIF', 'RIFUND', 'ANGSURANTERTUNGAK', 'BANKFUNDINGJF', 'BANKFUNDINGTL', 'SISA_POKOKP', 'SALDO_BUNGAP', 'SALDO_PINJAMP', 'AnBPKB', 'StatusBPKB', 'NoBPKB', 'StatusWo', 'ContractPrepaidAmount', 'StatusAsset', 'Tgl_Tarik', 'Alamat_Tagih', 'Denda_Bayar', 'KodeBayar', 'Tgl_Bayar', 'Warna', 'Tgl_Sp', 'NoSpBPKB', 'OvdBPKB', 'Tgl_Lahir', 'KTP', 'NPWP', 'Tgl_Denda', 'DendaByrTerakhir', 'TglJual', 'TglDO', 'KelurahanLegalAdress', 'KecamatanLegalAdress', 'KodeposLegalAddress', 'KelurahanResidence', 'KecamatanResidence', 'KodeposResidence', 'NilBayarAkhir', 'MobilePhone', 'MailingAdress', 'MailingKecamatan', 'MailingKelurahan', 'MailingZipCode', 'LCInstallment', 'EmployeeID', 'MailingCity', 'Tgl_Proses', 'IsSyariah', 'marketing', 'SOmarketing', 'Surveyor', 'SOSurveyor', 'SourceApplication', 'CreditScoringResult', 'ApplicationPriority', 'surveyorid', 'Insurance', 'MainCoverage', 'PolicyNumber', 'legalRT', 'legalRW', 'MailingRT', 'MailingRW', 'YNQuestion', 'BirthPlace', 'MaxOvd', 'OtherFee', 'FirstInstallment', 'BAname', 'SupplierKtpID', 'ProfID', 'PenghasilanKons', 'LamaKerja', 'IndustriType', 'AgentCommision', 'AgentCommision2', 'ReleaseDate', 'RRDDate', 'POS_ID', 'ProductOfferingID', 'Profession']
+2024-10-24 14:07:22,642 [INFO] Kolom yang telah dinormalisasi: ['branchid', 'applicationid', 'agreementno', 'customerid', 'nama', 'alamat', 'kecamatan', 'legalcity', 'alamatkantor', 'telprumah', 'telpkantor', 'merek', 'type', 'model', 'tenor', 'angke', 'pokokawal', 'arawal', 'saldopokok', 'saldobunga', 'saldopinjam', 'ovd', 'denda', 'dealer', 'status', 'tgljt', 'angsuran', 'tglktr', 'cmo', 'tglcair', 'productid', 'downpayment', 'sisabayar', 'thnmotor', 'totalotr', 'norangka', 'nomesin', 'attributecontent', 'effectiverate', 'flatrate', 'usednew', 'nilass', 'niladm', 'apsupplier', 'insentif', 'rifund', 'angsurantertungak', 'bankfundingjf', 'bankfundingtl', 'sisapokokp', 'saldobungap', 'saldopinjamp', 'anbpkb', 'statusbpkb', 'nobpkb', 'statuswo', 'contractprepaidamount', 'statusasset', 'tgltarik', 'alamattagih', 'dendabayar', 'kodebayar', 'tglbayar', 'warna', 'tglsp', 'nospbpkb', 'ovdbpkb', 'tgllahir', 'ktp', 'npwp', 'tgldenda', 'dendabyrterakhir', 'tgljual', 'tgldo', 'kelurahanlegaladress', 'kecamatanlegaladress', 'kodeposlegaladdress', 'kelurahanresidence', 'kecamatanresidence', 'kodeposresidence', 'nilbayarakhir', 'mobilephone', 'mailingadress', 'mailingkecamatan', 'mailingkelurahan', 'mailingzipcode', 'lcinstallment', 'employeeid', 'mailingcity', 'tglproses', 'issyariah', 'marketing', 'somarketing', 'surveyor', 'sosurveyor', 'sourceapplication', 'creditscoringresult', 'applicationpriority', 'surveyorid', 'insurance', 'maincoverage', 'policynumber', 'legalrt', 'legalrw', 'mailingrt', 'mailingrw', 'ynquestion', 'birthplace', 'maxovd', 'otherfee', 'firstinstallment', 'baname', 'supplierktpid', 'profid', 'penghasilankons', 'lamakerja', 'industritype', 'agentcommision', 'agentcommision2', 'releasedate', 'rrddate', 'posid', 'productofferingid', 'profession']
+2024-10-24 14:07:22,646 [INFO] Kolom dinamis hasil pencocokan: {'branchid': 'BranchID', 'agreementno': 'AgreementNo', 'customerid': 'CustomerID', 'nama': 'Nama', 'model': 'Model', 'tenor': 'Tenor', 'angke': 'Ang_ke', 'pokokawal': 'Pokok_Awal', 'saldopokok': 'Saldo_Pokok', 'ovd': 'OVD', 'status': 'Status', 'tgljt': 'Tgl_Jt', 'tglcair': 'Tgl_Cair', 'productid': 'ProductId', 'statuswo': 'StatusWo', 'statusasset': 'StatusAsset', 'tgltarik': 'Tgl_Tarik', 'tglbayar': 'Tgl_Bayar', 'tgldo': 'TglDO', 'tglproses': 'Tgl_Proses', 'maxovd': 'Max_OVD', 'posid': 'POS_ID', 'applicationpriority': 'ApplicationPriority', 'baname': 'BAName', 'cmo': 'CMO', 'angsuran': 'Angsuran', 'profid': 'Profession', 'sourceapplication': 'SourceApplication'}
+2024-10-24 14:07:22,747 [INFO] DataFrame setelah filter dan rename kolom:
+   BranchID   AgreementNo  ...  Profession SourceApplication
+0       401  211120803892  ...  PEGAWAI SW                RO
+1       401  211120805550  ...  TNI                       RO
+2       401  211120900191  ...  Wiraswasta                RO
+3       401  211120900404  ...  Wiraswasta                RO
+4       401  211120900406  ...  PEGAWAI SW                RO
+
+[5 rows x 28 columns]
+2024-10-24 14:07:23,030 [INFO] DataFrame setelah menambahkan kolom periode dan drop baris kosong:
+    Periode  BranchID   AgreementNo  ...   Angsuran  Profession SourceApplication
+0  20230405       401  211120803892  ...        NaN  PEGAWAI SW                RO
+1  20230405       401  211120805550  ...  4168500.0  TNI                       RO
+2  20230405       401  211120900191  ...   741000.0  Wiraswasta                RO
+3  20230405       401  211120900404  ...   848500.0  Wiraswasta                RO
+4  20230405       401  211120900406  ...  1300000.0  PEGAWAI SW                RO
+
+[5 rows x 29 columns]
+2024-10-24 14:07:23,699 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime:
+    Periode  BranchID   AgreementNo  ...   Angsuran  Profession SourceApplication
+0  20230405       401  211120803892  ...        NaN  PEGAWAI SW                RO
+1  20230405       401  211120805550  ...  4168500.0  TNI                       RO
+2  20230405       401  211120900191  ...   741000.0  Wiraswasta                RO
+3  20230405       401  211120900404  ...   848500.0  Wiraswasta                RO
+4  20230405       401  211120900406  ...  1300000.0  PEGAWAI SW                RO
+
+[5 rows x 29 columns]
+2024-10-24 14:13:37,559 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-24 14:13:37,560 [INFO] Proses selesai, data berhasil disimpan ke database!
+2024-10-24 15:13:17,417 [INFO] Tes koneksi berhasil!
+2024-10-24 15:17:16,200 [INFO] Kolom yang ada di file: ['BranchID', 'ApplicationID', 'AgreementNo', 'CustomerID', 'Nama', 'Alamat', 'Kecamatan', 'LegalCity', 'Alamat_kantor', 'Telp_Rumah', 'Telp_Kantor', 'Merek', 'Type', 'Model', 'Tenor', 'Ang_ke', 'POKOK_AWAL', 'AR_AWAL', 'SALDO_POKOK', 'SALDO_BUNGA', 'SALDO_PINJAM', 'OVD', 'DENDA', 'Dealer', 'Status', 'Tgl_jt', 'Angsuran', 'Tgl_Ktr', 'CMO', 'Tgl_Cair', 'ProductId', 'DownPayment', 'SISABAYAR', 'Thn_Motor', 'TOTALOTR', 'NoRangka', 'NoMesin', 'AttributeContent', 'EffectiveRate', 'FlatRate', 'UsedNew', 'NIL_ASS', 'NIL_ADM', 'APSUPPLIER', 'INSENTIF', 'RIFUND', 'ANGSURANTERTUNGAK', 'BANKFUNDINGJF', 'BANKFUNDINGTL', 'SISA_POKOKP', 'SALDO_BUNGAP', 'SALDO_PINJAMP', 'AnBPKB', 'StatusBPKB', 'NoBPKB', 'StatusWo', 'ContractPrepaidAmount', 'StatusAsset', 'Tgl_Tarik', 'Alamat_Tagih', 'Denda_Bayar', 'KodeBayar', 'Tgl_Bayar', 'Warna', 'Tgl_Sp', 'NoSpBPKB', 'OvdBPKB', 'Tgl_Lahir', 'KTP', 'NPWP', 'Tgl_Denda', 'DendaByrTerakhir', 'TglJual', 'TglDO', 'KelurahanLegalAdress', 'KecamatanLegalAdress', 'KodeposLegalAddress', 'KelurahanResidence', 'KecamatanResidence', 'KodeposResidence', 'NilBayarAkhir', 'MobilePhone', 'MailingAdress', 'MailingKecamatan', 'MailingKelurahan', 'MailingZipCode', 'LCInstallment', 'EmployeeID', 'MailingCity', 'Tgl_Proses', 'IsSyariah', 'marketing', 'SOmarketing', 'Surveyor', 'SOSurveyor', 'SourceApplication', 'CreditScoringResult', 'ApplicationPriority', 'surveyorid', 'Insurance', 'MainCoverage', 'PolicyNumber', 'legalRT', 'legalRW', 'MailingRT', 'MailingRW', 'YNQuestion', 'BirthPlace', 'MaxOvd', 'OtherFee', 'FirstInstallment', 'BAname', 'SupplierKtpID', 'ProfID', 'PenghasilanKons', 'LamaKerja', 'IndustriType', 'AgentCommision', 'AgentCommision2', 'ReleaseDate', 'RRDDate', 'POS_ID', 'ProductOfferingID', 'Profession']
+2024-10-24 15:17:16,200 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/04. APRIL 2023/20230405.xlsx
+2024-10-24 15:17:16,201 [INFO] Kolom di file Excel: ['BranchID', 'ApplicationID', 'AgreementNo', 'CustomerID', 'Nama', 'Alamat', 'Kecamatan', 'LegalCity', 'Alamat_kantor', 'Telp_Rumah', 'Telp_Kantor', 'Merek', 'Type', 'Model', 'Tenor', 'Ang_ke', 'POKOK_AWAL', 'AR_AWAL', 'SALDO_POKOK', 'SALDO_BUNGA', 'SALDO_PINJAM', 'OVD', 'DENDA', 'Dealer', 'Status', 'Tgl_jt', 'Angsuran', 'Tgl_Ktr', 'CMO', 'Tgl_Cair', 'ProductId', 'DownPayment', 'SISABAYAR', 'Thn_Motor', 'TOTALOTR', 'NoRangka', 'NoMesin', 'AttributeContent', 'EffectiveRate', 'FlatRate', 'UsedNew', 'NIL_ASS', 'NIL_ADM', 'APSUPPLIER', 'INSENTIF', 'RIFUND', 'ANGSURANTERTUNGAK', 'BANKFUNDINGJF', 'BANKFUNDINGTL', 'SISA_POKOKP', 'SALDO_BUNGAP', 'SALDO_PINJAMP', 'AnBPKB', 'StatusBPKB', 'NoBPKB', 'StatusWo', 'ContractPrepaidAmount', 'StatusAsset', 'Tgl_Tarik', 'Alamat_Tagih', 'Denda_Bayar', 'KodeBayar', 'Tgl_Bayar', 'Warna', 'Tgl_Sp', 'NoSpBPKB', 'OvdBPKB', 'Tgl_Lahir', 'KTP', 'NPWP', 'Tgl_Denda', 'DendaByrTerakhir', 'TglJual', 'TglDO', 'KelurahanLegalAdress', 'KecamatanLegalAdress', 'KodeposLegalAddress', 'KelurahanResidence', 'KecamatanResidence', 'KodeposResidence', 'NilBayarAkhir', 'MobilePhone', 'MailingAdress', 'MailingKecamatan', 'MailingKelurahan', 'MailingZipCode', 'LCInstallment', 'EmployeeID', 'MailingCity', 'Tgl_Proses', 'IsSyariah', 'marketing', 'SOmarketing', 'Surveyor', 'SOSurveyor', 'SourceApplication', 'CreditScoringResult', 'ApplicationPriority', 'surveyorid', 'Insurance', 'MainCoverage', 'PolicyNumber', 'legalRT', 'legalRW', 'MailingRT', 'MailingRW', 'YNQuestion', 'BirthPlace', 'MaxOvd', 'OtherFee', 'FirstInstallment', 'BAname', 'SupplierKtpID', 'ProfID', 'PenghasilanKons', 'LamaKerja', 'IndustriType', 'AgentCommision', 'AgentCommision2', 'ReleaseDate', 'RRDDate', 'POS_ID', 'ProductOfferingID', 'Profession']
+2024-10-24 15:17:16,201 [INFO] Kolom yang telah dinormalisasi: ['branchid', 'applicationid', 'agreementno', 'customerid', 'nama', 'alamat', 'kecamatan', 'legalcity', 'alamatkantor', 'telprumah', 'telpkantor', 'merek', 'type', 'model', 'tenor', 'angke', 'pokokawal', 'arawal', 'saldopokok', 'saldobunga', 'saldopinjam', 'ovd', 'denda', 'dealer', 'status', 'tgljt', 'angsuran', 'tglktr', 'cmo', 'tglcair', 'productid', 'downpayment', 'sisabayar', 'thnmotor', 'totalotr', 'norangka', 'nomesin', 'attributecontent', 'effectiverate', 'flatrate', 'usednew', 'nilass', 'niladm', 'apsupplier', 'insentif', 'rifund', 'angsurantertungak', 'bankfundingjf', 'bankfundingtl', 'sisapokokp', 'saldobungap', 'saldopinjamp', 'anbpkb', 'statusbpkb', 'nobpkb', 'statuswo', 'contractprepaidamount', 'statusasset', 'tgltarik', 'alamattagih', 'dendabayar', 'kodebayar', 'tglbayar', 'warna', 'tglsp', 'nospbpkb', 'ovdbpkb', 'tgllahir', 'ktp', 'npwp', 'tgldenda', 'dendabyrterakhir', 'tgljual', 'tgldo', 'kelurahanlegaladress', 'kecamatanlegaladress', 'kodeposlegaladdress', 'kelurahanresidence', 'kecamatanresidence', 'kodeposresidence', 'nilbayarakhir', 'mobilephone', 'mailingadress', 'mailingkecamatan', 'mailingkelurahan', 'mailingzipcode', 'lcinstallment', 'employeeid', 'mailingcity', 'tglproses', 'issyariah', 'marketing', 'somarketing', 'surveyor', 'sosurveyor', 'sourceapplication', 'creditscoringresult', 'applicationpriority', 'surveyorid', 'insurance', 'maincoverage', 'policynumber', 'legalrt', 'legalrw', 'mailingrt', 'mailingrw', 'ynquestion', 'birthplace', 'maxovd', 'otherfee', 'firstinstallment', 'baname', 'supplierktpid', 'profid', 'penghasilankons', 'lamakerja', 'industritype', 'agentcommision', 'agentcommision2', 'releasedate', 'rrddate', 'posid', 'productofferingid', 'profession']
+2024-10-24 15:17:16,202 [INFO] Kolom dinamis hasil pencocokan: {'branchid': 'BranchID', 'agreementno': 'AgreementNo', 'customerid': 'CustomerID', 'nama': 'Nama', 'model': 'Model', 'tenor': 'Tenor', 'angke': 'Ang_ke', 'pokokawal': 'Pokok_Awal', 'saldopokok': 'Saldo_Pokok', 'ovd': 'OVD', 'status': 'Status', 'tgljt': 'Tgl_Jt', 'tglcair': 'Tgl_Cair', 'productid': 'ProductId', 'statuswo': 'StatusWo', 'statusasset': 'StatusAsset', 'tgltarik': 'Tgl_Tarik', 'tglbayar': 'Tgl_Bayar', 'tgldo': 'TglDO', 'tglproses': 'Tgl_Proses', 'maxovd': 'Max_OVD', 'posid': 'POS_ID', 'applicationpriority': 'ApplicationPriority', 'baname': 'BAName', 'cmo': 'CMO', 'angsuran': 'Angsuran', 'profid': 'Profession', 'sourceapplication': 'SourceApplication'}
+2024-10-24 15:17:16,350 [INFO] DataFrame setelah filter dan rename kolom:
+   BranchID   AgreementNo  ...  Profession SourceApplication
+0       401  211120803892  ...  PEGAWAI SW                RO
+1       401  211120805550  ...  TNI                       RO
+2       401  211120900191  ...  Wiraswasta                RO
+3       401  211120900404  ...  Wiraswasta                RO
+4       401  211120900406  ...  PEGAWAI SW                RO
+
+[5 rows x 28 columns]
+2024-10-24 15:29:55,569 [INFO] Tes koneksi berhasil!
+2024-10-24 15:33:44,089 [INFO] Kolom yang ada di file: ['BranchID', 'ApplicationID', 'AgreementNo', 'CustomerID', 'Nama', 'Alamat', 'Kecamatan', 'LegalCity', 'Alamat_kantor', 'Telp_Rumah', 'Telp_Kantor', 'Merek', 'Type', 'Model', 'Tenor', 'Ang_ke', 'POKOK_AWAL', 'AR_AWAL', 'SALDO_POKOK', 'SALDO_BUNGA', 'SALDO_PINJAM', 'OVD', 'DENDA', 'Dealer', 'Status', 'Tgl_jt', 'Angsuran', 'Tgl_Ktr', 'CMO', 'Tgl_Cair', 'ProductId', 'DownPayment', 'SISABAYAR', 'Thn_Motor', 'TOTALOTR', 'NoRangka', 'NoMesin', 'AttributeContent', 'EffectiveRate', 'FlatRate', 'UsedNew', 'NIL_ASS', 'NIL_ADM', 'APSUPPLIER', 'INSENTIF', 'RIFUND', 'ANGSURANTERTUNGAK', 'BANKFUNDINGJF', 'BANKFUNDINGTL', 'SISA_POKOKP', 'SALDO_BUNGAP', 'SALDO_PINJAMP', 'AnBPKB', 'StatusBPKB', 'NoBPKB', 'StatusWo', 'ContractPrepaidAmount', 'StatusAsset', 'Tgl_Tarik', 'Alamat_Tagih', 'Denda_Bayar', 'KodeBayar', 'Tgl_Bayar', 'Warna', 'Tgl_Sp', 'NoSpBPKB', 'OvdBPKB', 'Tgl_Lahir', 'KTP', 'NPWP', 'Tgl_Denda', 'DendaByrTerakhir', 'TglJual', 'TglDO', 'KelurahanLegalAdress', 'KecamatanLegalAdress', 'KodeposLegalAddress', 'KelurahanResidence', 'KecamatanResidence', 'KodeposResidence', 'NilBayarAkhir', 'MobilePhone', 'MailingAdress', 'MailingKecamatan', 'MailingKelurahan', 'MailingZipCode', 'LCInstallment', 'EmployeeID', 'MailingCity', 'Tgl_Proses', 'IsSyariah', 'marketing', 'SOmarketing', 'Surveyor', 'SOSurveyor', 'SourceApplication', 'CreditScoringResult', 'ApplicationPriority', 'surveyorid', 'Insurance', 'MainCoverage', 'PolicyNumber', 'legalRT', 'legalRW', 'MailingRT', 'MailingRW', 'YNQuestion', 'BirthPlace', 'MaxOvd', 'OtherFee', 'FirstInstallment', 'BAname', 'SupplierKtpID', 'ProfID', 'PenghasilanKons', 'LamaKerja', 'IndustriType', 'AgentCommision', 'AgentCommision2', 'ReleaseDate', 'RRDDate', 'POS_ID', 'ProductOfferingID', 'Profession']
+2024-10-24 15:33:44,089 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/04. APRIL 2023/20230405.xlsx
+2024-10-24 15:33:44,089 [INFO] Kolom di file Excel: ['BranchID', 'ApplicationID', 'AgreementNo', 'CustomerID', 'Nama', 'Alamat', 'Kecamatan', 'LegalCity', 'Alamat_kantor', 'Telp_Rumah', 'Telp_Kantor', 'Merek', 'Type', 'Model', 'Tenor', 'Ang_ke', 'POKOK_AWAL', 'AR_AWAL', 'SALDO_POKOK', 'SALDO_BUNGA', 'SALDO_PINJAM', 'OVD', 'DENDA', 'Dealer', 'Status', 'Tgl_jt', 'Angsuran', 'Tgl_Ktr', 'CMO', 'Tgl_Cair', 'ProductId', 'DownPayment', 'SISABAYAR', 'Thn_Motor', 'TOTALOTR', 'NoRangka', 'NoMesin', 'AttributeContent', 'EffectiveRate', 'FlatRate', 'UsedNew', 'NIL_ASS', 'NIL_ADM', 'APSUPPLIER', 'INSENTIF', 'RIFUND', 'ANGSURANTERTUNGAK', 'BANKFUNDINGJF', 'BANKFUNDINGTL', 'SISA_POKOKP', 'SALDO_BUNGAP', 'SALDO_PINJAMP', 'AnBPKB', 'StatusBPKB', 'NoBPKB', 'StatusWo', 'ContractPrepaidAmount', 'StatusAsset', 'Tgl_Tarik', 'Alamat_Tagih', 'Denda_Bayar', 'KodeBayar', 'Tgl_Bayar', 'Warna', 'Tgl_Sp', 'NoSpBPKB', 'OvdBPKB', 'Tgl_Lahir', 'KTP', 'NPWP', 'Tgl_Denda', 'DendaByrTerakhir', 'TglJual', 'TglDO', 'KelurahanLegalAdress', 'KecamatanLegalAdress', 'KodeposLegalAddress', 'KelurahanResidence', 'KecamatanResidence', 'KodeposResidence', 'NilBayarAkhir', 'MobilePhone', 'MailingAdress', 'MailingKecamatan', 'MailingKelurahan', 'MailingZipCode', 'LCInstallment', 'EmployeeID', 'MailingCity', 'Tgl_Proses', 'IsSyariah', 'marketing', 'SOmarketing', 'Surveyor', 'SOSurveyor', 'SourceApplication', 'CreditScoringResult', 'ApplicationPriority', 'surveyorid', 'Insurance', 'MainCoverage', 'PolicyNumber', 'legalRT', 'legalRW', 'MailingRT', 'MailingRW', 'YNQuestion', 'BirthPlace', 'MaxOvd', 'OtherFee', 'FirstInstallment', 'BAname', 'SupplierKtpID', 'ProfID', 'PenghasilanKons', 'LamaKerja', 'IndustriType', 'AgentCommision', 'AgentCommision2', 'ReleaseDate', 'RRDDate', 'POS_ID', 'ProductOfferingID', 'Profession']
+2024-10-24 15:33:44,089 [INFO] Kolom yang telah dinormalisasi: ['branchid', 'applicationid', 'agreementno', 'customerid', 'nama', 'alamat', 'kecamatan', 'legalcity', 'alamatkantor', 'telprumah', 'telpkantor', 'merek', 'type', 'model', 'tenor', 'angke', 'pokokawal', 'arawal', 'saldopokok', 'saldobunga', 'saldopinjam', 'ovd', 'denda', 'dealer', 'status', 'tgljt', 'angsuran', 'tglktr', 'cmo', 'tglcair', 'productid', 'downpayment', 'sisabayar', 'thnmotor', 'totalotr', 'norangka', 'nomesin', 'attributecontent', 'effectiverate', 'flatrate', 'usednew', 'nilass', 'niladm', 'apsupplier', 'insentif', 'rifund', 'angsurantertungak', 'bankfundingjf', 'bankfundingtl', 'sisapokokp', 'saldobungap', 'saldopinjamp', 'anbpkb', 'statusbpkb', 'nobpkb', 'statuswo', 'contractprepaidamount', 'statusasset', 'tgltarik', 'alamattagih', 'dendabayar', 'kodebayar', 'tglbayar', 'warna', 'tglsp', 'nospbpkb', 'ovdbpkb', 'tgllahir', 'ktp', 'npwp', 'tgldenda', 'dendabyrterakhir', 'tgljual', 'tgldo', 'kelurahanlegaladress', 'kecamatanlegaladress', 'kodeposlegaladdress', 'kelurahanresidence', 'kecamatanresidence', 'kodeposresidence', 'nilbayarakhir', 'mobilephone', 'mailingadress', 'mailingkecamatan', 'mailingkelurahan', 'mailingzipcode', 'lcinstallment', 'employeeid', 'mailingcity', 'tglproses', 'issyariah', 'marketing', 'somarketing', 'surveyor', 'sosurveyor', 'sourceapplication', 'creditscoringresult', 'applicationpriority', 'surveyorid', 'insurance', 'maincoverage', 'policynumber', 'legalrt', 'legalrw', 'mailingrt', 'mailingrw', 'ynquestion', 'birthplace', 'maxovd', 'otherfee', 'firstinstallment', 'baname', 'supplierktpid', 'profid', 'penghasilankons', 'lamakerja', 'industritype', 'agentcommision', 'agentcommision2', 'releasedate', 'rrddate', 'posid', 'productofferingid', 'profession']
+2024-10-24 15:33:44,094 [INFO] Kolom dinamis hasil pencocokan: {'branchid': 'BranchID', 'agreementno': 'AgreementNo', 'customerid': 'CustomerID', 'nama': 'Nama', 'model': 'Model', 'tenor': 'Tenor', 'angke': 'Ang_ke', 'pokokawal': 'Pokok_Awal', 'saldopokok': 'Saldo_Pokok', 'ovd': 'OVD', 'status': 'Status', 'tgljt': 'Tgl_Jt', 'tglcair': 'Tgl_Cair', 'productid': 'ProductId', 'statuswo': 'StatusWo', 'statusasset': 'StatusAsset', 'tgltarik': 'Tgl_Tarik', 'tglbayar': 'Tgl_Bayar', 'tgldo': 'TglDO', 'tglproses': 'Tgl_Proses', 'maxovd': 'Max_OVD', 'posid': 'POS_ID', 'applicationpriority': 'ApplicationPriority', 'baname': 'BAName', 'cmo': 'CMO', 'angsuran': 'Angsuran', 'profid': 'Profession', 'sourceapplication': 'SourceApplication'}
+2024-10-24 15:35:21,304 [INFO] Tes koneksi berhasil!
+2024-10-24 15:39:06,042 [INFO] Kolom yang ada di file: ['BranchID', 'ApplicationID', 'AgreementNo', 'CustomerID', 'Nama', 'Alamat', 'Kecamatan', 'LegalCity', 'Alamat_kantor', 'Telp_Rumah', 'Telp_Kantor', 'Merek', 'Type', 'Model', 'Tenor', 'Ang_ke', 'POKOK_AWAL', 'AR_AWAL', 'SALDO_POKOK', 'SALDO_BUNGA', 'SALDO_PINJAM', 'OVD', 'DENDA', 'Dealer', 'Status', 'Tgl_jt', 'Angsuran', 'Tgl_Ktr', 'CMO', 'Tgl_Cair', 'ProductId', 'DownPayment', 'SISABAYAR', 'Thn_Motor', 'TOTALOTR', 'NoRangka', 'NoMesin', 'AttributeContent', 'EffectiveRate', 'FlatRate', 'UsedNew', 'NIL_ASS', 'NIL_ADM', 'APSUPPLIER', 'INSENTIF', 'RIFUND', 'ANGSURANTERTUNGAK', 'BANKFUNDINGJF', 'BANKFUNDINGTL', 'SISA_POKOKP', 'SALDO_BUNGAP', 'SALDO_PINJAMP', 'AnBPKB', 'StatusBPKB', 'NoBPKB', 'StatusWo', 'ContractPrepaidAmount', 'StatusAsset', 'Tgl_Tarik', 'Alamat_Tagih', 'Denda_Bayar', 'KodeBayar', 'Tgl_Bayar', 'Warna', 'Tgl_Sp', 'NoSpBPKB', 'OvdBPKB', 'Tgl_Lahir', 'KTP', 'NPWP', 'Tgl_Denda', 'DendaByrTerakhir', 'TglJual', 'TglDO', 'KelurahanLegalAdress', 'KecamatanLegalAdress', 'KodeposLegalAddress', 'KelurahanResidence', 'KecamatanResidence', 'KodeposResidence', 'NilBayarAkhir', 'MobilePhone', 'MailingAdress', 'MailingKecamatan', 'MailingKelurahan', 'MailingZipCode', 'LCInstallment', 'EmployeeID', 'MailingCity', 'Tgl_Proses', 'IsSyariah', 'marketing', 'SOmarketing', 'Surveyor', 'SOSurveyor', 'SourceApplication', 'CreditScoringResult', 'ApplicationPriority', 'surveyorid', 'Insurance', 'MainCoverage', 'PolicyNumber', 'legalRT', 'legalRW', 'MailingRT', 'MailingRW', 'YNQuestion', 'BirthPlace', 'MaxOvd', 'OtherFee', 'FirstInstallment', 'BAname', 'SupplierKtpID', 'ProfID', 'PenghasilanKons', 'LamaKerja', 'IndustriType', 'AgentCommision', 'AgentCommision2', 'ReleaseDate', 'RRDDate', 'POS_ID', 'ProductOfferingID', 'Profession']
+2024-10-24 15:39:06,042 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/04. APRIL 2023/20230405.xlsx
+2024-10-24 15:39:06,042 [INFO] Kolom di file Excel: ['BranchID', 'ApplicationID', 'AgreementNo', 'CustomerID', 'Nama', 'Alamat', 'Kecamatan', 'LegalCity', 'Alamat_kantor', 'Telp_Rumah', 'Telp_Kantor', 'Merek', 'Type', 'Model', 'Tenor', 'Ang_ke', 'POKOK_AWAL', 'AR_AWAL', 'SALDO_POKOK', 'SALDO_BUNGA', 'SALDO_PINJAM', 'OVD', 'DENDA', 'Dealer', 'Status', 'Tgl_jt', 'Angsuran', 'Tgl_Ktr', 'CMO', 'Tgl_Cair', 'ProductId', 'DownPayment', 'SISABAYAR', 'Thn_Motor', 'TOTALOTR', 'NoRangka', 'NoMesin', 'AttributeContent', 'EffectiveRate', 'FlatRate', 'UsedNew', 'NIL_ASS', 'NIL_ADM', 'APSUPPLIER', 'INSENTIF', 'RIFUND', 'ANGSURANTERTUNGAK', 'BANKFUNDINGJF', 'BANKFUNDINGTL', 'SISA_POKOKP', 'SALDO_BUNGAP', 'SALDO_PINJAMP', 'AnBPKB', 'StatusBPKB', 'NoBPKB', 'StatusWo', 'ContractPrepaidAmount', 'StatusAsset', 'Tgl_Tarik', 'Alamat_Tagih', 'Denda_Bayar', 'KodeBayar', 'Tgl_Bayar', 'Warna', 'Tgl_Sp', 'NoSpBPKB', 'OvdBPKB', 'Tgl_Lahir', 'KTP', 'NPWP', 'Tgl_Denda', 'DendaByrTerakhir', 'TglJual', 'TglDO', 'KelurahanLegalAdress', 'KecamatanLegalAdress', 'KodeposLegalAddress', 'KelurahanResidence', 'KecamatanResidence', 'KodeposResidence', 'NilBayarAkhir', 'MobilePhone', 'MailingAdress', 'MailingKecamatan', 'MailingKelurahan', 'MailingZipCode', 'LCInstallment', 'EmployeeID', 'MailingCity', 'Tgl_Proses', 'IsSyariah', 'marketing', 'SOmarketing', 'Surveyor', 'SOSurveyor', 'SourceApplication', 'CreditScoringResult', 'ApplicationPriority', 'surveyorid', 'Insurance', 'MainCoverage', 'PolicyNumber', 'legalRT', 'legalRW', 'MailingRT', 'MailingRW', 'YNQuestion', 'BirthPlace', 'MaxOvd', 'OtherFee', 'FirstInstallment', 'BAname', 'SupplierKtpID', 'ProfID', 'PenghasilanKons', 'LamaKerja', 'IndustriType', 'AgentCommision', 'AgentCommision2', 'ReleaseDate', 'RRDDate', 'POS_ID', 'ProductOfferingID', 'Profession']
+2024-10-24 15:39:06,043 [INFO] Kolom yang telah dinormalisasi: ['branchid', 'applicationid', 'agreementno', 'customerid', 'nama', 'alamat', 'kecamatan', 'legalcity', 'alamatkantor', 'telprumah', 'telpkantor', 'merek', 'type', 'model', 'tenor', 'angke', 'pokokawal', 'arawal', 'saldopokok', 'saldobunga', 'saldopinjam', 'ovd', 'denda', 'dealer', 'status', 'tgljt', 'angsuran', 'tglktr', 'cmo', 'tglcair', 'productid', 'downpayment', 'sisabayar', 'thnmotor', 'totalotr', 'norangka', 'nomesin', 'attributecontent', 'effectiverate', 'flatrate', 'usednew', 'nilass', 'niladm', 'apsupplier', 'insentif', 'rifund', 'angsurantertungak', 'bankfundingjf', 'bankfundingtl', 'sisapokokp', 'saldobungap', 'saldopinjamp', 'anbpkb', 'statusbpkb', 'nobpkb', 'statuswo', 'contractprepaidamount', 'statusasset', 'tgltarik', 'alamattagih', 'dendabayar', 'kodebayar', 'tglbayar', 'warna', 'tglsp', 'nospbpkb', 'ovdbpkb', 'tgllahir', 'ktp', 'npwp', 'tgldenda', 'dendabyrterakhir', 'tgljual', 'tgldo', 'kelurahanlegaladress', 'kecamatanlegaladress', 'kodeposlegaladdress', 'kelurahanresidence', 'kecamatanresidence', 'kodeposresidence', 'nilbayarakhir', 'mobilephone', 'mailingadress', 'mailingkecamatan', 'mailingkelurahan', 'mailingzipcode', 'lcinstallment', 'employeeid', 'mailingcity', 'tglproses', 'issyariah', 'marketing', 'somarketing', 'surveyor', 'sosurveyor', 'sourceapplication', 'creditscoringresult', 'applicationpriority', 'surveyorid', 'insurance', 'maincoverage', 'policynumber', 'legalrt', 'legalrw', 'mailingrt', 'mailingrw', 'ynquestion', 'birthplace', 'maxovd', 'otherfee', 'firstinstallment', 'baname', 'supplierktpid', 'profid', 'penghasilankons', 'lamakerja', 'industritype', 'agentcommision', 'agentcommision2', 'releasedate', 'rrddate', 'posid', 'productofferingid', 'profession']
+2024-10-24 15:39:06,046 [INFO] Kolom dinamis hasil pencocokan: {'branchid': 'BranchID', 'agreementno': 'AgreementNo', 'customerid': 'CustomerID', 'nama': 'Nama', 'model': 'Model', 'tenor': 'Tenor', 'angke': 'Ang_ke', 'pokokawal': 'Pokok_Awal', 'saldopokok': 'Saldo_Pokok', 'ovd': 'OVD', 'status': 'Status', 'tgljt': 'Tgl_Jt', 'tglcair': 'Tgl_Cair', 'productid': 'ProductId', 'statuswo': 'StatusWo', 'statusasset': 'StatusAsset', 'tgltarik': 'Tgl_Tarik', 'tglbayar': 'Tgl_Bayar', 'tgldo': 'TglDO', 'tglproses': 'Tgl_Proses', 'maxovd': 'Max_OVD', 'posid': 'POS_ID', 'applicationpriority': 'ApplicationPriority', 'baname': 'BAName', 'cmo': 'CMO', 'angsuran': 'Angsuran', 'profid': 'Profession', 'sourceapplication': 'SourceApplication'}
+2024-10-24 15:39:06,198 [INFO] DataFrame setelah filter dan rename kolom:
+   BranchID   AgreementNo  ...  Profession SourceApplication
+1       401  211120805550  ...  TNI                       RO
+2       401  211120900191  ...  Wiraswasta                RO
+3       401  211120900404  ...  Wiraswasta                RO
+4       401  211120900406  ...  PEGAWAI SW                RO
+5       401  211120900514  ...  PEGAWAI SW                RO
+
+[5 rows x 28 columns]
+2024-10-24 15:39:06,326 [INFO] DataFrame setelah menambahkan kolom periode dan drop baris kosong:
+    Periode  BranchID   AgreementNo  ...   Angsuran  Profession SourceApplication
+1  20230405       401  211120805550  ...  4168500.0  TNI                       RO
+2  20230405       401  211120900191  ...   741000.0  Wiraswasta                RO
+3  20230405       401  211120900404  ...   848500.0  Wiraswasta                RO
+4  20230405       401  211120900406  ...  1300000.0  PEGAWAI SW                RO
+5  20230405       401  211120900514  ...   676500.0  PEGAWAI SW                RO
+
+[5 rows x 29 columns]
+2024-10-24 15:39:06,578 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime:
+    Periode  BranchID   AgreementNo  ...   Angsuran  Profession SourceApplication
+1  20230405       401  211120805550  ...  4168500.0  TNI                       RO
+2  20230405       401  211120900191  ...   741000.0  Wiraswasta                RO
+3  20230405       401  211120900404  ...   848500.0  Wiraswasta                RO
+4  20230405       401  211120900406  ...  1300000.0  PEGAWAI SW                RO
+5  20230405       401  211120900514  ...   676500.0  PEGAWAI SW                RO
+
+[5 rows x 29 columns]
+2024-10-24 15:40:12,189 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-24 15:40:12,189 [INFO] Proses selesai, data berhasil disimpan ke database!
+2024-10-24 15:56:14,965 [INFO] Tes koneksi berhasil!
+2024-10-24 15:59:55,367 [INFO] Kolom yang ada di file: ['BranchID', 'ApplicationID', 'AgreementNo', 'CustomerID', 'Nama', 'Alamat', 'Kecamatan', 'LegalCity', 'Alamat_kantor', 'Telp_Rumah', 'Telp_Kantor', 'Merek', 'Type', 'Model', 'Tenor', 'Ang_ke', 'POKOK_AWAL', 'AR_AWAL', 'SALDO_POKOK', 'SALDO_BUNGA', 'SALDO_PINJAM', 'OVD', 'DENDA', 'Dealer', 'Status', 'Tgl_jt', 'Angsuran', 'Tgl_Ktr', 'CMO', 'Tgl_Cair', 'ProductId', 'DownPayment', 'SISABAYAR', 'Thn_Motor', 'TOTALOTR', 'NoRangka', 'NoMesin', 'AttributeContent', 'EffectiveRate', 'FlatRate', 'UsedNew', 'NIL_ASS', 'NIL_ADM', 'APSUPPLIER', 'INSENTIF', 'RIFUND', 'ANGSURANTERTUNGAK', 'BANKFUNDINGJF', 'BANKFUNDINGTL', 'SISA_POKOKP', 'SALDO_BUNGAP', 'SALDO_PINJAMP', 'AnBPKB', 'StatusBPKB', 'NoBPKB', 'StatusWo', 'ContractPrepaidAmount', 'StatusAsset', 'Tgl_Tarik', 'Alamat_Tagih', 'Denda_Bayar', 'KodeBayar', 'Tgl_Bayar', 'Warna', 'Tgl_Sp', 'NoSpBPKB', 'OvdBPKB', 'Tgl_Lahir', 'KTP', 'NPWP', 'Tgl_Denda', 'DendaByrTerakhir', 'TglJual', 'TglDO', 'KelurahanLegalAdress', 'KecamatanLegalAdress', 'KodeposLegalAddress', 'KelurahanResidence', 'KecamatanResidence', 'KodeposResidence', 'NilBayarAkhir', 'MobilePhone', 'MailingAdress', 'MailingKecamatan', 'MailingKelurahan', 'MailingZipCode', 'LCInstallment', 'EmployeeID', 'MailingCity', 'Tgl_Proses', 'IsSyariah', 'marketing', 'SOmarketing', 'Surveyor', 'SOSurveyor', 'SourceApplication', 'CreditScoringResult', 'ApplicationPriority', 'surveyorid', 'Insurance', 'MainCoverage', 'PolicyNumber', 'legalRT', 'legalRW', 'MailingRT', 'MailingRW', 'YNQuestion', 'BirthPlace', 'MaxOvd', 'OtherFee', 'FirstInstallment', 'BAname', 'SupplierKtpID', 'ProfID', 'PenghasilanKons', 'LamaKerja', 'IndustriType', 'AgentCommision', 'AgentCommision2', 'ReleaseDate', 'RRDDate', 'POS_ID', 'ProductOfferingID', 'Profession']
+2024-10-24 15:59:55,367 [INFO] Berhasil membaca data dari D:/OneDrive/ASM/DATA/2023/03. MARET 2023/20230312.xlsx
+2024-10-24 15:59:55,367 [INFO] Kolom di file Excel: ['BranchID', 'ApplicationID', 'AgreementNo', 'CustomerID', 'Nama', 'Alamat', 'Kecamatan', 'LegalCity', 'Alamat_kantor', 'Telp_Rumah', 'Telp_Kantor', 'Merek', 'Type', 'Model', 'Tenor', 'Ang_ke', 'POKOK_AWAL', 'AR_AWAL', 'SALDO_POKOK', 'SALDO_BUNGA', 'SALDO_PINJAM', 'OVD', 'DENDA', 'Dealer', 'Status', 'Tgl_jt', 'Angsuran', 'Tgl_Ktr', 'CMO', 'Tgl_Cair', 'ProductId', 'DownPayment', 'SISABAYAR', 'Thn_Motor', 'TOTALOTR', 'NoRangka', 'NoMesin', 'AttributeContent', 'EffectiveRate', 'FlatRate', 'UsedNew', 'NIL_ASS', 'NIL_ADM', 'APSUPPLIER', 'INSENTIF', 'RIFUND', 'ANGSURANTERTUNGAK', 'BANKFUNDINGJF', 'BANKFUNDINGTL', 'SISA_POKOKP', 'SALDO_BUNGAP', 'SALDO_PINJAMP', 'AnBPKB', 'StatusBPKB', 'NoBPKB', 'StatusWo', 'ContractPrepaidAmount', 'StatusAsset', 'Tgl_Tarik', 'Alamat_Tagih', 'Denda_Bayar', 'KodeBayar', 'Tgl_Bayar', 'Warna', 'Tgl_Sp', 'NoSpBPKB', 'OvdBPKB', 'Tgl_Lahir', 'KTP', 'NPWP', 'Tgl_Denda', 'DendaByrTerakhir', 'TglJual', 'TglDO', 'KelurahanLegalAdress', 'KecamatanLegalAdress', 'KodeposLegalAddress', 'KelurahanResidence', 'KecamatanResidence', 'KodeposResidence', 'NilBayarAkhir', 'MobilePhone', 'MailingAdress', 'MailingKecamatan', 'MailingKelurahan', 'MailingZipCode', 'LCInstallment', 'EmployeeID', 'MailingCity', 'Tgl_Proses', 'IsSyariah', 'marketing', 'SOmarketing', 'Surveyor', 'SOSurveyor', 'SourceApplication', 'CreditScoringResult', 'ApplicationPriority', 'surveyorid', 'Insurance', 'MainCoverage', 'PolicyNumber', 'legalRT', 'legalRW', 'MailingRT', 'MailingRW', 'YNQuestion', 'BirthPlace', 'MaxOvd', 'OtherFee', 'FirstInstallment', 'BAname', 'SupplierKtpID', 'ProfID', 'PenghasilanKons', 'LamaKerja', 'IndustriType', 'AgentCommision', 'AgentCommision2', 'ReleaseDate', 'RRDDate', 'POS_ID', 'ProductOfferingID', 'Profession']
+2024-10-24 15:59:55,367 [INFO] Kolom yang telah dinormalisasi: ['branchid', 'applicationid', 'agreementno', 'customerid', 'nama', 'alamat', 'kecamatan', 'legalcity', 'alamatkantor', 'telprumah', 'telpkantor', 'merek', 'type', 'model', 'tenor', 'angke', 'pokokawal', 'arawal', 'saldopokok', 'saldobunga', 'saldopinjam', 'ovd', 'denda', 'dealer', 'status', 'tgljt', 'angsuran', 'tglktr', 'cmo', 'tglcair', 'productid', 'downpayment', 'sisabayar', 'thnmotor', 'totalotr', 'norangka', 'nomesin', 'attributecontent', 'effectiverate', 'flatrate', 'usednew', 'nilass', 'niladm', 'apsupplier', 'insentif', 'rifund', 'angsurantertungak', 'bankfundingjf', 'bankfundingtl', 'sisapokokp', 'saldobungap', 'saldopinjamp', 'anbpkb', 'statusbpkb', 'nobpkb', 'statuswo', 'contractprepaidamount', 'statusasset', 'tgltarik', 'alamattagih', 'dendabayar', 'kodebayar', 'tglbayar', 'warna', 'tglsp', 'nospbpkb', 'ovdbpkb', 'tgllahir', 'ktp', 'npwp', 'tgldenda', 'dendabyrterakhir', 'tgljual', 'tgldo', 'kelurahanlegaladress', 'kecamatanlegaladress', 'kodeposlegaladdress', 'kelurahanresidence', 'kecamatanresidence', 'kodeposresidence', 'nilbayarakhir', 'mobilephone', 'mailingadress', 'mailingkecamatan', 'mailingkelurahan', 'mailingzipcode', 'lcinstallment', 'employeeid', 'mailingcity', 'tglproses', 'issyariah', 'marketing', 'somarketing', 'surveyor', 'sosurveyor', 'sourceapplication', 'creditscoringresult', 'applicationpriority', 'surveyorid', 'insurance', 'maincoverage', 'policynumber', 'legalrt', 'legalrw', 'mailingrt', 'mailingrw', 'ynquestion', 'birthplace', 'maxovd', 'otherfee', 'firstinstallment', 'baname', 'supplierktpid', 'profid', 'penghasilankons', 'lamakerja', 'industritype', 'agentcommision', 'agentcommision2', 'releasedate', 'rrddate', 'posid', 'productofferingid', 'profession']
+2024-10-24 15:59:55,371 [INFO] Kolom dinamis hasil pencocokan: {'branchid': 'BranchID', 'agreementno': 'AgreementNo', 'customerid': 'CustomerID', 'nama': 'Nama', 'model': 'Model', 'tenor': 'Tenor', 'angke': 'Ang_ke', 'pokokawal': 'Pokok_Awal', 'saldopokok': 'Saldo_Pokok', 'ovd': 'OVD', 'status': 'Status', 'tgljt': 'Tgl_Jt', 'tglcair': 'Tgl_Cair', 'productid': 'ProductId', 'statuswo': 'StatusWo', 'statusasset': 'StatusAsset', 'tgltarik': 'Tgl_Tarik', 'tglbayar': 'Tgl_Bayar', 'tgldo': 'TglDO', 'tglproses': 'Tgl_Proses', 'maxovd': 'Max_OVD', 'posid': 'POS_ID', 'applicationpriority': 'ApplicationPriority', 'baname': 'BAName', 'cmo': 'CMO', 'angsuran': 'Angsuran', 'profid': 'Profession', 'sourceapplication': 'SourceApplication'}
+2024-10-24 15:59:55,525 [INFO] DataFrame setelah filter dan rename kolom:
+   BranchID   AgreementNo  ...  Profession SourceApplication
+0       401  211120808460  ...  PEGAWAI SW                RO
+1       401  211120900452  ...  Wiraswasta                RO
+2       401  211120900561  ...  Lain-Lain                 RO
+3       401  211120900624  ...  Wiraswasta                RO
+4       401  211120900644  ...  Ibu Rumah                 RO
+
+[5 rows x 28 columns]
+2024-10-24 15:59:55,865 [INFO] DataFrame setelah menambahkan kolom periode dan drop baris kosong:
+    Periode  BranchID   AgreementNo  ...   Angsuran  Profession SourceApplication
+0  20230312       401  211120808460  ...   760500.0  PEGAWAI SW                RO
+1  20230312       401  211120900452  ...   848500.0  Wiraswasta                RO
+2  20230312       401  211120900561  ...   695500.0  Lain-Lain                 RO
+3  20230312       401  211120900624  ...  1659000.0  Wiraswasta                RO
+4  20230312       401  211120900644  ...   627500.0  Ibu Rumah                 RO
+
+[5 rows x 29 columns]
+2024-10-24 15:59:56,196 [INFO] DataFrame setelah pembersihan kolom numerik dan konversi datetime:
+    Periode  BranchID   AgreementNo  ...   Angsuran  Profession SourceApplication
+0  20230312       401  211120808460  ...   760500.0  PEGAWAI SW                RO
+1  20230312       401  211120900452  ...   848500.0  Wiraswasta                RO
+2  20230312       401  211120900561  ...   695500.0  Lain-Lain                 RO
+3  20230312       401  211120900624  ...  1659000.0  Wiraswasta                RO
+4  20230312       401  211120900644  ...   627500.0  Ibu Rumah                 RO
+
+[5 rows x 29 columns]
+2024-10-24 16:01:00,986 [INFO] Backup data berhasil dilakukan ke tabel 'AZ_Daily' di SQL Server!
+2024-10-24 16:01:00,986 [INFO] Proses selesai, data berhasil disimpan ke database!
